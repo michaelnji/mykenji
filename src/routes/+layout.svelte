@@ -8,13 +8,13 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		$theme = getOrSetItem('theme', 'light');
+		$theme = getOrSetItem('theme', 'dark');
 	});
 </script>
 
 <div class={$theme}>
 	<div
-		class="dark:!bg-base-400 dark:!text-gray-50 bg-gray-50 text-base-400 minw-screen min-h-screen transition-colors duration-300"
+		class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400 minw-screen min-h-screen transition-colors duration-300"
 	>
 		<header>
 			<Navbar />
