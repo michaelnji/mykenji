@@ -28,7 +28,7 @@
 					<a href="/" class="logo"><span class="font-extrabold text-primary">マイケル</span> Nji</a>
 				</div>
 				<button
-					class="btn btn-ghost dark:!text-gray-50 shadow-lg overflow-hidden !rounded-full"
+					class="btn btn-ghost dark:!text-gray-50 shadow-lg overflow-hidden !rounded-full dark:hover:!bg-gray-50 dark:hover:!bg-opacity-5"
 					on:click={toggleTheme}
 				>
 					{#key $theme}
@@ -148,7 +148,7 @@
 		@apply flex items-center gap-x-3 p-3 w-full;
 	}
 	.nav-center ul li {
-		@apply rounded-xl cursor-pointer;
+		@apply rounded-full p-1 cursor-pointer;
 	}
 
 	.nav-center ul li:hover {
