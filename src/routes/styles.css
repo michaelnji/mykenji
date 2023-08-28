@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+	@apply flex items-center gap-x-2 p-3 transition duration-300 rounded-xl text-base uppercase bg-base-200  text-gray-50;
+}
+.btn:hover {
+	@apply bg-base-300;
+}
+.btn:active {
+	@apply scale-95;
+}
+.btn-lg {
+	@apply text-xl;
+}
+.divider {
+	@apply w-full border border-gray-200;
+}
+.btn-ghost {
+	@apply bg-transparent text-base-400 transition shadow-none;
+}
+.btn-ghost:hover {
+	@apply bg-base-300  bg-opacity-5;
+}
+.btn-primary {
+	@apply bg-primary text-gray-50;
+}
+.btn-primary:hover {
+	@apply bg-opacity-60 bg-primary;
+}
