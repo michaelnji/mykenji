@@ -8,7 +8,7 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		$theme = getOrSetItem('theme', 'light');
+		$theme = getOrSetItem('theme', 'dark');
 	});
 </script>
 
