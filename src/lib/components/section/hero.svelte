@@ -25,17 +25,17 @@
 	</h2>
 	<div class="w-full max-w-xl flex-wrap justify-center p-6 !mx-auto flex items-center gap-3">
 		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
-			<Icon name="svelte" color="orange" height="68" width="68" />
+			<Icon name="supabase" color="#51cf66" height="68" width="68" />
 		</div>
-
 		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
 			<Icon name="express" color="teal" height="68" width="68" />
 		</div>
 		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
 			<Icon name="nodedotjs" color="#37b24d" height="68" width="68" />
 		</div>
+
 		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
-			<Icon name="supabase" color="#51cf66" height="68" width="68" />
+			<Icon name="svelte" color="orange" height="68" width="68" />
 		</div>
 	</div>
 </section>

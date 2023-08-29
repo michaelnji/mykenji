@@ -29,3 +29,6 @@
 .btn-primary:hover {
 	@apply bg-opacity-60 bg-primary;
 }
+:root {
+	scroll-behavior: smooth;
+}
