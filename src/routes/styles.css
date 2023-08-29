@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	scroll-behavior: smooth;
+}
 .btn {
 	@apply flex items-center gap-x-2 p-3 transition duration-300 rounded-xl text-base uppercase bg-base-200  text-gray-50;
 }
@@ -28,7 +31,4 @@
 }
 .btn-primary:hover {
 	@apply bg-opacity-60 bg-primary;
-}
-:root {
-	scroll-behavior: smooth;
 }
