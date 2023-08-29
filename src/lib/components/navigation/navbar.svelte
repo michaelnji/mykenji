@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { setItemValue } from '$lib/scripts/dbManager';
 	import theme from '$lib/stores/theme';
 	import { IconMini, IconOutline, IconSolid } from 'svelte-heros-v2';
 	import { fade, fly, scale } from 'svelte/transition';
-	let changeIcon: boolean = false;
+	let closeModal: boolean = false;
 	function toggleTheme(): void {
 		if ($theme === 'dark') {
 			$theme = setItemValue('theme', 'light');
@@ -11,16 +12,21 @@
 		}
 		$theme = setItemValue('theme', 'dark');
 	}
+	$: currentSection = $page.url.pathname;
+
+	$: {
+		console.log(currentSection);
+	}
 </script>
 
 <div class="navbar-wrapper !z-10">
-	{#if changeIcon}
+	{#if closeModal}
 		<div
 			class="navbar-container dark:!border-base-100 dark:!bg-base-300 dark:!text-gray-50"
 			in:fly={{ y: 200 }}
 			out:fade={{ duration: 100 }}
 			on:blur={() => {
-				changeIcon = !changeIcon;
+				closeModal = !closeModal;
 			}}
 		>
 			<div class="nav-start justify-between flex items-center w-full">
@@ -59,24 +65,43 @@
 			<div class="divider dark:!border-base-100" />
 			<nav class="nav-center">
 				<ul>
+					<li>
+						<a
+							href="/#about"
+							class="nav-item"
+							class:!bg-primary={currentSection === '/#about'}
+							class:!bg-opacity-30={currentSection === '/#about'}
+							class:!text-primary={currentSection === '/#about'}
+							on:click={() => {
+								closeModal = !closeModal;
+							}}
+						>
+							ABOUT
+						</a>
+					</li>
+					<li>
+						<a
+							class:bg-primary={currentSection === '/#projects'}
+							class:bg-opacity-30={currentSection === '/#projects'}
+							class:text-primary={currentSection === '/#projects'}
+							href="/#projects"
+							class="nav-item"
+							on:click={() => {
+								closeModal = !closeModal;
+							}}
+						>
+							PROJECTS
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/michaelnji" class="nav-item"> GITHUB </a>
+					</li>
 					<!-- <li>
-					<a href="/" class="nav-item !items-center"> HOME </a>
-				</li> -->
-					<li>
-						<a href="/" class="nav-item"> HOME </a>
-					</li>
-					<li>
-						<a href="/" class="nav-item"> PROJECTS </a>
-					</li>
-					<li>
-						<a href="/" class="nav-item"> GITHUB </a>
-					</li>
-					<li>
 						<a href="/" class="nav-item"> BLOG </a>
 					</li>
 					<li>
 						<a href="/" class="nav-item"> RESUME </a>
-					</li>
+					</li> -->
 				</ul>
 			</nav>
 			<div class="divider dark:!border-base-100" />
@@ -88,11 +113,11 @@
 	<button
 		class="btn !z-20 md:btn-lg btn-primary shadow-lg overflow-hidden !rounded-full"
 		on:click={() => {
-			changeIcon = !changeIcon;
+			closeModal = !closeModal;
 		}}
 	>
-		{#key changeIcon}
-			{#if !changeIcon}
+		{#key closeModal}
+			{#if !closeModal}
 				<div in:scale={{ duration: 400 }}>
 					<IconSolid
 						name="bars-3-solid"
