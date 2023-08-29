@@ -13,10 +13,6 @@
 		$theme = setItemValue('theme', 'dark');
 	}
 	$: currentSection = $page.url.pathname;
-
-	$: {
-		console.log(currentSection);
-	}
 </script>
 
 <div class="navbar-wrapper !z-10">
