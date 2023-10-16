@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from "svelte/transition";
 	import i from '$lib/images/myke.jpeg';
 	import { Icon } from 'svelte-simples';
 </script>
@@ -7,7 +8,7 @@
 	<div
 		class="max-w-[16rem] w-full h-full mx-auto max-h-[16rem] !rounded-full overflow-hidden mb-6 border-4 relative border-base-300 dark:border-gray-50"
 	>
-		<img src={i} alt="" class="mx-auto" />
+		<img src={i} alt="" class="mx-auto" in:fade loading="lazy"/>
 	</div>
 	<h1
 		class="text-4xl w-full max-w-6xl mx-auto md:text-6xl lg:text-7xl font-extrabold font-head text-center"
@@ -15,8 +16,8 @@
 		Hi! I am Michael Nji, a <span class="!text-primary">Developer </span> & Student
 	</h1>
 	<p class="mt-6 max-w-6xl mx-auto text-center text-xl">
-		AKA <b>6ixi</b>, a 22 year-old who's in love with building beautiful UIs and the web, crafting
-		<a href="/projects" class="text-primary underline font-bold">cool stuff</a> since 2020
+		A 22 year-old who's in love with building beautiful UIs and the web, crafting
+		<a href="/#projects" class="text-primary underline font-bold">cool stuff</a> since 2020
 	</p>
 </section>
 <section class="md:pt-12 pt-6 w-full">
