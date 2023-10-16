@@ -8,7 +8,7 @@
 			About Myke
 		</h1>
 		<p class="mt-6 max-w-3xl mx-auto text-center text-lg opacity-90">
-			Cameroonian & a student at <b class="font-head">EXHIST</b> Bamenda, i picked up coding in 2016
+			Cameroonian & a self taught web developer, I picked up coding in 2016
 			as a way to keep myself busy during the teacher's strike and has since then
 			<b class="text-primary">loved it!</b>. Building websites is something I enjoy and have been
 			learning more and more of everyday.
@@ -17,7 +17,7 @@
 			I am currently working hard to build a reputable github portfolio (you should <a
 				href="https://github.com/michaelnji"
 				class="text-primary underline">check it out</a
-			>🍀) so as to build my skills & fill up this ever growing pot of curiosity in me
+			>🍀) so as to build my skills & fill up this ever growing void of curiosity in me
 		</p>
 	</section>
 
