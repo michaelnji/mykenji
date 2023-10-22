@@ -15,7 +15,7 @@
 	$: currentSection = $page.url.pathname;
 </script>
 
-<div class="navbar-wrapper !z-10">
+<div class="navbar-wrapper !z-10 !transition-colors !duration-300">
 	{#if closeModal}
 		<div
 			class="navbar-container dark:!border-base-100 dark:!bg-base-300 dark:!text-gray-50"

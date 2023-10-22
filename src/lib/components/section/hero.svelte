@@ -13,14 +13,14 @@
 	<h1
 		class="text-4xl w-full max-w-6xl mx-auto md:text-6xl lg:text-7xl font-extrabold font-head text-center"
 	>
-		Hi! I am Michael Nji, a <span class="!text-primary">Developer </span> & Student
+		👋🏽Hi! I am Michael Nji, a <span class="!text-primary">Developer </span> & Student
 	</h1>
-	<p class="mt-6 max-w-6xl mx-auto text-center text-xl">
-		A 22 year-old who's in love with building beautiful UIs and the web, crafting
+	<p class="mt-6 p-3 max-w-max rounded-lg bg-primary bg-opacity-10 text-primary dark:text-indigo-200  mx-auto text-center text-xl  opacity-80">
+		⚡A 22 year-old who's in love with building beautiful UIs, making
 		<a href="/#projects" class="text-primary underline font-bold">cool stuff</a> since 2020
 	</p>
 </section>
-<section class="md:pt-12 pt-6 w-full">
+<section class="pt-12  w-full">
 	<h2 class="text-2xl w-full max-w-6xl !mx-auto font-extrabold font-head text-center">
 		I use the <b class="text-primary">SENS</b> stack
 	</h2>
