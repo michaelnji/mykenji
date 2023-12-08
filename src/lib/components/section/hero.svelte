@@ -16,7 +16,7 @@
 		👋🏽Hi! I am Michael Nji, a <span class="!text-primary">Developer </span> & Student
 	</h1>
 	<p class="mt-6 p-3 max-w-max rounded-lg bg-primary bg-opacity-10 text-primary dark:text-indigo-200  mx-auto text-center text-xl  opacity-80">
-		⚡A 22 year-old who's in love with building beautiful UIs, making
+		⚡A self taught web dev who's in love with building beautiful UIs, making
 		<a href="/#projects" class="text-primary underline font-bold">cool stuff</a> since 2020
 	</p>
 </section>

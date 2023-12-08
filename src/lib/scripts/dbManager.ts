@@ -1,6 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
-function getOrSetItem(key:string, value = ''):any {
-	let db = localStorage;
+/**
+ * @description Returns an item from localStorage if any, else creates a new one
+ * @param {string} key
+ * @param {string} [value='']
+ * @return {*}  {*}
+ */
+export function getOrSetItem(key: string, value: string = ''): any {
+	const db = localStorage;
 	if (db.getItem(key) == null) {
 		db.setItem(key, JSON.stringify(value));
 	} else {
@@ -8,29 +16,37 @@ function getOrSetItem(key:string, value = ''):any {
 	}
 	return value;
 }
-function getItemValue(key): any | null {
-	let db = localStorage;
+/**
+ * @description returns an item from localStorage
+ * @param {*} key
+ * @return {*}  {(any | null)}
+ */
+export function getItemValue(key: any): any | null {
+	const db = localStorage;
 	if (db.getItem(key) !== null) {
 		return JSON.parse(db.getItem(key));
 	}
 	return null;
 }
-
-function setItemValue(key, value = '') {
-	let db = localStorage;
+/**
+ * @description creates an item and stores it in localStorage
+ * @param {*} key
+ * @param {string} [value='']
+ * @return {*}  {(any | null)}
+ */
+export function setItemValue(key: any, value: string = ''): any | null {
 	if (key !== null) {
-		db.setItem(key, JSON.stringify(value));
+		localStorage.setItem(key, JSON.stringify(value));
 		return value;
 	} else return null;
 }
-function clearDB() {
-	let db = localStorage;
-	db.clear();
+/**
+ * @description clears all items stored in localStorage
+ 
+ * @return {*} 
+ */
+export function clearDB(): null {
+	localStorage.clear();
+	return null
 }
 
-export  {
-	getItemValue,
-	getOrSetItem,
-	setItemValue,
-	clearDB
-};

@@ -1,15 +1,15 @@
 <script>
-	import Navbar from './../lib/components/navigation/navbar.svelte';
-	import './styles.css';
+	import { getOrSetItem } from '$lib/scripts/dbManager';
+	import theme from '$lib/stores/theme';
 	import '@fontsource/epilogue';
 	import '@fontsource/krona-one';
-	import theme from '$lib/stores/theme';
-	import { getOrSetItem } from '$lib/scripts/dbManager';
 	import { onMount } from 'svelte';
+	import Navbar from './../lib/components/navigation/navbar.svelte';
+	import './styles.css';
 
 	onMount(() => {
 		$theme = getOrSetItem('theme', 'dark');
-	});
+	}); 
 </script>
 
 <div class={$theme}>

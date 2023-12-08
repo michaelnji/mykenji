@@ -1,11 +1,11 @@
-<script lang="ts">
+ ;<script lang="ts">
 	import Image from './../display/Image.svelte';
 	import { Icon } from 'svelte-simples';
 	import i from '$lib/images/me.jpg';
 	import ImageLoader from '../display/ImageLoader.svelte';
 </script>
 
-<div class="!my-24 mx-6" id="about">
+<div class="!mb-24 mt-6 mx-6" id="about">
 	<section class=" px-6">
 		
 		<div class="mt-6 w-full grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -31,7 +31,7 @@
 				</h2>
 				<div class="w-full  flex-wrap justify-center !mx-auto flex items-center gap-3 mt-8">
 					<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-2xl">
-						<Icon name="astro" color="#f03e3e" height="68" width="58" /> 
+						<Icon name="go" color="#339af0" height="68" width="58" /> 
 					</div>
 
 					<div class="p-2 rounded-xl  bg-white shadow-2xl">
@@ -56,6 +56,9 @@
 					</div>
 					<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-2xl">
 						<Icon name="figma" color="#fa5252" height="68" width="58" />
+					</div>
+					<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-2xl">
+						<Icon name="webstorm" color="#fa5252" height="68" width="58" />
 					</div>
 				</div>
 			</div>

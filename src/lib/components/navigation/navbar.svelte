@@ -8,14 +8,16 @@
 	function toggleTheme(): void {
 		if ($theme === 'dark') {
 			$theme = setItemValue('theme', 'light');
+			closeModal = !closeModal
 			return;
 		}
 		$theme = setItemValue('theme', 'dark');
+		closeModal = !closeModal
 	}
 	$: currentSection = $page.url.pathname;
 </script>
 
-<div class="navbar-wrapper !z-10 !transition-colors !duration-300">
+<div class="navbar-wrapper !z-10">
 	{#if closeModal}
 		<div
 			class="navbar-container dark:!border-base-100 dark:!bg-base-300 dark:!text-gray-50"
@@ -27,7 +29,7 @@
 		>
 			<div class="nav-start justify-between flex items-center w-full">
 				<div>
-					<a href="/" class="logo"><span class="font-extrabold text-primary">マイケル</span> Nji</a>
+					<a href="/"  class='logo !duration-300'><span class="font-extrabold text-primary">マイケル</span> Nji</a>
 				</div>
 				<button
 					class="btn btn-ghost dark:!text-gray-50 shadow-lg overflow-hidden !rounded-full dark:hover:!bg-gray-50 dark:hover:!bg-opacity-5"
