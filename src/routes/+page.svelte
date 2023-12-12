@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Blog from "$lib/components/section/blog.svelte";
 	import About from '$lib/components/section/about.svelte';
 	import Footer from '$lib/components/section/footer.svelte';
 	import Hero from '$lib/components/section/hero.svelte';
@@ -9,9 +10,12 @@
 <div class="mb-24">
 <Hero />
 </div>
-	<div class="mb-24 mt-32">
+	<div class="!mb-24 mt-32">
 		<About />
 	</div>
+<div class="!my-24">
+	<Blog />
+</div>
 <div class="my-24">
 	<Projects />
 </div>
