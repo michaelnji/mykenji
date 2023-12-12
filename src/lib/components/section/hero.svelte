@@ -13,16 +13,16 @@
 	<h1
 		class="text-4xl w-full max-w-6xl mx-auto md:text-6xl lg:text-7xl font-extrabold font-head text-center"
 	>
-		👋🏽Hi! I am Michael Nji, a <span class="!text-primary">Developer </span> & Student
+		👋🏽Hi! I am Michael Nji, a <span class="!text-primary dark:!text-indigo-200">Developer </span> & Student
 	</h1>
-	<p class="mt-6 p-3 max-w-max rounded-lg bg-primary bg-opacity-10 text-primary dark:text-indigo-200  mx-auto text-center text-xl  opacity-80">
+	<p class="md:mt-6 p-3 max-w-max rounded-lg md:bg-primary md:bg-opacity-10 md:text-primary md:dark:text-indigo-200  mx-auto text-center md:text-xl text-base  opacity-70">
 		⚡A self taught web dev who's in love with building beautiful UIs, making
 		<a href="/#projects" class="text-primary underline font-bold">cool stuff</a> since 2020
 	</p>
 </section>
 <section class="pt-12  w-full">
 	<h2 class="text-2xl w-full max-w-6xl !mx-auto font-extrabold font-head text-center">
-		I use the <b class="text-primary">SENS</b> stack
+		I use the <b class="text-primary dark:text-indigo-200">SENS</b> stack
 	</h2>
 	<div class="w-full max-w-xl flex-wrap justify-center p-6 !mx-auto flex items-center gap-3">
 		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
