@@ -1,8 +1,8 @@
+// @ts-ignore
 import { round } from 'mathjs';
 /**
  * @description Formats a number to a more human friendly format
  * @example const formattedNumber = formatNum(100990) // 100,990
- * @author Michael
  * @param {number} num
  * @return {*} {string | number}
  */
@@ -18,7 +18,6 @@ export function formatNum(num: number): string | number {
  * @description Adds a currency symbol to a number
  * @example const formattedNumber = formatNumCurrency(23500,'XAF') // XAF 23500
  * @example const formattedNumber = formatNumCurrency(23500,'USD') // USD 23500
- * @author Michael
  * @param {number} num
  * @param {string} [currency='XAF']
  * @return {*}  {string}
@@ -33,7 +32,6 @@ export function formatNumCurrency(num: number, currency: string = 'XAF'): string
  * @description summarizes numbers by replacing significant figures with letters representing their magnitude
  * @example const formattedNumber = numToSummary(10250000) // 10.2M
  * @example const formattedNumber = numToSummary(23500) // 23.5K
- * @author Michael
  * @export
  * @param {number} num
  * @return {*}  {(string | number)}
