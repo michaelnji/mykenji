@@ -92,6 +92,20 @@
 						</a>
 					</li>
 					<li>
+						<a
+							class:bg-primary={currentSection === '/blog'}
+							class:bg-opacity-30={currentSection === '/blog'}
+							class:text-primary={currentSection === '/blog'}
+							href="/blog"
+							class="nav-item"
+							on:click={() => {
+								closeModal = !closeModal;
+							}}
+						>
+							BLOG
+						</a>
+					</li>
+					<li>
 						<a href="https://github.com/michaelnji" class="nav-item"> GITHUB </a>
 					</li>
 					<!-- <li>

@@ -14,6 +14,9 @@ dependencies:
   '@sanity/client':
     specifier: ^6.9.3
     version: 6.9.3
+  '@vercel/speed-insights':
+    specifier: ^1.0.1
+    version: 1.0.1
 
 devDependencies:
   '@fontsource/fira-mono':
@@ -635,6 +638,11 @@ packages:
       - encoding
       - supports-color
     dev: true
+
+  /@vercel/speed-insights@1.0.1:
+    resolution: {integrity: sha512-cm8KTTsDgS1AbWsgIEZuMoyPUjclzeqJihyLp0tnA21B/x9iTE8hu2S5zM+/DBzihuHxWL1dx9pCWk22ctMFWQ==}
+    requiresBuild: true
+    dev: false
 
   /@vercel/stega@0.1.0:
     resolution: {integrity: sha512-5b0PkOJsFBX5alChuIO3qpkt5vIZBevzLPhUQ1UP8UzVjL3F1VllnZxp/thfD8R5ol7D7WHkgZHIjdUBX4tDpQ==}
