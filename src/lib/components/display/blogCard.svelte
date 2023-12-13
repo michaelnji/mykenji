@@ -15,7 +15,10 @@
 </h1>
 <p class="mt-3 text-md opacity-75 font-medium  line-clamp-3">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolores aliquid sunt adipisci maxime distinctio ut qui? Optio beatae suscipit animi adipisci nesciunt facilis enim rem facere. A, voluptate asperiores.
-</p>
+</p> 
+<div class="mt-2 mb-6">
+  <a href="/" class="font-extrabold transition dark:text-indigo-200 text-primary border-b-2  border-transparent hover:border-primary dark:hover:border-indigo-200">Read more >> </a>
+</div>
 <div class="mt-3 flex flex-wrap gap-2">
     <span class="px-3 py-1 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm font-mono transition duration-1000">
 
