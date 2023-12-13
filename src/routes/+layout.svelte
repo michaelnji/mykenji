@@ -6,7 +6,8 @@
 	import { onMount } from 'svelte';
 	import Navbar from './../lib/components/navigation/navbar.svelte';
 	import './styles.css';
-
+import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit"
+injectSpeedInsights()
 	onMount(() => {
 		$theme = getOrSetItem('theme', 'dark');
 	}); 
