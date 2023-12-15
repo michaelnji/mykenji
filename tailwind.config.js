@@ -5,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Epilogue'],
+				sans: ['Work Sans'],
 				head: ['Krona One']
 			},
 			colors: {
