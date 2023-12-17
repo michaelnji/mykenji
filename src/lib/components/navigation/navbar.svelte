@@ -96,6 +96,7 @@
 							class:bg-primary={currentSection === '/blog'}
 							class:bg-opacity-30={currentSection === '/blog'}
 							class:text-primary={currentSection === '/blog'}
+							class:rounded-full={currentSection === '/blog'}
 							href="/blog"
 							class="nav-item"
 							on:click={() => {

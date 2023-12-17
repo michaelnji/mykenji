@@ -5,6 +5,11 @@
 	import Hero from '$lib/components/section/hero.svelte';
 	import Projects from '$lib/components/section/projects.svelte';
 	import Contact from '$lib/components/section/contact.svelte';
+	import { onMount } from 'svelte';
+	export let data;
+	
+		
+	
 </script>
 
 <div class="mb-24">
@@ -14,7 +19,9 @@
 		<About />
 	</div>
 <div class="!my-24">
-	<Blog />
+	{#if data?.posts }
+		<Blog posts={data.posts} />
+	{/if}
 </div>
 <div class="my-24">
 	<Projects />

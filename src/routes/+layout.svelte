@@ -1,8 +1,8 @@
 <script>
 	import { getOrSetItem } from '$lib/scripts/dbManager';
 	import theme from '$lib/stores/theme';
-	import '@fontsource/epilogue';
 	import '@fontsource/krona-one';
+	import '@fontsource/work-sans';
 	import { onMount } from 'svelte';
 	import Navbar from './../lib/components/navigation/navbar.svelte';
 	import './styles.css';
