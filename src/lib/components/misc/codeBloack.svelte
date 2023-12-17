@@ -8,10 +8,21 @@
 	$: ({ language, code } = value);
 </script>
 
-{#if language == 'css'}
+<div class="card-wrapper  transition duration-300 ease-in-out">
+	{#if language == 'css'}
 	<Highlight language={css} {code} langtag />
     {:else if language == 'jsx'}
 	<HighlightSvelte {code} langtag/>
     {:else}
 	<HighlightAuto {code} langtag/>
 {/if}
+</div>
+<style>
+	.card-wrapper{
+		box-shadow: 4px 4px black;
+		
+	}
+	.card-wrapper:hover{
+		box-shadow: -4px -4px black;
+	}
+</style>

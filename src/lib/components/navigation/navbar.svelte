@@ -17,10 +17,10 @@
 	$: currentSection = $page.url.pathname;
 </script>
 
-<div class="navbar-wrapper !z-10">
+<div class="navbar-wrapper  !z-10">
 	{#if closeModal}
 		<div
-			class="navbar-container dark:!border-base-100 dark:!bg-base-300 dark:!text-gray-50"
+			class="navbar-container card-wrapper dark:!bg-base-200 dark:!text-gray-50"
 			in:fly={{ y: 200 }}
 			out:fade={{ duration: 100 }}
 			on:blur={() => {
@@ -60,7 +60,7 @@
 					{/key}
 				</button>
 			</div>
-			<div class="divider dark:!border-base-100" />
+			<div class="divider dark:!border-gray-700" />
 			<nav class="nav-center">
 				<ul>
 					<li>
@@ -117,14 +117,14 @@
 					</li> -->
 				</ul>
 			</nav>
-			<div class="divider dark:!border-base-100" />
+			<div class="divider dark:!border-gray-700" />
 			<div class="nav-end">
 				<p class="text-xs px-3 opacity-70">Designed and developed in CMR with 💻 & 🎧</p>
 			</div>
 		</div>
 	{/if}
 	<button
-		class="btn !z-20 md:btn-lg btn-primary shadow-lg overflow-hidden !rounded-full"
+		class="btn !z-20 md:btn-lg btn-primary  overflow-hidden !rounded-none border border-black card-wrapper"
 		on:click={() => {
 			closeModal = !closeModal;
 		}}
@@ -174,7 +174,7 @@
 		@apply fixed bottom-4 flex flex-col   items-end gap-y-4  right-4;
 	}
 	.navbar-container {
-		@apply bg-white border shadow-lg border-gray-200 py-6 px-3 rounded-2xl w-full flex flex-col items-start gap-y-2;
+		@apply bg-white border-2 border-black  py-6 px-3  w-full flex flex-col items-start gap-y-2 transition ease-in-out duration-300;
 	}
 	.logo {
 		@apply font-head text-xl;
@@ -200,5 +200,12 @@
 	}
 	.nav-end {
 		@apply mt-4 w-full;
+	}
+		.card-wrapper{
+		box-shadow: 4px 4px black;
+		
+	}
+	.card-wrapper:hover{
+		box-shadow: -4px -4px black;
 	}
 </style>

@@ -25,21 +25,28 @@
 		I use the <b class="text-primary dark:text-indigo-200">SENS</b> stack
 	</h2>
 	<div class="w-full max-w-xl flex-wrap justify-center p-6 !mx-auto flex items-center gap-3">
-		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
+		<div class="p-2  dark:bg-base-200 bg-white card-wrapper border-2 border-black transition-shadow ease-in-out duration-300">
 			<Icon name="supabase" color="#51cf66" height="68" width="68" />
 		</div>
-		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
+		<div class="p-2  dark:bg-base-200 bg-white card-wrapper border-2 border-black transition-shadow ease-in-out duration-300">
 			<Icon name="express" color="teal" height="68" width="68" />
 		</div>
-		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
+		<div class="p-2  dark:bg-base-200 bg-white card-wrapper border-2 border-black transition-shadow ease-in-out duration-300">
 			<Icon name="nodedotjs" color="#37b24d" height="68" width="68" />
 		</div>
 
-		<div class="p-2 rounded-xl dark:bg-base-200 bg-white shadow-xl">
+		<div class="p-2  dark:bg-base-200 bg-white card-wrapper border-2 border-black transition-shadow ease-in-out duration-300">
 			<Icon name="svelte" color="orange" height="68" width="68" />
 		</div>
 	</div>
 </section>
 
 <style>
+		.card-wrapper{
+		box-shadow: 4px 4px black;
+		
+	}
+	.card-wrapper:hover{
+		box-shadow: -4px -4px black;
+	}
 </style>

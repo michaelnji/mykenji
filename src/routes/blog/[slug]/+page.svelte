@@ -17,7 +17,7 @@
 			<img
 				src={data.imageUrl}
 				alt=""
-				class=" rounded-2xl border border-gray-200 dark:border-gray-700 w-full"
+				class="  border-2 border-black custom-img w-full"
 			/>
 			<p class="font-bold mt-6 md:mt-14 md:mb-4 mb-2 text-lg">
 				<span class="text-gray-700 dark:text-gray-200 "
@@ -47,7 +47,7 @@
 				<p class="font-bold">By {data.authorInfo.name}</p>
 			</div>
 		</div>
-		<section class="!w-full mt-10 prose md:prose-xl dark:prose-invert prose-headings:font-head prose-headings:font-extrabold prose-pre:p-0 prose-pre:rounded-2xl prose-pre:whitespace-pre-wrap  prose-indigo">
+		<section class="!w-full mt-10 prose md:prose-xl dark:prose-invert prose-headings:font-head prose-headings:font-extrabold prose-pre:p-0 prose-pre:rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black  prose-indigo">
 		<PortableText
   value={[
     ...data.body
@@ -77,6 +77,10 @@
 		</section>
 	</section>
 
-<!-- TODO: Install tailwind prose -->
-<!-- TODO: write custom components for portable text -->
-
+<style>
+	.custom-img{
+		box-shadow: 4px 4px black;
+		
+	}
+	
+</style>
