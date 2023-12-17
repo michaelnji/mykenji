@@ -10,7 +10,7 @@
 	<section class=" px-6 w-full">
 		<div class="mt-6 w-full flex flex-col lg:flex-row gap-6">
 			<div class="max-w-xl rounded-2xl mx-auto">
-				<img src={i} class=" max-w-lg rounded-2xl shadow-xl  mx-auto mb-6 lg:mb-0" alt=" of me standing" />
+				<img src={i} class=" w-full !max-w-lg rounded-2xl shadow-xl  mx-auto mb-6 lg:mb-0" alt=" of me standing" />
 			</div>
 			<div>
 				<h1
