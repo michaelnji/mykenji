@@ -15,7 +15,7 @@ injectSpeedInsights()
 
 <div class={$theme}>
 	<div
-		class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400 minw-screen min-h-screen transition-colors duration-300"
+		class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400  transition-colors duration-300"
 	>
 		<header>
 			<Navbar />
