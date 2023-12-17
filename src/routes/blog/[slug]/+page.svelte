@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
 	import { getReadableDate } from '$lib/utils/timeFunctions.js';
@@ -11,12 +12,12 @@
   {@html dracula}
 </svelte:head>
 
-	<section class="px-3 max-w-5xl w-full mx-auto ">
-		<div class="">
+	<section class="px-6 md:px-12 md:w-3/4 w-full ">
+		<div class="w-full">
 			<img
 				src={data.imageUrl}
 				alt=""
-				class=" rounded-2xl border border-gray-200 dark:border-gray-700"
+				class=" rounded-2xl border border-gray-200 dark:border-gray-700 w-full"
 			/>
 			<p class="font-bold mt-6 md:mt-14 md:mb-4 mb-2 text-lg">
 				<span class="text-gray-700 dark:text-gray-200 "
@@ -24,7 +25,7 @@
 				>
 			</p>
 			<h1
-				class=" text-3xl w-full   md:text-4xl font-extrabold font-head "
+				class=" text-4xl w-full   md:text-6xl font-extrabold font-head "
 			>
 				{data.title}
 			</h1>
@@ -46,15 +47,17 @@
 				<p class="font-bold">By {data.authorInfo.name}</p>
 			</div>
 		</div>
-		<section class="mt-10 prose lg:prose-xl dark:prose-invert prose-headings:font-head prose-headings:font-extrabold prose-pre:p-0 prose-pre:rounded-2xl prose-pre:whitespace-pre-wrap">
+		<section class="!w-full mt-10 prose md:prose-xl dark:prose-invert prose-headings:font-head prose-headings:font-extrabold prose-pre:p-0 prose-pre:rounded-2xl prose-pre:whitespace-pre-wrap  prose-indigo">
 		<PortableText
   value={[
     ...data.body
   ]}
    components={{
      types: {
-    code: CodeBloack
-    },
+    code: CodeBloack,
+	image: BlogImg,
+	img: BlogImg,
+},
   
     block: {
       // Re-using the same component across multiple styles
