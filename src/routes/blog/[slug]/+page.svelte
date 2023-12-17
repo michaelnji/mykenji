@@ -1,11 +1,15 @@
 <script lang="ts">
+	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
 	import { getReadableDate } from '$lib/utils/timeFunctions.js';
-	  import {PortableText} from '@portabletext/svelte'
+	import { PortableText } from '@portabletext/svelte';
+  import dracula from "svelte-highlight/styles/dracula";
 
 	export let data;
 </script>
-
+<svelte:head>
+  {@html dracula}
+</svelte:head>
 
 	<section class="px-3 max-w-5xl w-full mx-auto ">
 		<div class="">
@@ -14,8 +18,8 @@
 				alt=""
 				class=" rounded-2xl border border-gray-200 dark:border-gray-700"
 			/>
-			<p class="font-bold mt-14 mb-4 text-lg">
-				<span class="text-gray-700 dark:text-gray-200 bg-gray-400 bg-opacity-10 py-2 px-4"
+			<p class="font-bold mt-6 md:mt-14 md:mb-4 mb-2 text-lg">
+				<span class="text-gray-700 dark:text-gray-200 "
 					>{getReadableDate(data.publishedAt)}</span
 				>
 			</p>
@@ -42,15 +46,34 @@
 				<p class="font-bold">By {data.authorInfo.name}</p>
 			</div>
 		</div>
-		<section class="mt-10">
+		<section class="mt-10 prose lg:prose-xl dark:prose-invert prose-headings:font-head prose-headings:font-extrabold prose-pre:p-0 prose-pre:rounded-2xl prose-pre:whitespace-pre-wrap">
 		<PortableText
   value={[
     ...data.body
   ]}
+   components={{
+     types: {
+    code: CodeBloack
+    },
   
+    block: {
+      // Re-using the same component across multiple styles
+      h1: CustomHeading,
+      h2: CustomHeading,
+      h3: CustomHeading,
+      h4: CustomHeading,
+      h5: CustomHeading,
+      h6: CustomHeading,
+	 
+	  
+    
+    },
+    
+  }}
 />
 		</section>
 	</section>
 
-
+<!-- TODO: Install tailwind prose -->
+<!-- TODO: write custom components for portable text -->
 

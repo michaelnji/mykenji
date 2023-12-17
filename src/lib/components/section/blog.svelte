@@ -2,7 +2,7 @@
 	import BlogCard from "./../display/blogCard.svelte";
 	import { Icon } from 'svelte-simples';
     export let posts: any[]
-    console.log('posts',posts)
+   
 </script>
 <section class='py-12 lg:py-24 w-full'>
 
