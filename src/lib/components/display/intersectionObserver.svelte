@@ -49,12 +49,7 @@
   });
 </script>
 
-<style>
-  div {
-    width: 100%;
-    height: 100%;
-  }
-</style>
+
 
 <div bind:this={container}>
   <slot {intersecting}></slot>

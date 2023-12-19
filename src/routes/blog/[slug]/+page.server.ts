@@ -5,8 +5,10 @@ import type { Load } from '@sveltejs/kit';
 export const load: Load = async ({ url, params, fetch }) => {
 	const res = await getPost(params.slug);
 	if (res?.post) {
-        console.log(res.post[0].imageUrl);
-		return  res.post[0]
+		return {
+			post: res.post[0],
+			toc: res.toc
+		}
 		
 	}
 

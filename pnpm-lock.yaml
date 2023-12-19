@@ -26,6 +26,9 @@ dependencies:
   mathjs:
     specifier: ^12.2.0
     version: 12.2.0
+  speakingurl:
+    specifier: ^14.0.1
+    version: 14.0.1
 
 devDependencies:
   '@fontsource/fira-mono':
@@ -88,6 +91,9 @@ devDependencies:
   svelte-highlight:
     specifier: ^7.4.6
     version: 7.4.6
+  svelte-intersection-observer:
+    specifier: ^0.10.1
+    version: 0.10.1
   svelte-simples:
     specifier: ^0.8.6
     version: 0.8.6(svelte@4.0.0)
@@ -2427,6 +2433,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /speakingurl@14.0.1:
+    resolution: {integrity: sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /speedometer@1.0.0:
     resolution: {integrity: sha512-lgxErLl/7A5+vgIIXsh9MbeukOaCb2axgQ+bKCdIE+ibNT4XNYGNCR1qFEGq6F+YDASXK3Fh/c5FgtZchFolxw==}
     dev: false
@@ -2568,6 +2579,10 @@ packages:
       svelte: ^3.19.0 || ^4.0.0
     dependencies:
       svelte: 4.0.0
+    dev: true
+
+  /svelte-intersection-observer@0.10.1:
+    resolution: {integrity: sha512-hvWZwd0S8t0osA0ChJ4uJDsLvZlULyE3roDEc8mWyeiLT9y25NKT/CKfncsDyS7EGq3B9zb4ZxsH2uNaaXWP4A==}
     dev: true
 
   /svelte-preprocess@5.1.1(postcss@8.4.32)(svelte@4.0.0)(typescript@5.3.3):
