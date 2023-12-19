@@ -8,16 +8,16 @@
 	function toggleTheme(): void {
 		if ($theme === 'dark') {
 			$theme = setItemValue('theme', 'light');
-			closeModal = !closeModal
+			closeModal = !closeModal;
 			return;
 		}
 		$theme = setItemValue('theme', 'dark');
-		closeModal = !closeModal
+		closeModal = !closeModal;
 	}
 	$: currentSection = $page.url.pathname;
 </script>
 
-<div class="navbar-wrapper  !z-10">
+<div class="navbar-wrapper !z-10">
 	{#if closeModal}
 		<div
 			class="navbar-container card-wrapper dark:!bg-base-200 dark:!text-gray-50"
@@ -29,7 +29,13 @@
 		>
 			<div class="nav-start justify-between flex items-center w-full">
 				<div>
-					<a href="/"  class='logo !duration-300'><span class="font-extrabold text-primary">マイケル</span> Nji</a>
+					<a
+						href="/"
+						class="logo !duration-300"
+						on:click={() => {
+							closeModal = !closeModal;
+						}}><span class="font-extrabold text-primary">マイケル</span> Nji</a
+					>
 				</div>
 				<button
 					class="btn btn-ghost dark:!text-gray-50 shadow-lg overflow-hidden !rounded-full dark:hover:!bg-gray-50 dark:hover:!bg-opacity-5"
@@ -124,7 +130,7 @@
 		</div>
 	{/if}
 	<button
-		class="btn !z-20 md:btn-lg btn-primary  overflow-hidden !rounded-none border border-black card-wrapper"
+		class="btn !z-20 md:btn-lg btn-primary overflow-hidden !rounded-none border border-black card-wrapper"
 		on:click={() => {
 			closeModal = !closeModal;
 		}}
@@ -201,11 +207,10 @@
 	.nav-end {
 		@apply mt-4 w-full;
 	}
-		.card-wrapper{
+	.card-wrapper {
 		box-shadow: 4px 4px black;
-		
 	}
-	.card-wrapper:hover{
+	.card-wrapper:hover {
 		box-shadow: -4px -4px black;
 	}
 </style>
