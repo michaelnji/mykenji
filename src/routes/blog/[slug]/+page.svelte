@@ -1,5 +1,6 @@
 <script lang="ts">
-	import BlogImg from '$lib/components/misc/blogImg.svelte';
+	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
+import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
 	import Toc from '$lib/components/misc/toc.svelte';
@@ -17,14 +18,14 @@
 </svelte:head>
 
 
-	<section class="px-6 md:px-12 max-w-5xl w-full mx-auto ">
+	<section class="px-6 md:px-12 md:max-w-5xl w-full mx-auto ">
 		<div class="w-full">
 			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full" />
 
-			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold text-center ">
+			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold md:text-center ">
 				{data.post.title}
 			</h1>
-			<div class="mt-6 flex flex-wrap gap-3 items-center w-full justify-center ">
+			<div class="mt-6 flex flex-wrap gap-3 items-center w-full md:justify-center ">
 				{#each data.post.tags as tag}
 					<span
 						class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
@@ -33,14 +34,14 @@
 					</span>
 				{/each}
 			</div>
-			<p class="font-medium opacity-80 mt-4 text-lg mx-auto w-max">
+			<p class="font-medium opacity-80 mt-4 text-lg mx-auto md:w-max">
 				<span class="text-gray-700 font-serif dark:text-gray-200"
 					>{data.post._updatedAt
 						? `Updated on ${getReadableDate(data.post._updatedAt)}`
 						: `published on ${getReadableDate(data.post.publishedAt)}`}</span
 				>
 			</p>
-			<div class="mt-6 flex flex-wrap gap-3 items-center mx-auto w-max">
+			<div class="mt-6 flex flex-wrap gap-3 items-center mx-auto md:w-max">
 				<img
 					src={data.post.authorInfo.imageUrl}
 					alt=""
@@ -53,7 +54,7 @@
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!w-max mx-auto mt-10 prose md:prose-xl  px-3 dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:p-0 prose-pre:rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif"
+			class="md:!w-max mx-auto mt-10 prose md:prose-xl  px-3 dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:p-0 prose-pre:rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif"
 		>
 			<PortableText
 				value={[...data.post.body]}
@@ -76,6 +77,9 @@
 				}}
 			/>
 		</section>
+		<aside class="mt-20">
+			<BlogAuthorInfo author={data.post.authorInfo} />
+		</aside>
 	</section>
 	<Footer/>
 
