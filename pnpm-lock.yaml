@@ -11,6 +11,9 @@ dependencies:
   '@fontsource/krona-one':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/source-serif-pro':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@fontsource/work-sans':
     specifier: ^5.0.16
     version: 5.0.16
@@ -393,6 +396,10 @@ packages:
 
   /@fontsource/krona-one@5.0.8:
     resolution: {integrity: sha512-2QRdHlTrOKJn53EdmFFt1To+JiYKWRGRVcrWPirXHyr4YSOpHJQKjK7RshYLq+TObdI5bwUuq8u+sDCdcG28rw==}
+    dev: false
+
+  /@fontsource/source-serif-pro@5.0.8:
+    resolution: {integrity: sha512-bb8bza+aBp6Wpz1LOXaQ9YSwMc/wNpk3hniENCPoBMMwsn9LQaJU0kKnJSSIi+ld1t7aH4jbh+mHQHN1zLfZ3A==}
     dev: false
 
   /@fontsource/work-sans@5.0.16:

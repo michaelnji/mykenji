@@ -15,12 +15,13 @@
 
 <IntersectionObserver
 	{element}
+	once={false}
 	bind:intersecting
 	on:intersect={() => {
 		$currentItem = anchorId;
 	}}
 >
-	<div bind:this={element} id={anchorId} class="group relative">
+	<div bind:this={element} id={anchorId} class="group relative ">
 		{#if style === 'h1'}
 			<h1 class=" flex w-full items-center gap-3">
 				<a

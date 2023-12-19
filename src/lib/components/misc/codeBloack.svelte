@@ -8,7 +8,7 @@
 	$: ({ language, code } = value);
 </script>
 
-<div class="card-wrapper  transition duration-300 ease-in-out">
+<div class="card-wrapper  transition duration-300 ease-in-out !font-mono">
 	{#if language == 'css'}
 	<Highlight language={css} {code} langtag />
     {:else if language == 'jsx'}

@@ -3,7 +3,33 @@
 @tailwind utilities;
 
 :root {
+	--secondary: #4c6ef5; 
+	--primary: transparent;
 	scroll-behavior: smooth;
+}
+.dark *{
+--primary: #495057
+}
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--primary) !important;
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary);
+	border-radius: 14px;
+	border: 3px solid var(--primary);
 }
 .btn {
 	@apply flex items-center gap-x-2 p-3 transition duration-300 rounded-xl text-base uppercase bg-base-200  text-gray-50;
