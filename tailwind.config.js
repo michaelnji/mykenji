@@ -6,7 +6,9 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Work Sans'],
-				head: ['Krona One']
+				head: ['Krona One'],
+				serif: ['Source Serif Pro'],
+				mono: ['Fira Mono'],
 			},
 			colors: {
 				'base-100': '#1f2937',
