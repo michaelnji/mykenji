@@ -3,6 +3,7 @@
 import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
+	import RelatedPosts from '$lib/components/misc/relatedPosts.svelte';
 	import Toc from '$lib/components/misc/toc.svelte';
 	import Footer from '$lib/components/section/footer.svelte';
 	import { getReadableDate } from '$lib/utils/timeFunctions.js';
@@ -54,7 +55,7 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose md:prose-xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:p-0 prose-pre:rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif border-b-2 dark:border-gray-700 pb-10"
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose md:!prose-xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif border-b-2 dark:border-gray-700 pb-10"
 		>
 			<PortableText
 				value={[...data.post.body]}
@@ -81,6 +82,9 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 			<BlogAuthorInfo author={data.post.authorInfo} />
 		</aside>
 	</section>
+	<div class="mt-24">
+		<RelatedPosts posts={data.relatedPosts}/>
+	</div>
 	<Footer/>
 
 <style>

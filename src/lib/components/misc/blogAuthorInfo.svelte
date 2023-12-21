@@ -4,7 +4,7 @@
 </script>
 
  
-    <div class="bg-gray-100 dark:bg-base-300  max-w-sm  p-5 w-full">
+    <div class=" max-w-sm  p-5 w-full">
     <div class=" flex flex-col gap-3 ">
 			<div class="flex flex-row gap-3 items-center">
                 	<img
