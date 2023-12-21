@@ -10,13 +10,13 @@
 </script>
 
 <div
-	class=" w-full max-w-md grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black  group card-wrapper duration-300 ease-out"
+	class=" w-full max-w-md grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black  group card-wrapper duration-500 ease-out"
 >
 	<div class=" overflow-hidden">
 		<img
 			src={imgUrl}
 			alt="main illustration"
-			class="group-hover:scale-110 transition-transform duration-1000 max-h-[15rem]"
+			class="group-hover:scale-110 transition-transform duration-1000 !my-0"
 		/>
 	</div>
 	<div class="p-6">
@@ -46,7 +46,7 @@
 		<div class="mt-2">
 			<a
 				href={`/blog/${slug}`}
-				class="font-extrabold transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"
+				class="font-semibold transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"
 				>Read more 
 			</a>
 		</div>
