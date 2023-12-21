@@ -14,6 +14,7 @@
 	import Navbar from './../lib/components/navigation/navbar.svelte';
 	import './styles.css';
 import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit"
+   import { ProgressBar } from "@prgm/sveltekit-progress-bar";
 injectSpeedInsights()
 	onMount(() => {
 		$theme = getOrSetItem('theme', 'dark');
@@ -21,6 +22,7 @@ injectSpeedInsights()
 </script>
 
 <div class={`${$theme}`}>
+	<ProgressBar class="text-primary" />
 	<div
 		class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400  transition-colors duration-300"
 	>
