@@ -3,24 +3,28 @@
     export let author : any; 
 </script>
 
-<div class="w-full flex items-center justify-center">
-    <div class="w-full hidden md:inline-flex  border-t-2 border-dashed"></div>
-    <div class="border-dashed border-2  p-3 w-full md:w-[80rem]">
-    <div class=" flex flex-wrap gap-3 items-center ">
-				<img
+ 
+    <div class="bg-gray-100 dark:bg-base-300  max-w-sm  p-5 w-full">
+    <div class=" flex flex-col gap-3 ">
+			<div class="flex flex-row gap-3 items-center">
+                	<img
 					src={author.imageUrl}
 					alt={author.name}
 					class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-700"
 				/>
 				<div>
-                    <p class="font-semibold"> {author.name}</p>
-                    <a href={author.twitter} target="_blank"><p class="font-medium font-serif flex gap-2 opacity-70"> <Icon name='twitter'/>@cod3v1l</p></a>
+                    <p class="font-semibold flex gap-x-2"> {author.name} <span
+						class="px-1 py-0.5 flex items-center font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-xs transition duration-150"
+					>
+						Author
+					</span></p>
+                    <a href={author.twitter} target="_blank"><p class="font-medium font-serif flex gap-2 opacity-70 group"> <Icon name='twitter' class='group-hover:text-blue-500 transition-colors'/>@cod3v1l</p></a>
                 </div>
-                <p class="mt-2 prose text-opacity-75">
+            </div>
+                <p class="mt-2 prose text-opacity-75 dark:prose-invert">
                     {author.bio[0].children[0].text}
                 </p>
 			</div>
             
         </div>
-        <div class="w-full hidden md:inline-flex  border-t-2 border-dashed"></div>
-</div>
+      

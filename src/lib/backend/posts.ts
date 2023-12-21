@@ -37,12 +37,12 @@ export async function getPost(slug:string|undefined ) {
 		}
 		return {
 			status: 500,
-			body: new Error('Internal Server Error')
+			body: new Error('Internal Server error')
 		};
    } catch (error) {
 	return {
 			status: 500,
-			body: new Error('Internal Server Error')
+			body: new Error('Internal Server error')
 		}
    }
 }
