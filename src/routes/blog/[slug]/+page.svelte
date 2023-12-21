@@ -18,14 +18,14 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 </svelte:head>
 
 
-	<section class="px-6 md:px-12 md:max-w-5xl w-full mx-auto ">
+	<section class="px-6 md:px-0 max-w-3xl mx-auto ">
 		<div class="w-full">
-			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full" />
+			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full " />
 
-			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold md:text-center ">
+			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold  ">
 				{data.post.title}
 			</h1>
-			<div class="mt-6 flex flex-wrap gap-3 items-center w-full md:justify-center ">
+			<div class="mt-6 flex flex-wrap gap-3 items-center w-full  ">
 				{#each data.post.tags as tag}
 					<span
 						class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
@@ -34,27 +34,27 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 					</span>
 				{/each}
 			</div>
-			<p class="font-medium opacity-80 mt-4 text-lg mx-auto md:w-max">
-				<span class="text-gray-700 font-serif dark:text-gray-200"
+			<p class="font-medium opacity-80 mt-4 text-lg">
+				<span class="text-gray-700 font-serif dark:text-gray-200 font-bold"
 					>{data.post._updatedAt
-						? `Updated on ${getReadableDate(data.post._updatedAt)}`
-						: `published on ${getReadableDate(data.post.publishedAt)}`}</span
+						? `Last updated on ${getReadableDate(data.post._updatedAt)}`
+						: `Published on ${getReadableDate(data.post.publishedAt)}`}</span
 				>
 			</p>
-			<div class="mt-6 flex flex-wrap gap-3 items-center mx-auto md:w-max">
+			<!-- <div class="mt-6 flex flex-wrap gap-3 items-center ">
 				<img
 					src={data.post.authorInfo.imageUrl}
 					alt=""
 					class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-700"
 				/>
 				<p class="font-medium font-serif">By {data.post.authorInfo.name}</p>
-			</div>
+			</div> -->
 		</div>
-		<aside class=" w-full max-w-xl my-10 mx-auto">
+		<aside class=" w-full max-w-xl mb-10 mt-3">
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="md:!w-max mx-auto mt-10 prose md:prose-xl  px-3 dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:p-0 prose-pre:rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif"
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose md:prose-xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:p-0 prose-pre:rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif border-b-2 dark:border-gray-700 pb-10"
 		>
 			<PortableText
 				value={[...data.post.body]}
@@ -77,7 +77,7 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 				}}
 			/>
 		</section>
-		<aside class="mt-20">
+		<aside class="mt-8">
 			<BlogAuthorInfo author={data.post.authorInfo} />
 		</aside>
 	</section>
