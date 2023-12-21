@@ -1,3 +1,4 @@
+import type { ClipboardCopyResult } from '$lib/types';
 import speakingurl from 'speakingurl';
 const filter = (ast: any[], match: { (node: any): boolean; (arg0: any): any }) =>
 	ast.reduce((acc, node) => {
@@ -42,3 +43,35 @@ export const parseOutline = (ast: any[]) => {
 
 const getChildrenText = (props: { children: any[] }) =>
 	props.children.map((node) => (typeof node === 'string' ? node : node.text || '')).join('');
+
+
+export function copyToClipboard(text: string): Promise<ClipboardCopyResult> {
+	return new Promise((resolve) => {
+		if (!navigator.clipboard) {
+			// Fallback for browsers that do not support the Clipboard API
+			const textArea = document.createElement('textarea');
+			textArea.value = text;
+			document.body.appendChild(textArea);
+			textArea.select();
+
+			try {
+				const success = document.execCommand('copy');
+				document.body.removeChild(textArea);
+
+				if (success) {
+					resolve('success');
+				} else {
+					resolve('error');
+				}
+			} catch (err) {
+				resolve('error');
+			}
+		} else {
+			// Modern browsers supporting the Clipboard API
+			navigator.clipboard.writeText(text).then(
+				() => resolve('success'),
+				() => resolve('error')
+			);
+		}
+	});
+}
