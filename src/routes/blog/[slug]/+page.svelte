@@ -82,7 +82,7 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 			<BlogAuthorInfo author={data.post.authorInfo} />
 		</aside>
 	</section>
-	<div class="mt-24">
+	<div class="mt-24 px-6 md:px-0">
 		<RelatedPosts posts={data.relatedPosts}/>
 	</div>
 	<Footer/>
