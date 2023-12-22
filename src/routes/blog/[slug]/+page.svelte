@@ -2,7 +2,9 @@
 	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
 import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
+	import ColorBlock from '$lib/components/misc/colorBlock.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
+	import InlineCodeBlock from '$lib/components/misc/inlineCodeBlock.svelte';
 	import RelatedPosts from '$lib/components/misc/relatedPosts.svelte';
 	import Toc from '$lib/components/misc/toc.svelte';
 	import Footer from '$lib/components/section/footer.svelte';
@@ -63,7 +65,12 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 					types: {
 						code: CodeBloack,
 						image: BlogImg,
-						img: BlogImg
+						img: BlogImg,
+						
+					},
+					marks:{
+						color: ColorBlock,
+						code: InlineCodeBlock
 					},
 
 					block: {
