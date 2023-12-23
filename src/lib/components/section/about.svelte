@@ -16,7 +16,7 @@
 				<h1
 					class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center"
 				>
-					About Me😃
+					About Me🚀👨‍💻
 				</h1>
 				<p class="mt-6 mx-auto max-w-xl text-center text-lg opacity-75">
 					Cameroonian & a self taught web developer, I picked up coding in 2016 as a way to keep

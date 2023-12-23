@@ -7,7 +7,7 @@
 <div class="py-12 lg:py-24" id="projects">
 	<section class=" px-6">
 		<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center">
-			Projects
+			Projects🚀
 		</h1>
 		<p class="mt-6 max-w-2xl mx-auto text-center text-lg opacity-90">
 			I have been working hard lately to build some pretty awesome stuff out here:

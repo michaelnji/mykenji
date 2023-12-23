@@ -49,6 +49,7 @@
 		"@fontsource/krona-one": "^5.0.8",
 		"@fontsource/source-serif-pro": "^5.0.8",
 		"@fontsource/work-sans": "^5.0.16",
+		"@formkit/auto-animate": "^0.8.1",
 		"@sanity/client": "^6.9.3",
 		"@vercel/speed-insights": "^1.0.1",
 		"date-fns": "^2.30.0",

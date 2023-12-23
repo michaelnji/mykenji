@@ -1,6 +1,6 @@
 <script lang="ts">
 	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
-import BlogImg from '$lib/components/misc/blogImg.svelte';
+	import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
 	import ColorBlock from '$lib/components/misc/colorBlock.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
@@ -32,7 +32,7 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 			<div class="mt-6 flex flex-wrap gap-3 items-center w-full  ">
 				{#each data.post.tags as tag}
 					<span
-						class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
+						class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
 					>
 						{tag.title}
 					</span>
