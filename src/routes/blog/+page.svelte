@@ -1,42 +1,93 @@
-<script>
+<script lang="ts">
+	import { fade } from "svelte/transition";
+	// import autoAnimate from '@formkit/auto-animate';
+	import BlogCard from '$lib/components/display/blogCard.svelte';
+	import Footer from '$lib/components/section/footer.svelte';
+	export let data: any;
+	let activeTag: string = 'all';
 
-	import BlogCard from "$lib/components/display/blogCard.svelte";
-	import Footer from "$lib/components/section/footer.svelte";
+	function tagExists(tags: any): boolean {
+		let exists = false;
+		for (let index = 0; index < tags.length; index++) {
+			const tag = tags[index];
+			if (tag.title === activeTag) {
+				exists = true;
+				break;
+			}
+		}
+		return exists;
+	}
 
 </script>
-<section class="pb-12">
+
+<section class="pb-12 md:min-h-screen">
 	<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center">
 		Articles
 	</h1>
-	<div class="mt-6 flex flex-wrap gap-3 max-w-4xl mx-auto justify-center items-center">
-		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
-		>
-			ALL
-		</span>
-		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
-		>
-			SVELTEKIT
-		</span>
-		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
-		>
-			GOLANG
-		</span>
-		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-200 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
-		>
-			LIFESTYLE
-		</span>
-	</div>
-    <div class="mt-12 p-6 flex flex-wrap justify-center items-center gap-6  w-full ">
-    <BlogCard/>
-    <BlogCard/>
-    <BlogCard/>
-    <BlogCard/>
-   
-</div>
+	{#key activeTag}
+		<div class="mt-6 flex flex-wrap gap-3 max-w-4xl mx-auto justify-center items-center">
+			<button
+				class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
+				class:!bg-primary={activeTag === 'all'}
+				class:!text-white={activeTag === 'all'}
+				on:click={() => {
+					activeTag = 'all';
+				}}
+			>
+				ALL
+			</button>
+			{#each data.tags as tag}
+				<button
+					class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
+					class:!bg-primary={activeTag === tag.title}
+					class:!text-white={activeTag === tag.title}
+					on:click={() => {
+						activeTag = tag.title;
+					}}
+				>
+					{tag.title}
+				</button>
+			{/each}
+		</div>
+
+		{#if activeTag === 'all'}
+			<div
+				class="prose-base mt-6 p-6 flex flex-wrap justify-center items-center gap-6 w-full"
+				
+			>
+				{#each data.posts as post}
+					<div>
+						<BlogCard
+						title={post.title}
+						tags={post.tags}
+						slug={post.slug.current}
+						published={post.publishedAt}
+						excerpt={post.excerpt}
+					/>
+					</div>
+				{/each}
+			</div>
+		{:else}
+		<div
+				class="prose-base mt-6 p-6 flex flex-wrap justify-center items-center gap-6 w-full"
+				
+			>
+				{#each data.posts as post}
+					{#if tagExists(post.tags)}
+						<div out:fade>
+							<BlogCard
+							title={post.title}
+							tags={post.tags}
+							slug={post.slug.current}
+							published={post.publishedAt}
+							excerpt={post.excerpt}
+						/>
+						</div>
+					{/if}
+				{/each}
+			</div>
+		{/if}
+	{/key}
 </section>
 
-<Footer/>
+<div><Footer /></div>
