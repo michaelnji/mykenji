@@ -5,6 +5,7 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import ColorBlock from '$lib/components/misc/colorBlock.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
 	import InlineCodeBlock from '$lib/components/misc/inlineCodeBlock.svelte';
+	import Quote from '$lib/components/misc/quote.svelte';
 	import RelatedPosts from '$lib/components/misc/relatedPosts.svelte';
 	import Toc from '$lib/components/misc/toc.svelte';
 	import Footer from '$lib/components/section/footer.svelte';
@@ -80,7 +81,8 @@ import BlogImg from '$lib/components/misc/blogImg.svelte';
 						h3: CustomHeading,
 						h4: CustomHeading,
 						h5: CustomHeading,
-						h6: CustomHeading
+						h6: CustomHeading,
+						blockquote: Quote
 					}
 				}}
 			/>
