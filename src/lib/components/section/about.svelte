@@ -1,8 +1,6 @@
 <script lang="ts">
-	import Image from './../display/Image.svelte';
-	import { Icon } from 'svelte-simples';
 	import i from '$lib/images/me.jpg';
-	import ImageLoader from '../display/ImageLoader.svelte';
+	import { Icon } from 'svelte-simples';
 </script>
 
 ;

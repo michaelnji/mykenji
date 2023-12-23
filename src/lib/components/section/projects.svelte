@@ -1,7 +1,5 @@
 <script lang="ts">
-	import kawaiii from '$lib/images/kawaiii.vercel.app_(iPad).png';
 	import byte from '$lib/images/bytepay.vercel.app_(iPad).png';
-	import wabuzz from '$lib/images/wabuzz.png'
 </script>
 
 <div class="py-12 lg:py-24" id="projects">
