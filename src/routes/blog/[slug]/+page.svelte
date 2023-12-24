@@ -4,6 +4,8 @@
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
 	import ColorBlock from '$lib/components/misc/colorBlock.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
+	import Gotcha from '$lib/components/misc/gotcha.svelte';
+	import Hint from '$lib/components/misc/hint.svelte';
 	import InlineCodeBlock from '$lib/components/misc/inlineCodeBlock.svelte';
 	import Quote from '$lib/components/misc/quote.svelte';
 	import RelatedPosts from '$lib/components/misc/relatedPosts.svelte';
@@ -82,7 +84,9 @@
 						h4: CustomHeading,
 						h5: CustomHeading,
 						h6: CustomHeading,
-						blockquote: Quote
+						blockquote: Quote,
+						hint: Hint,
+						gotcha: Gotcha,
 					}
 				}}
 			/>
