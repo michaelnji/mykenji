@@ -6,7 +6,7 @@
 ;
 <div class="!mb-24 mt-6  w-full " id="about">
 	<section class=" px-6 w-full">
-		<div class="mt-6 w-full flex flex-col lg:flex-row gap-6">
+		<div class="mt-6 w-full flex flex-col-reverse lg:flex-row gap-6">
 			<div class="max-w-xl rounded-2xl mx-auto">
 				<img src={i} class=" w-full !max-w-lg card-wrapper transition-shadow border-2 border-black ease-in-out duration-300  mx-auto mb-6 lg:mb-0" alt=" of me standing" />
 			</div>
