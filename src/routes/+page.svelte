@@ -12,10 +12,10 @@
 	
 </script>
 
-<div class="mb-24">
+
 <Hero />
-</div>
-	<div class="!mb-24 mt-32">
+
+	<div class="!mb-24 mt-12">
 		<About />
 	</div>
 <div class="!my-24">
