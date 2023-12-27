@@ -1,4 +1,5 @@
 <script>
+	import { fade } from "svelte/transition";
 	// @ts-nocheck
 
 	import { IconMini, IconSolid } from 'svelte-heros-v2';
@@ -36,9 +37,13 @@
 	>
 		{#key copySuccess}
 			{#if copySuccess}
-				<IconMini name="check-mini" class="focus:!outline-none" />
+				<div>
+					<IconMini name="check-mini" class="focus:!outline-none" />
+				</div>
 			{:else}
-				<IconMini name="square-2-stack-mini" class="focus:!outline-none" />
+				<div>
+					<IconMini name="square-2-stack-mini" class="focus:!outline-none" />
+				</div>
 			{/if}
 		{/key}
 	</button>

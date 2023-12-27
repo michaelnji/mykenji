@@ -41,7 +41,7 @@
 				{/each}
 			</div>
 			<p class="font-medium opacity-80 mt-4 text-lg">
-				<span class="text-gray-700 font-serif dark:text-gray-200 font-bold"
+				<span class="text-gray-700 dark:text-gray-200 font-medium text-base"
 					>{data.post._updatedAt
 						? `Last updated on ${getReadableDate(data.post._updatedAt)}`
 						: `Published on ${getReadableDate(data.post.publishedAt)}`}</span
@@ -60,7 +60,7 @@
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose md:!prose-xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif border-b-2 dark:border-gray-700 pb-10"
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif border-b-2 dark:border-gray-700 pb-10"
 		>
 			<PortableText
 				value={[...data.post.body]}
