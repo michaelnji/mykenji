@@ -15,6 +15,9 @@
 	import './styles.css';
 import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit"
    import { ProgressBar } from "@prgm/sveltekit-progress-bar";
+   import { inject } from '@vercel/analytics';
+ 
+inject();
 injectSpeedInsights()
 	onMount(() => {
 		$theme = getOrSetItem('theme', 'dark');
