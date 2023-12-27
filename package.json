@@ -51,6 +51,7 @@
 		"@fontsource/work-sans": "^5.0.16",
 		"@formkit/auto-animate": "^0.8.1",
 		"@sanity/client": "^6.9.3",
+		"@vercel/analytics": "^1.1.1",
 		"@vercel/speed-insights": "^1.0.1",
 		"date-fns": "^2.30.0",
 		"mathjs": "^12.2.0",
