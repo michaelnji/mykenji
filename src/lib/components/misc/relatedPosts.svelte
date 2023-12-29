@@ -3,7 +3,7 @@
 
      export let posts:any
 </script>
-<h1 class="mb-12 text-2xl text-center w-full md:text-3xl font-semibold  ">
+<h1 class="mb-12 text-3xl text-center w-full md:text-4xl font-semibold  ">
 				More Articles
 			</h1>
 <div class="flex flex-wrap w-full gap-6 items-center justify-center">
@@ -15,7 +15,7 @@
 		
 	</div>
 	<div class="p-6">
-		<h1 class="text-xl  capitalize md:text-2 font-extrabold font-head">
+		<h1 class="text-2xl  capitalize font-medium font-head">
             {post.title}
 		</h1>
         <div class="mt-3 flex flex-wrap gap-2">
@@ -30,13 +30,13 @@
                 </a>
             {/each}
         </div>
-		<p class="mt-6 text-md opacity-75 font-medium line-clamp-2">
+		<p class="mt-6 text-xl opacity-75 font-medium line-clamp-2">
 			{post.excerpt}
 		</p>
 		<div class="mt-2">
 			<a
 				href={`/blog/${post.slug.current}`}
-				class="font-semibold transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"
+				class="font-semibold text-lg transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"
 				>Read more 
 			</a>
 		</div>

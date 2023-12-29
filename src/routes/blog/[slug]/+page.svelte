@@ -41,26 +41,30 @@
 				{/each}
 			</div>
 			<p class="font-medium opacity-80 mt-4 text-lg">
-				<span class="text-gray-700 dark:text-gray-200 font-medium text-base"
+				<span class="text-gray-700 dark:text-gray-200 font-medium text-xl "
 					>{data.post._updatedAt
 						? `Last updated on ${getReadableDate(data.post._updatedAt)}`
 						: `Published on ${getReadableDate(data.post.publishedAt)}`}</span
 				>
 			</p>
-			<!-- <div class="mt-6 flex flex-wrap gap-3 items-center ">
+			<div class="my-3 flex flex-wrap gap-3 items-center ">
 				<img
 					src={data.post.authorInfo.imageUrl}
 					alt=""
 					class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-700"
 				/>
-				<p class="font-medium ">By {data.post.authorInfo.name}</p>
-			</div> -->
+				<p class="font-medium opacity-80 text-xl flex items-center gap-2">{data.post.authorInfo.name}<span
+						class="px-1 py-0.5 flex items-center font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-base transition duration-150"
+					>
+						Author
+					</span></p>
+			</div>
 		</div>
-		<aside class=" w-full max-w-xl mb-10 mt-3">
+		<aside class=" w-full max-w-xl my-12">
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo  border-b-2 dark:border-gray-700 pb-10"
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black  prose-pre:!bg-inherit prose-indigo  border-b-2 dark:border-gray-700 pb-10"
 		>
 			<PortableText
 				value={[...data.post.body]}

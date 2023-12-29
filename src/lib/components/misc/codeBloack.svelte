@@ -33,16 +33,16 @@
 	{/if}
 	<button
 		on:click={copyCode}
-		class="py-1 px-2 absolute top-3 right-3 text-xs text-gray-200 bg-gray-700 rounded active:scale-95 transition-transform duration-200"
+		class="py-1 px-2 absolute top-3 right-3 text-xs text-gray-200  rounded active:scale-95 transition-transform duration-200"
 	>
 		{#key copySuccess}
 			{#if copySuccess}
-				<div>
-					<IconMini name="check-mini" class="focus:!outline-none" />
+				<div class="flex items-center gap-x-2 font-bold" in:fade>
+					<b class="hidden md:inline">copied</b> <IconMini name="check-mini" class="focus:!outline-none text-green-500" />
 				</div>
 			{:else}
-				<div>
-					<IconMini name="square-2-stack-mini" class="focus:!outline-none" />
+				<div class="flex items-center gap-x-2 font-bold" in:fade>
+				<b class="hidden md:inline">copy</b>	<IconMini name="square-2-stack-mini" class="focus:!outline-none" />
 				</div>
 			{/if}
 		{/key}
