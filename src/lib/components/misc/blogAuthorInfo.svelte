@@ -18,7 +18,7 @@
 					>
 						Author
 					</span></p>
-                    <a href={author.twitter} target="_blank"><p class="font-medium font-serif flex gap-2 opacity-70 group"> <Icon name='twitter' class='group-hover:text-blue-500 transition-colors'/>@cod3v1l</p></a>
+                    <a href={author.twitter} target="_blank"><p class="font-medium  flex gap-2 opacity-70 group"> <Icon name='twitter' class='group-hover:text-blue-500 transition-colors'/>@cod3v1l</p></a>
                 </div>
             </div>
                 <p class="mt-2 prose text-opacity-75 dark:prose-invert">

@@ -5,12 +5,24 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/alegreya':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@fontsource/epilogue':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/inter':
+    specifier: ^5.0.16
+    version: 5.0.16
   '@fontsource/krona-one':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/lora':
+    specifier: ^5.0.8
+    version: 5.0.8
+  '@fontsource/quattrocento':
+    specifier: ^5.0.18
+    version: 5.0.18
   '@fontsource/source-serif-pro':
     specifier: ^5.0.8
     version: 5.0.8
@@ -395,6 +407,10 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
+  /@fontsource/alegreya@5.0.8:
+    resolution: {integrity: sha512-f9B9ni40u2KKs6xmMWrcB3uDhQvoxkUl7DCRoYMPwhaVtBbmAt8dOIJ8+ETUtCRcAbDp4VGVJ7yNK+ubGItfuw==}
+    dev: false
+
   /@fontsource/epilogue@5.0.8:
     resolution: {integrity: sha512-zlDC3f+LO21v0bMWok9nFRHuJfVCAA+uY3poYk8AkMExwrNyZ3zJ2ITPUdAI84R6p4Z0jj0fRs2w0avMPOrOUw==}
     dev: false
@@ -403,8 +419,20 @@ packages:
     resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
     dev: true
 
+  /@fontsource/inter@5.0.16:
+    resolution: {integrity: sha512-qF0aH5UiZvCmneX5orJbVRoc2VTyLTV3X/7laMp03Qt28L+B9tFlZODOGUL64wDWc69YVdi1LeJB0cIgd51lvw==}
+    dev: false
+
   /@fontsource/krona-one@5.0.8:
     resolution: {integrity: sha512-2QRdHlTrOKJn53EdmFFt1To+JiYKWRGRVcrWPirXHyr4YSOpHJQKjK7RshYLq+TObdI5bwUuq8u+sDCdcG28rw==}
+    dev: false
+
+  /@fontsource/lora@5.0.8:
+    resolution: {integrity: sha512-lJBsGmaOCr5INZwxz29TVTrIuZPTYcd3lkwnpoTclb86KsYpyU7chDVUQvf3CW/+hdX3fi1z7GvUz/kJIDyiZA==}
+    dev: false
+
+  /@fontsource/quattrocento@5.0.18:
+    resolution: {integrity: sha512-3D2IZU9he/X9B09wmBt47GZApza2CKoxsEDsFB+QtyLtjeoG9QqGhPaNjqJ+zHe2mNoB+88xWdlLz+XAU/1BZg==}
     dev: false
 
   /@fontsource/source-serif-pro@5.0.8:

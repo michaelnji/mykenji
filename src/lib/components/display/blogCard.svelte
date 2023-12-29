@@ -18,25 +18,25 @@
 		>
 			{getReadableDate(published)}
 		</div>
-		<h1 class="text-xl  capitalize md:text-2xl font-extrabold font-head">
+		<h1 class="text-2xl lg:text-3xl  capitalize font-medium font-head">
             {title}
 		</h1>
-        <div class="mt-1 flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2">
             {#each tags as tag}
                 <a href={`/blog/tags/${tag.title}`}>
                     <span
                         class="px-3 py-1   font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm font-mono transition duration-1000"
                     >
-                        <span class=" opacity-0 group-hover:opacity-80 transition-opacity duration-700">#</span
+                        <span class=" opacity-0 font-light group-hover:opacity-80 transition-opacity duration-700">#</span
                         >{tag.title}
                     </span>
                 </a>
             {/each}
         </div>
-		<p class="mt-6 text-md opacity-75 font-medium line-clamp-2">
+		<p class="mt-6 text-xl opacity-75 font-medium line-clamp-2">
 			{excerpt}
 		</p>
-		<div class="mt-2">
+		<div>
 			<a
 				href={`/blog/${slug}`}
 				class="font-semibold transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"

@@ -22,7 +22,7 @@
 
 <section class="pb-12 md:min-h-screen">
 	<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center">
-		Articles
+		Article Garden🌿
 	</h1>
 	{#key activeTag}
 		<div class="mt-6 flex flex-wrap gap-3 max-w-4xl mx-auto justify-center items-center">
