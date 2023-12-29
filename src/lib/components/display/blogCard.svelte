@@ -14,7 +14,7 @@
 	
 	<div class="p-6">
 		<div
-			class=" max-w-max  font-medium opacity-70"
+			class=" max-w-max  font-medium opacity-70 text-lg"
 		>
 			{getReadableDate(published)}
 		</div>
