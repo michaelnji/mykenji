@@ -15,7 +15,7 @@
 
 <Hero />
 
-	<div class="!mb-24 mt-12">
+	<div class="!mb-24 lg:mt-12">
 		<About />
 	</div>
 <div class="!my-24">

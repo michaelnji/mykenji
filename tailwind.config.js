@@ -5,10 +5,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Work Sans'],
-				head: ['Krona One'],
-				serif: ['Source Serif Pro'],
-				mono: ['Fira Mono'],
+				sans: ['Alegreya', 'sans-serif'],
+				head: ['Alegreya', 'sans-serif'],
+				mono: ['Fira Mono']
 			},
 			colors: {
 				'base-100': '#1f2937',

@@ -10,9 +10,9 @@
 		<img src={i} alt="" class="" in:fade />
 	</div>
 	<h1
-		class="text-3xl text-center md:text-left  md:text-6xl  font-head font-bold"
+		class="text-6xl md:text-5xl text-center md:text-left  lg:text-7xl  font-head font-extrabold capitalize"
 	>
-		I build <span class="!text-primary dark:!text-indigo-200 ">pretty awesome</span> web projects & OSS  
+		I love <span class="!text-primary dark:!text-indigo-200 ">the awesome web</span> & building Open source  
 	</h1></div>
 	
 </section>

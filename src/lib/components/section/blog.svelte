@@ -4,7 +4,7 @@
 </script>
 <section class='py-12 lg:py-24 w-full'>
 
-	<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center">Article Garden🌿</h1>
+	<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-bold font-head text-center">Article Garden🌿</h1>
 
 <div class="prose-base mt-6 p-6 flex flex-wrap justify-center items-center gap-6  w-full ">
    {#each posts as post,i }
@@ -14,7 +14,7 @@
    {/each}
 </div>
 <a href="/blog"
-     class="btn  md:btn-lg btn-primary overflow-hidden !rounded-none border border-black card-wrapper w-[90%] max-w-sm mx-auto flex justify-center font-medium mt-12"
+     class="btn md:btn-lg btn-primary overflow-hidden !rounded-none border border-black card-wrapper w-[90%] max-w-sm mx-auto flex justify-center font-medium mt-12"
      
  >View All</a>
 </section>

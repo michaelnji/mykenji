@@ -28,7 +28,7 @@
 		<div class="w-full">
 			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full " />
 
-			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold  ">
+			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold !font-head ">
 				{data.post.title}
 			</h1>
 			<div class="mt-6 flex flex-wrap gap-3 items-center w-full  ">
@@ -53,14 +53,14 @@
 					alt=""
 					class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-700"
 				/>
-				<p class="font-medium font-serif">By {data.post.authorInfo.name}</p>
+				<p class="font-medium ">By {data.post.authorInfo.name}</p>
 			</div> -->
 		</div>
 		<aside class=" w-full max-w-xl mb-10 mt-3">
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo font-serif border-b-2 dark:border-gray-700 pb-10"
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black prose-indigo  border-b-2 dark:border-gray-700 pb-10"
 		>
 			<PortableText
 				value={[...data.post.body]}

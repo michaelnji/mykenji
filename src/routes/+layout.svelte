@@ -1,14 +1,18 @@
 <script>
 	import { getOrSetItem } from '$lib/scripts/dbManager';
 	import theme from '$lib/stores/theme';
-	import '@fontsource/krona-one';
-	import '@fontsource/work-sans';
-	import '@fontsource/work-sans/900.css';
-	import '@fontsource/work-sans/600.css';
-	import '@fontsource/work-sans/700.css';
-	import '@fontsource/work-sans/800.css';
-	import '@fontsource/work-sans/500.css';
-	import '@fontsource/source-serif-pro';
+	import '@fontsource/alegreya/400-italic.css';
+import '@fontsource/alegreya/500-italic.css';
+import '@fontsource/alegreya/600-italic.css';
+import '@fontsource/alegreya/700-italic.css';
+import '@fontsource/alegreya/800-italic.css';
+import '@fontsource/alegreya/900-italic.css';
+	import '@fontsource/alegreya/400.css';
+import '@fontsource/alegreya/500.css';
+import '@fontsource/alegreya/600.css';
+import '@fontsource/alegreya/700.css';
+import '@fontsource/alegreya/800.css';
+import '@fontsource/alegreya/900.css';
 	import '@fontsource/fira-mono';
 	import { onMount } from 'svelte';
 	import Navbar from './../lib/components/navigation/navbar.svelte';
