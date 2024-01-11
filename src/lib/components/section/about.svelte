@@ -6,7 +6,7 @@
 </script>
 
 ;
-<div class="!mb-24 lg:mt-16 w-full max-w-7xl" id="about">
+<div class="!mb-24 lg:mt-16 w-full max-w-7xl mx-auto" id="about">
 	<section class=" px-6 w-full">
 		<div
 			class="mt-6 w-full flex flex-col-reverse lg:flex-row gap-6 justify-start max-w-7xl mx-auto"
@@ -36,30 +36,30 @@
 					<div class="mx-auto my-8 lg:max-w-xl">
 						<Quote>I had aspirations of becoming a Cardiologist before switching to tech.</Quote>
 					</div>
-					<p class="mx-auto mt-5 text-2xl lg:max-w-xl opacity-80">
+					<p class="mx-auto mt-5 text-2xl lg:max-w-xl opacity-80 leading-relaxed">
 						I currently work with 
 						<span
-							class="inline-flex font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
+							class="inline-flex border border-gray-700 font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
 						>
 							<span><Icon name="svelte" width="20" height="20" color="#ff922b" /></span>SVELTE/SVELTEKIT
 						</span>
 						<span
-							class="inline-flex font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
+							class="inline-flex border border-gray-700 font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
 						>
 							<span><Icon name="supabase" width="20" height="20" color="#51cf66" /></span>SUPABASE 
 						</span>
 						<span
-							class="inline-flex font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
+							class="inline-flex border border-gray-700 font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
 						>
 							<span><Icon name="nodedotjs" width="20" height="20" color="#51cf66" /></span>NODEJS 
 						</span>
 						<span
-							class="inline-flex font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
+							class="inline-flex border border-gray-700 font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
 						>
 							<span><Icon name="tailwindcss" width="20" height="20" color="#20c997" /></span>TAILWINDCSS  
 						</span>  
 						<span
-							class="inline-flex font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
+							class="inline-flex border border-gray-700 font-bold text-base p-1 rounded bg-gray-900 font-mono bg-opacity-5 items-center gap-1"
 						>
 							<span><Icon name="typescript" width="20" height="20" color="#4dabf7" /></span>TYPESCRIPT  
 						</span> & I also blog about these technologies <a href="/blog" class='text-primary hover:underline'>here</a>
