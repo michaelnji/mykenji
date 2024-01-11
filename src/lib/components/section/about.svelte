@@ -1,11 +1,10 @@
 <script lang="ts">
 	import i from '$lib/images/me.jpg';
 	import { Icon } from 'svelte-simples';
-	import Hint from '../misc/hint.svelte';
 	import Quote from '../misc/quote.svelte';
 </script>
 
-;
+
 <div class="!mb-24 lg:mt-16 w-full max-w-7xl mx-auto" id="about">
 	<section class=" px-6 w-full">
 		<div

@@ -3,8 +3,15 @@
      
 </script>
 
-<div class="p-3 bg-orange-400  bg-opacity-10 font-medium text-xl border-2 border-orange-400 dark:border-opacity-30 border-l-8">
-   <div class="flex flex-col gap-y-3 ">
-   <div class="flex gap-x-1 items-center font-sans  text-orange-500 dark:text-orange-300"> <IconMini name='exclamation-triangle-solid' width='24' height='24' />Be Careful</div> <div class=""><slot/></div>
+
+
+<div class="p-3 bg-orange-400 dark:bg-orange-200  bg-opacity-20 dark:bg-opacity-10 relative">
+   <div class=" absolute p-3 bg-orange-500 text-white -top-3 left-6">
+      <IconMini name='exclamation-triangle-solid' width='26' height='26' />
+
    </div>
+    <div class=" text-xl !font-normal pt-10 p-3">
+      <slot/>
+   </div>
+  
 </div>
