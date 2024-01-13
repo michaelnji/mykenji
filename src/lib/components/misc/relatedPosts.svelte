@@ -9,7 +9,7 @@
 <div class="flex flex-wrap w-full gap-6 items-center justify-center">
     {#each posts as post }
         <div
-	class=" w-full max-w-2xl grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black  group card-wrapper duration-500 ease-out"
+	class=" w-full max-w-2xl grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black rounded-3xl  group card-wrapper duration-500 ease-out"
 >
 	<div class=" overflow-hidden">
 		

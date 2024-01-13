@@ -6,7 +6,7 @@ $: ({ value } = portableText);
 	$: ({ _ref } = asset);
     
 </script>
-<img class="  border-2 border-black  custom-img dark:custom-img-dark w-full  transition duration-300 ease-in-out" src={`https://cdn.sanity.io/images/5xp71fus/production/${_ref.split('image-')[1].split('-png')[0]}.png`} alt="">
+<img class=" rounded-3xl  border-2 border-black  custom-img dark:custom-img-dark w-full  transition duration-300 ease-in-out" src={`https://cdn.sanity.io/images/5xp71fus/production/${_ref.split('image-')[1].split('-png')[0]}.png`} alt="">
 
 <style>
 	.custom-img{

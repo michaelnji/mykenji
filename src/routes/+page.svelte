@@ -1,19 +1,18 @@
 <script lang="ts">
-	import Blog from "$lib/components/section/blog.svelte";
 	import About from '$lib/components/section/about.svelte';
+	import Blog from "$lib/components/section/blog.svelte";
+	import Contact from '$lib/components/section/contact.svelte';
 	import Footer from '$lib/components/section/footer.svelte';
 	import Hero from '$lib/components/section/hero.svelte';
 	import Projects from '$lib/components/section/projects.svelte';
-	import Contact from '$lib/components/section/contact.svelte';
-	import { onMount } from 'svelte';
 	export let data;
 	
-		
+
 	
 </script>
 
 
-<Hero />
+	<Hero />
 
 	<div class="!mb-24 lg:mt-12">
 		<About />
@@ -31,5 +30,4 @@
 </div>
 <Footer />
 
-<style>
-</style>
+

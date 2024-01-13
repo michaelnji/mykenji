@@ -1,16 +1,16 @@
 <script lang="ts">
 	import i from '$lib/images/myke.jpeg';
-	import { fade } from "svelte/transition";
+	import { fade, fly } from "svelte/transition";
 </script>
 
-<section class=" px-3 md:px-6 w-full">
+<section class=" px-3 md:px-6 w-full" in:fly={{ x: -100, duration: 1000 }}>
 	<div class="mx-auto max-w-7xl flex flex-col md:flex-row gap-6 items-center  justify-center"><div
-		class="md:max-w-[12rem] max-w-[8rem] w-full  !rounded-full overflow-hidden mb-6 border-4 relative border-base-300 dark:border-gray-50"
+		class=" bg-primary h-[rem] w-[12rem]  !rounded-full overflow-hidden mb-6 border-4 relative border-base-300 dark:border-gray-50"
 	>
-		<img src={i} alt="" class="" in:fade />
+		<img src={i} alt="" class="" loading="lazy" in:fade />
 	</div>
 	<h1
-		class="text-4xl md:text-5xl text-center md:text-left  lg:text-7xl  font-head font-extrabold capitalize"
+		class="text-5xl md:text-5xl text-center md:text-left  lg:text-7xl  font-head font-extrabold capitalize"
 	>
 		I love <span class="!text-primary dark:!text-indigo-200 ">the awesome web</span> & building Open source  
 	</h1></div>

@@ -1,24 +1,24 @@
 <script lang="ts">
+	import { fade, fly } from "svelte/transition";
 	import i from '$lib/images/me.jpg';
 	import { Icon } from 'svelte-simples';
-	import Hint from '../misc/hint.svelte';
 	import Quote from '../misc/quote.svelte';
 </script>
 
-;
-<div class="!mb-24 lg:mt-16 w-full max-w-7xl mx-auto" id="about">
+
+<div class="!mb-24 lg:mt-16 w-full lg:max-w-7xl max-w-xl mx-auto" id="about" >
 	<section class=" px-6 w-full">
 		<div
 			class="mt-6 w-full flex flex-col-reverse lg:flex-row gap-6 justify-start max-w-7xl mx-auto"
 		>
-			<div class="lg:max-w-xl rounded-2xl mx-auto">
+			<div class="lg:max-w-xl rounded-2xl mx-auto" in:fly={{ y: 100, duration: 1000 }}>
 				<img
 					src={i}
-					class=" w-full !max-w-lg card-wrapper transition-shadow border-2 border-black ease-in-out duration-300 mx-auto mb-6 lg:mb-0"
+					class=" w-full !max-w-lg card-wrapper transition-shadow border-2 border-black ease-in-out duration-300 mx-auto mb-6 lg:mb-0 rounded-3xl"
 					alt=" of me standing"
 				/>
 			</div>
-			<div class="">
+			<div in:fade={{ duration: 1000 }}>
 				<div class="lg:max-w-3xl text-center md:text-left">
 					<h1 class="text-3xl w-full md:text-4xl font-bold font-head mx-auto">Little bits about me</h1>
 					<p class="mx-auto mt-5 text-2xl lg:max-w-xl opacity-80">

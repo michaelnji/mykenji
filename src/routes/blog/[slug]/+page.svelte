@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { IconMini } from "svelte-heros-v2";
 	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
 	import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
@@ -24,47 +25,46 @@
 </svelte:head>
 
 
-	<section class="px-6 md:px-0 max-w-3xl mx-auto ">
+	<section class="px-6 md:px-0 max-w-4xl mx-auto ">
 		<div class="w-full">
-			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full " />
+			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full rounded-xl" />
 
-			<h1 class="mt-6 text-4xl w-full md:text-6xl font-bold !font-head ">
+			<h1 class="mt-6 text-5xl w-full md:text-7xl font-extrabold !font-head ">
 				{data.post.title}
 			</h1>
-			<div class="mt-6 flex flex-wrap gap-3 items-center w-full  ">
+			<p class="font-medium mt-6 font-sans opacity-80 flex gap-x-2 items-center">
+				<IconMini name="calendar-solid" />
+				<span class="text-gray-700 dark:text-gray-200 font-medium text-2xl "
+					>{data.post._updatedAt
+						? `Last updated ${getReadableDate(data.post._updatedAt)}`
+						: `Published ${getReadableDate(data.post.publishedAt)}`}</span
+				>
+			</p>
+			<div class="mt-3 flex flex-wrap gap-3 items-center w-full  ">
 				{#each data.post.tags as tag}
 					<span
-						class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
+						class="px-3 py-1 rounded-xl hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150 uppercase"
 					>
 						{tag.title}
 					</span>
 				{/each}
 			</div>
-			<p class="font-medium opacity-80 mt-4 text-lg">
-				<span class="text-gray-700 dark:text-gray-200 font-medium text-xl "
-					>{data.post._updatedAt
-						? `Last updated on ${getReadableDate(data.post._updatedAt)}`
-						: `Published on ${getReadableDate(data.post.publishedAt)}`}</span
-				>
-			</p>
-			<div class="my-3 flex flex-wrap gap-3 items-center ">
+			
+			<div class="mb-4  mt-4 p-2 pr-4 rounded-full bg-gray-100 max-w-max dark:bg-gray-800 flex flex-wrap gap-3 items-center ">
 				<img
 					src={data.post.authorInfo.imageUrl}
 					alt=""
-					class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-700"
+					class="w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700"
 				/>
-				<p class="font-medium opacity-80 text-xl flex items-center gap-2">{data.post.authorInfo.name}<span
-						class="px-1 py-0.5 flex items-center font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-base transition duration-150"
-					>
-						Author
-					</span></p>
+				<p class="font-medium opacity-80 text-xl flex items-center gap-2">{data.post.authorInfo.name}</p>
 			</div>
+			
 		</div>
-		<aside class=" w-full max-w-xl my-12">
+		<aside class=" w-full max-w-3xl my-12">
 		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold  prose-pre:!p-0 prose-pre:!rounded-none prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black  prose-pre:!bg-inherit prose-indigo  border-b-2 dark:border-gray-700 pb-10"
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold prose-pre:!rounded-3xl  prose-pre:!p-0  prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black  prose-pre:!bg-inherit prose-indigo  border-b-2 dark:bolder-gray-700 pb-10 "
 		>
 			<PortableText
 				value={[...data.post.body]}

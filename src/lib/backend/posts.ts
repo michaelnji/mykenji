@@ -1,4 +1,4 @@
-import { parseOutline, findHeadings } from "$lib/utils";
+import { findHeadings } from "$lib/utils";
 import { queries } from "$lib/utils/queryManager";
 import { sanityClient } from "./sanity";
 

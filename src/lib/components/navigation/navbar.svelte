@@ -20,7 +20,7 @@
 <div class="navbar-wrapper !z-10">
 	{#if closeModal}
 		<div
-			class="navbar-container card-wrapper dark:!bg-base-200 dark:!text-gray-50"
+			class="navbar-container rounded-3xl card-wrapper dark:!bg-base-200 dark:!text-gray-50"
 			in:fly={{ y: 200 }}
 			out:fade={{ duration: 100 }}
 			on:blur={() => {
@@ -38,7 +38,7 @@
 					>
 				</div>
 				<button
-					class="btn btn-ghost dark:!text-gray-50 shadow-lg overflow-hidden !rounded-full dark:hover:!bg-gray-50 dark:hover:!bg-opacity-5"
+					class="btn btn-ghost dark:!text-gray-50 shadow-lg overflow-hidden !rounded-2xl dark:hover:!bg-gray-50 dark:hover:!bg-opacity-5"
 					on:click={toggleTheme}
 				>
 					{#key $theme}
@@ -102,7 +102,7 @@
 							class:bg-primary={currentSection === '/blog'}
 							class:bg-opacity-30={currentSection === '/blog'}
 							class:text-primary={currentSection === '/blog'}
-							class:rounded-full={currentSection === '/blog'}
+							class:rounded-2xl={currentSection === '/blog'}
 							href="/blog"
 							class="nav-item"
 							on:click={() => {
@@ -130,7 +130,7 @@
 		</div>
 	{/if}
 	<button
-		class="btn !z-20 md:btn-lg btn-primary overflow-hidden !rounded-none border border-black card-wrapper"
+		class="btn !z-20 md:btn-lg btn-primary overflow-hidden !rounded-2xl border border-black card-wrapper active:scale-90 transition"
 		on:click={() => {
 			closeModal = !closeModal;
 		}}
@@ -192,7 +192,7 @@
 		@apply flex items-center gap-x-3 p-3 w-full;
 	}
 	.nav-center ul li {
-		@apply rounded-full p-1 cursor-pointer;
+		@apply rounded-2xl p-1 cursor-pointer;
 	}
 
 	.nav-center ul li:hover {
