@@ -3,8 +3,8 @@
      
 </script>
 
-<div class="p-3 bg-green-400  dark:bg-green-200 dark:bg-opacity-10 bg-opacity-20 relative">
-   <div class=" absolute p-3 bg-green-400 text-white -top-3 left-6">
+<div class="p-3 rounded-2xl bg-green-400  dark:bg-green-200 dark:bg-opacity-10 bg-opacity-20 relative">
+   <div class=" absolute rounded-xl p-3 bg-green-400 text-white -top-3 left-6">
       <IconMini name='star-solid' width='24' height='24' />
 
    </div>

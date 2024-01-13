@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class=" w-full max-w-2xl grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black  group card-wrapper duration-500 ease-out"
+	class=" w-full rounded-3xl max-w-2xl  border-2 border-black  group card-wrapper duration-500 ease-out"
 >
 	
 	<div class="p-6">
@@ -18,14 +18,14 @@
 		>
 			{getReadableDate(published)}
 		</div>
-		<h1 class="text-2xl lg:text-3xl  capitalize font-medium font-head">
+		<h1 class="text-2xl lg:text-3xl  capitalize font-medium font-head leading-tight">
             {title}
 		</h1>
         <div class="flex flex-wrap gap-2">
             {#each tags as tag}
                 <a href={`/blog/tags/${tag.title}`}>
                     <span
-                        class="px-3 py-1   font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm font-mono transition duration-1000"
+                        class="px-3 py-1   font-bold bg-primary bg-opacity-10 text-primary rounded-lg dark:text-indigo-200 text-sm font-mono transition duration-1000"
                     >
                         <span class=" opacity-0 font-light group-hover:opacity-80 transition-opacity duration-700">#</span
                         >{tag.title}
@@ -33,7 +33,7 @@
                 </a>
             {/each}
         </div>
-		<p class="mt-6 text-xl opacity-75 font-medium line-clamp-2">
+		<p class="text-xl opacity-75 font-medium line-clamp-2">
 			{excerpt}
 		</p>
 		<div>

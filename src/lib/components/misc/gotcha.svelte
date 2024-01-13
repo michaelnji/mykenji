@@ -5,8 +5,8 @@
 
 
 
-<div class="p-3 bg-orange-400 dark:bg-orange-200  bg-opacity-20 dark:bg-opacity-10 relative">
-   <div class=" absolute p-3 bg-orange-500 text-white -top-3 left-6">
+<div class="p-3 rounded-2xl bg-orange-400 dark:bg-orange-200  bg-opacity-20 dark:bg-opacity-10 relative">
+   <div class=" rounded-xl absolute p-3 bg-orange-500 text-white -top-3 left-6">
       <IconMini name='exclamation-triangle-solid' width='26' height='26' />
 
    </div>

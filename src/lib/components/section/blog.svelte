@@ -14,7 +14,7 @@
    {/each}
 </div>
 <a href="/blog"
-     class="btn md:btn-lg btn-primary overflow-hidden !rounded-none border border-black card-wrapper w-[90%] max-w-sm mx-auto flex justify-center font-medium mt-12"
+     class="btn rounded-2xl md:btn-lg btn-primary overflow-hidden ! border border-black card-wrapper w-[90%] max-w-sm mx-auto flex justify-center font-medium mt-12"
      
  >View All</a>
 </section>
