@@ -72,6 +72,7 @@
 					<li>
 						<a
 							href="/#about"
+							class:dark:text-indigo-50={currentSection === '/#about'}
 							class="nav-item"
 							class:!bg-primary={currentSection === '/#about'}
 							class:!bg-opacity-30={currentSection === '/#about'}
@@ -85,6 +86,7 @@
 					</li>
 					<li>
 						<a
+						class:dark:text-indigo-50={currentSection === '/#projects'}
 							class:bg-primary={currentSection === '/#projects'}
 							class:bg-opacity-30={currentSection === '/#projects'}
 							class:text-primary={currentSection === '/#projects'}
@@ -102,6 +104,8 @@
 							class:bg-primary={currentSection === '/blog'}
 							class:bg-opacity-30={currentSection === '/blog'}
 							class:text-primary={currentSection === '/blog'}
+							class:dark:text-indigo-50={currentSection === '/blog'}
+
 							class:rounded-2xl={currentSection === '/blog'}
 							href="/blog"
 							class="nav-item"
@@ -115,12 +119,7 @@
 					<li>
 						<a href="https://github.com/michaelnji" class="nav-item"> GITHUB </a>
 					</li>
-					<!-- <li>
-						<a href="/" class="nav-item"> BLOG </a>
-					</li>
-					<li>
-						<a href="/" class="nav-item"> RESUME </a>
-					</li> -->
+					
 				</ul>
 			</nav>
 			<div class="divider dark:!border-gray-700" />

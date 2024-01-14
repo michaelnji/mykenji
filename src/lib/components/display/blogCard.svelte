@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class=" w-full rounded-3xl max-w-2xl  border-2 border-black  group card-wrapper duration-500 ease-out"
+	class=" w-full rounded-3xl max-w-2xl  border-2 border-black  group card-wrapper duration-500 ease-out dark:bg-gray-900"
 >
 	
 	<div class="p-6">
@@ -25,7 +25,7 @@
             {#each tags as tag}
                 <a href={`/blog/tags/${tag.title}`}>
                     <span
-                        class="px-3 py-1   font-bold bg-primary bg-opacity-10 text-primary rounded-lg dark:text-indigo-200 text-sm font-mono transition duration-1000"
+                        class="px-3 py-1   font-bold bg-indigo-200 rounded-lg text-primary text-sm font-mono transition duration-1000"
                     >
                         <span class=" opacity-0 font-light group-hover:opacity-80 transition-opacity duration-700">#</span
                         >{tag.title}

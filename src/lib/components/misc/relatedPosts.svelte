@@ -9,7 +9,7 @@
 <div class="flex flex-wrap w-full gap-6 items-center justify-center">
     {#each posts as post }
         <div
-	class=" w-full max-w-2xl grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black rounded-3xl  group card-wrapper duration-500 ease-out"
+	class=" w-full max-w-2xl grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-black rounded-3xl dark:bg-gray-900  group card-wrapper duration-500 ease-out"
 >
 	<div class=" overflow-hidden">
 		
@@ -22,7 +22,7 @@
             {#each post.tags as tag}
                 <a href={`/blog/tags/${tag.title}`}>
                     <span
-                        class="px-3 py-1   font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm font-mono transition duration-1000"
+                        class="px-3 py-1   font-bold bg-indigo-200 rounded-lg text-primary text-sm font-mono transition duration-1000"
                     >
                         <span class=" opacity-0 group-hover:opacity-80 transition-opacity duration-700">#</span
                         >{tag.title}
