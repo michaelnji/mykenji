@@ -3,7 +3,7 @@
 	import { fade, fly } from 'svelte/transition';
 </script>
 
-<section class=" px-3 md:px-6 w-full" in:fly={{ x: -100, duration: 1000 }}>
+<section class=" px-3 md:px-6 w-full">
 	<div class="mx-auto max-w-7xl flex flex-col md:flex-row gap-x-12 gap-y-6 items-center justify-center">
 		<div class="relative">
 			
