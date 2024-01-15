@@ -1,20 +1,25 @@
 <script lang="ts">
 	import i from '$lib/images/myke.jpeg';
-	import { fade, fly } from "svelte/transition";
+	import { fade, fly } from 'svelte/transition';
 </script>
 
-<section class=" px-3 md:px-6 w-full" in:fly={{ x: -100, duration: 1000 }}>
-	<div class="mx-auto max-w-7xl flex flex-col md:flex-row gap-6 items-center  justify-center"><div
-		class=" bg-primary h-[rem] w-[12rem]  !rounded-full overflow-hidden mb-6 border-4 relative border-base-300 dark:border-gray-50"
-	>
-		<img src={i} alt="" class="" loading="lazy" in:fade />
+<section class=" px-3 md:px-6 w-full">
+	<div class="mx-auto max-w-7xl flex flex-col md:flex-row gap-x-12 gap-y-6 items-center justify-center">
+		<div class="relative">
+			
+			<div class="absolute bottom-10 right-3 h-6 w-6 rotate-45 transform  bg-green-300 border-4 border-white dark:border-gray-950 rounded-full "></div>
+			<div
+			class=" bg-primary h-[rem] w-[12rem] border-4 border-white dark:border-gray-950 !rounded-full overflow-hidden mb-6 "
+		>
+			<img src={i} alt="" class="" loading="lazy" in:fade />
+		</div>
+		</div>
+		<h1
+			class="text-5xl md:text-5xl text-center md:text-left lg:text-7xl font-head font-extrabold capitalize"
+		>
+			I am <span class="!text-primary dark:!text-indigo-200">Michael Nji</span> a Web Developer & Creator
+		</h1>
 	</div>
-	<h1
-		class="text-5xl md:text-5xl text-center md:text-left  lg:text-7xl  font-head font-extrabold capitalize"
-	>
-		I love <span class="!text-primary dark:!text-indigo-200 ">the awesome web</span> & building Open source  
-	</h1></div>
-	
 </section>
 <!-- <section class="pt-20  w-full  relative">
 	<div>
@@ -59,5 +64,3 @@
 	</div>
 	</div>
 </section> -->
-
-
