@@ -7,6 +7,7 @@ export default {
 			fontFamily: {
 				sans: ['Alegreya', 'sans-serif'],
 				head: ['Alegreya', 'sans-serif'],
+				"head-home": ['Work Sans', 'sans-serif'],
 				mono: ['Fira Mono']
 			},
 			colors: {

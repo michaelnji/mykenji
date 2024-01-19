@@ -57,6 +57,8 @@
 		"@sanity/client": "^6.9.3",
 		"@vercel/analytics": "^1.1.1",
 		"@vercel/speed-insights": "^1.0.1",
+		"animate.css": "^4.1.1",
+		"animejs": "^3.2.2",
 		"date-fns": "^2.30.0",
 		"mathjs": "^12.2.0",
 		"speakingurl": "^14.0.1"
