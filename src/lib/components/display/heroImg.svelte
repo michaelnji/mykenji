@@ -19,11 +19,11 @@
 			targets: elements,
 			opacity: {
 				value: 1,
-				delay: anime.stagger(300, {start:1900,easing: 'easeInOutQuad'})
+				delay: anime.stagger(200, {start:1700,easing: 'easeInOutQuad'})
 			},
 			translateY: {
 				value: '0px',
-				delay: anime.stagger(300, {start:1800,easing: 'easeInOutQuad'})
+				delay: anime.stagger(200, {start:1700,easing: 'easeInOutQuad'})
 			},
 			
 			
