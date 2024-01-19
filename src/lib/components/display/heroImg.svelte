@@ -13,17 +13,17 @@
 				duration: 1500
 			},
 			translateY: '0px',
-			delay: 1500
+			delay: 1700
 		});
 		anime({
 			targets: elements,
 			opacity: {
 				value: 1,
-				delay: anime.stagger(300, {start:2000,easing: 'easeInOutQuad'})
+				delay: anime.stagger(300, {start:1900,easing: 'easeInOutQuad'})
 			},
 			translateY: {
 				value: '0px',
-				delay: anime.stagger(300, {start:2000,easing: 'easeInOutQuad'})
+				delay: anime.stagger(300, {start:1800,easing: 'easeInOutQuad'})
 			},
 			
 			
@@ -32,13 +32,13 @@
 </script>
 
 <div class="flex w-full gap-x-12 items-center justify-between">
-	<div class=" bg-primary overflow-hidden hero-img mb-6 rounded-3xl w-[12rem]" style="opacity:0; transform:translateY(20px);">
+	<div class=" bg-primary overflow-hidden border-4 border-black hero-img mb-6 rounded-3xl w-[7rem] md:w-[12rem]" style="opacity:0; transform:translateY(20px);">
 		<img src={i} alt="" class="" loading="lazy" />
 	</div>
-	<div class="flex gap-x-3 icon-a">
+	<div class="md:flex gap-x-3 icon-a hidden  transform !scale-75 lg:!scale-100">
 		<div class="flex flex-col  justify-between gap-3 -rotate-12 mb-3 container-a">
 			<span
-				class="p-4 icon-one-a rounded-md shadow-lg font-bold font-head-home text-3xl bg-white flex items-center gap-4 border border-black dark:border-gray-700 dark:bg-gray-800"
+				class="p-4 icon-one-a rounded-md shadow-lg font-bold font-head-home text-3xl  bg-white flex items-center gap-4 border border-black dark:border-gray-700 dark:bg-gray-800"
 				style="opacity:0; transform:translateY(20px);"
 				><Icon name="javascript" width="40" height="40" color="#f0db4f" />
 			</span>

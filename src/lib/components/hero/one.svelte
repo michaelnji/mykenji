@@ -20,22 +20,22 @@ onMount(()=>{
 	duration: 500
   },
   duration: 1000,
-  delay:3000
+  delay:1500
 });
 	
 })
 </script>
 
-<div class="flex flex-col gap-y-6 max-w-[84rem]  rounded-3xl border-4 mx-auto border-black bg-yellow-100 p-12">
-		<div ><HeroImg /></div>
+<div class="flex flex-col md:gap-y-6 max-w-[84rem] md:h-max xl:!rounded-3xl lg:border-4 mx-auto border-black border-t-8 md:border-t-4 border-b-4 bg-yellow-100 md:p-12  px-6 py-12">
+		<div class=' md:inline-flex '><HeroImg /></div>
 		<h1
-			class="text-5xl heading-one  md:text-5xl text-center md:text-left lg:text-9xl font-head-home opacity-0 !text-black  font-bold leading-tight tracking-tighter"
-			style="line-height: 6.5rem; transform: translateY(100px);"
+			class="text-6xl md:text-7xl heading-one text-left lg:text-9xl font-head-home opacity-0 !text-black font-extrabold !leading-[3.5rem] md:leading-[4.3rem] lg:!leading-[7rem] md:tracking-tighter"
+			style=" transform:translateY(100px);"
 		>
-			I am a web developer & aspiring graphic designer
+			Building beautiful UIs & fast backends.
 		</h1>
-		<p class="mt-6  text-one !text-black !text-4xl  lg:max-w-6xl !font-light opacity-0"
-		style="line-height: 6.5rem; transform: translateX(-60px);">
+		<p class=" lg:mt-6 mt-4   text-one !text-black text-2xl md:!text-4xl  lg:max-w-6xl !font-light opacity-0 "
+		style=" transform: translateX(-60px);">
 			<span>Building beautiful UIs and responsive backends, also an entrepreneur offline </span>
 		</p>
 	</div>
