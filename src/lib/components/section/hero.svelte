@@ -12,20 +12,20 @@
 	});
 </script>
 
-<section class="lg:h-screen w-screen relative lg:grid md:place-items-center">
+<section class=" w-screen  relative xl:grid md:place-items-center">
 	<div class=" h-[7rem] md:h-[10rem] absolute !scale-100 w-full hero-bg my-auto block" />
 	<div
-		class=" hidden  lg:h-screen lg:px-14 w-full lg:flex md:items-center md:justify-center z-auto hero"
+		class=" hidden  xl:h-screen xl:px-14 w-full xl:flex md:items-center md:justify-center z-auto hero"
 		style="transform: scale(0)"
 	>
-		<div class="lg:absolute one z-50 transition duration-300 w-full">
+		<div class="xl:absolute one z-50 transition duration-300 w-full">
 			<One />
 		</div>
 	</div>
 	<div
-		class=" w-full lg:hidden md:items-center md:justify-center z-auto "
+		class=" w-full xl:hidden md:items-center md:justify-center z-auto "
 	>
-		<div class="lg:absolute one z-50 transition duration-300 w-full">
+		<div class="xl:absolute one z-50 transition duration-300 w-full">
 			<One />
 		</div>
 	</div>

@@ -1,11 +1,9 @@
 <script lang="ts">
-	import anime from 'animejs';
-	import { Icon } from 'svelte-simples';
 	import i from '$lib/images/myke.jpeg';
-	import { fade } from 'svelte/transition';
+	import anime from 'animejs';
 	import { onMount } from 'svelte';
+	import { Icon } from 'svelte-simples';
 	onMount(() => {
-		let elements = document.querySelectorAll('.icon-one-a');
 		anime({
 			targets: '.hero-img',
 			opacity: {
@@ -15,15 +13,16 @@
 			translateY: '0px',
 			delay: 1700
 		});
+		let elements = document.querySelectorAll('.icon-one-a');
 		anime({
 			targets: elements,
 			opacity: {
 				value: 1,
-				delay: anime.stagger(300, {start:1900,easing: 'easeInOutQuad'})
+				delay: anime.stagger(200, {start:1700,easing: 'easeInOutQuad'})
 			},
 			translateY: {
 				value: '0px',
-				delay: anime.stagger(300, {start:1800,easing: 'easeInOutQuad'})
+				delay: anime.stagger(200, {start:1700,easing: 'easeInOutQuad'})
 			},
 			
 			
@@ -35,7 +34,7 @@
 	<div class=" bg-primary overflow-hidden border-4 border-black hero-img mb-6 rounded-3xl w-[7rem] md:w-[12rem]" style="opacity:0; transform:translateY(20px);">
 		<img src={i} alt="" class="" loading="lazy" />
 	</div>
-	<div class="md:flex gap-x-3 icon-a hidden  transform !scale-75 lg:!scale-100">
+	<div class="md:flex gap-x-3 icon-a hidden  transform !scale-75 xl:!scale-100">
 		<div class="flex flex-col  justify-between gap-3 -rotate-12 mb-3 container-a">
 			<span
 				class="p-4 icon-one-a rounded-md shadow-lg font-bold font-head-home text-3xl  bg-white flex items-center gap-4 border border-black dark:border-gray-700 dark:bg-gray-800"

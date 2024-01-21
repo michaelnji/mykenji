@@ -24,6 +24,15 @@
 	import '@fontsource/work-sans/500.css';
 	import '@fontsource/work-sans/400.css';
 	import '@fontsource/fira-mono';
+	import '@fontsource/zen-dots';
+	import '@fontsource/righteous';
+	import '@fontsource/inter/100.css';
+	import '@fontsource/inter/200.css';
+	import '@fontsource/inter/400.css';
+	import '@fontsource/inter/500.css';
+	import '@fontsource/inter/600.css';
+	import '@fontsource/inter/700.css';
+
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import { onMount } from 'svelte';
 	import Navbar from './../lib/components/navigation/navbar.svelte';
@@ -34,7 +43,7 @@
 	inject();
 	injectSpeedInsights();
 	onMount(() => {
-		$theme = getOrSetItem('theme', 'dark');
+		$theme = getOrSetItem('theme', 'light');
 	});
 </script>
 
@@ -45,12 +54,12 @@
 	</div>
 {:else}
 		<div
-			class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400 transition-colors duration-300"
+			class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400 transition-colors duration-300 overflow-x-clip"
 		>
 			<header>
 				<Navbar />
 			</header>
-			<main class=" min-h-screen overflow-x-hidden">
+			<main class=" min-h-screen ">
 				<slot />
 			</main>
 

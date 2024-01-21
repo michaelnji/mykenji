@@ -2,7 +2,7 @@
 	import byte from '$lib/images/bytepay.vercel.app_(iPad).png';
 </script>
 
-<div class="py-12 lg:py-24" id="projects">
+<div class="py-12 xl:py-24" id="projects">
 	<section class=" px-6">
 		<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-bold font-head text-center">
 			Some of my work
@@ -15,10 +15,10 @@
 	<section class="pt-12 px-6">
 		<div class="w-full max-w-4xl mx-auto grid grid-cols-1 gap-6">
 			<div
-				class=" border-2 border-black rounded-2xl card-wrapper grid lg:grid-cols-2  transition-shadow duration-500"
+				class=" border-2 border-black rounded-2xl card-wrapper grid xl:grid-cols-2  transition-shadow duration-500"
 			>
-				<img src={byte} class="lg:mr-4 rounded-2xl" alt="bytepay website screenshot " />
-				<div class="bg-white dark:bg-base-200 p-4  lg:border-l-2  border-black rounded-2xl">
+				<img src={byte} class="xl:mr-4 rounded-2xl" alt="bytepay website screenshot " />
+				<div class="bg-white dark:bg-base-200 p-4  xl:border-l-2  border-black rounded-2xl">
 					<div class="w-full flex items-center justify-between flex-wrap gap-2">
 						<h1 class="text-3xl font-extrabold">BytePay</h1>
 						<div class="flex items-center gap-2">

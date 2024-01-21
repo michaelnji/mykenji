@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { IconMini } from "svelte-heros-v2";
 	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
 	import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
@@ -14,6 +13,7 @@
 	import Footer from '$lib/components/section/footer.svelte';
 	import { getReadableDate } from '$lib/utils/timeFunctions.js';
 	import { PortableText } from '@portabletext/svelte';
+	import { IconMini } from "svelte-heros-v2";
 	import dracula from 'svelte-highlight/styles/dracula';
 
 	export let data;
@@ -61,7 +61,7 @@
 			
 		</div>
 		<aside class=" w-full max-w-3xl my-12">
-		<div class="hidden lg:block w-full "><Toc outline={data.toc} /></div>
+		<div class="hidden xl:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
 			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold prose-pre:!rounded-3xl  prose-pre:!p-0  prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black  prose-pre:!bg-inherit prose-indigo  border-b-2 dark:bolder-gray-700 pb-10 "
