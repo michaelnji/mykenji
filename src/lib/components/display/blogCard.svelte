@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class=" w-full rounded-3xl max-w-2xl  border-2 border-black  group card-wrapper duration-500 ease-out dark:bg-gray-900"
+	class=" w-full rounded-3xl max-w-2xl  border-2 border-gray-900  group card-wrapper duration-500 ease-out dark:bg-gray-900"
 >
 	
 	<div class="p-6">

@@ -7,7 +7,7 @@ export default {
 			fontFamily: {
 				sans: ['Work Sans', 'sans-serif'],
 				head: ['Work Sans', 'sans-serif'],
-				"head-home": ['Zen Dots', 'sans-serif'],
+				"head-home": ['Righteous', 'sans-serif'],
 				mono: ['Fira Mono']
 			},
 			colors: {

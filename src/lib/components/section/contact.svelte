@@ -46,7 +46,7 @@
 		class=" hover:opacity-75 transition-opacity duration-200"
 	>
 		<div
-			class="py-2 px-4 flex gap-x-2 font-head bg-[black] dark:bg-gray-100 text-black bg-opacity-10 border-2 border-[black] hover:rotate-3 hover:scale-x-90 transition-transform duration-500"
+			class="py-2 px-4 flex gap-x-2 font-head bg-[black] dark:bg-gray-100 text-gray-900 bg-opacity-10 border-2 border-[black] hover:rotate-3 hover:scale-x-90 transition-transform duration-500"
 		>
 			<Icon name="github" color="black" /> 
 		</div>
