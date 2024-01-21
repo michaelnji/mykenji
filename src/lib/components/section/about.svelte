@@ -38,29 +38,29 @@
 		>
 			<div
 				bind:this={element}
-				class=" flex flex-wrap md:flex-nowrap gap-4 md:gap-12 mx-auto w-full items-center justify-center md:items-start"
+				class=" flex flex-wrap md:flex-nowrap gap-4 lg:gap-12 mx-auto w-full items-center justify-center md:items-start"
 			>
 				<div
-					class="bg-green-100 rounded-xl mt-12 relative p-6 border-2 md:border-4 border-black max-w-2xl w-full about-items opacity-0"
+					class="bg-green-100 rounded-xl mt-12 relative p-6 border-2 md:border-4 border-gray-900 max-w-2xl w-full about-items opacity-0"
 					style="transform: translateY(50px);"
 				>
-					<div class="absolute rounded-lg border-2 md:border-4 border-black p-3 bg-green-100 -top-8">
+					<div class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-green-100 -top-8">
 						<h2 class="font-head-home text-xl md:text-2xl xl:text-3xl">Hello There!</h2>
 					</div>
-					<p class="text-xl md:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
+					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
 						I'm Michael, a self taught frontend web developer based in Cameroon with a knack for
 						creating stuff with web technologies. I'm also into backend web development & a bit of
 						graphic designing
 					</p>
 				</div>
 				<div
-					class="bg-blue-100 mt-12 rounded-xl relative p-6 border-2 md:border-4 border-black max-w-2xl w-full about-items opacity-0"
+					class="bg-blue-100 mt-12 rounded-xl relative p-6 border-2 md:border-4 border-gray-900 max-w-2xl w-full about-items opacity-0"
 					style="transform: translateY(50px);"
 				>
-					<div class="absolute rounded-lg border-2 md:border-4 border-black p-3 bg-blue-100 -top-8">
-						<h2 class="font-head-home text-xl md:text-2xl xl:text-3xl">I love the web</h2>
+					<div class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-blue-100 -top-8">
+						<h2 class="font-head-home text-xl lgmd:text-2xl xl:text-3xl">I love the web</h2>
 					</div>
-					<p class="text-xl md:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
+					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
 						I discovered web development in 2020 and I've been learning and working hard to build
 						awesome web projects. I've fallen in love with frontend web development and look to get
 						better at it everyday.
@@ -79,17 +79,24 @@
 			duration: 600,
 			delay: anime.stagger(150, { start: 1000, easing: 'cubicBezier(.3, .4, .5, .3)' })
 		});
+				anime({
+			targets: '.skill-head',
+			opacity:1,
+			translateY: 0,
+			delay: 700
+		});
 			}}
 		>
 		<div bind:this={skill}
-			class="w-full flex mt-12 md:mt-32 rounded-xl relative items-center justify-center p-6 xl:h-[25rem] font-head-home font-extrabold text-center text-9xl text-opacity-50 text-gray-700"
+			class="w-full  flex flex-col-reverse mt-12 md:mt-32 rounded-xl  items-center justify-center"
 		>
-			TECH I USE!
-			<div class=" w-xl skills mx-auto absolute top-0 md:-rotate-6 grid md:grid-cols-3 grid-cols-2 gap-6">
+			
+		
+			<div class=" skills  border-gray-900 grid md:grid-cols-3 xl:grid-cols-5 grid-cols-2 bg-white 0 rounded-xl   gap-6 p-6">
 				{#each skills as skill}
 					<div
-						class={`border-2  p-6 flex items-center flex-col gap-3  !bg-white skill rounded-xl`}
-						style={`border-color:${skill.color}; transform: scale(0)`}
+						class={` p-3 flex items-center flex-col gap-3   skill rounded-xl`}
+						style={`color: ${skill.color} !important; transform: scale(0)`}
 					>
 						<Icon
 							name={skill.icon ? skill.icon : skill.name}
@@ -105,15 +112,18 @@
 							width="30"
 							class='block md:hidden'
 						/>
-						<p class="!text-sm md:text-2xl font-medium text-black capitalize">{skill.name}</p>
+						<p class="text-base md:text-2xl font-medium capitalize">{skill.name}</p>
 					</div>
 				{/each}
 			</div>
+			<div class="font-head-home text-3xl md:text-5xl  p-3 ">
+			<h2 class="skill-head" style="opacity:0; transform: translateY(20px)" >I Build Using These </h2>
+		</div>
 		</div>
 		</IntersectionObserver>
 	</div>
 
-	<!-- <div class=" sticky bg-gray-800 top-[39rem] rotate-90">
+	<!-- <div class="w-[33rem] sticky  top-[49rem] rotate-90">
 		
 			<h2
 				class="font-bold font-head-home text-6xl opacity-25 transition-opacity duration-500 w-full"
@@ -132,5 +142,7 @@
 	}
 	.card-wrapper:hover {
 		box-shadow: -4px -4px black;
+		
 	}
+
 </style>

@@ -2,7 +2,7 @@
 	import HeroImgAlt from '../display/heroImgAlt.svelte';
 	</script>
 
-<div class="flex flex-col gap-y-6 max-w-[84rem]  rounded-3xl border-4 mx-auto border-black bg-green-100 p-12">
+<div class="flex flex-col gap-y-6 max-w-[84rem]  rounded-3xl border-4 mx-auto border-gray-900 bg-green-100 p-12">
 		<div class="icon-a"><HeroImgAlt name='bolt' /></div>
 		<h1
 			class="text-5xl heading-a  md:text-5xl text-center md:text-left xl:text-9xl font-head-home font-bold leading-tight tracking-tighter"

@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { setItemValue } from '$lib/scripts/dbManager';
 	import theme from '$lib/stores/theme';
-	import { IconMini, IconOutline, IconSolid } from 'svelte-heros-v2';
+	import { IconSolid } from 'svelte-heros-v2';
 	import { fade, fly, scale } from 'svelte/transition';
 	let closeModal: boolean = false;
 	function toggleTheme(): void {
@@ -129,7 +129,7 @@
 		</div>
 	{/if}
 	<button
-		class="btn !z-20 md:btn-lg btn-primary overflow-hidden !rounded-2xl border border-black card-wrapper active:scale-90 transition"
+		class="btn !z-20 md:btn-lg btn-primary overflow-hidden !rounded-2xl border border-gray-900 card-wrapper active:scale-90 transition"
 		on:click={() => {
 			closeModal = !closeModal;
 		}}
@@ -179,7 +179,7 @@
 		@apply fixed bottom-4 flex flex-col   items-end gap-y-4  right-4;
 	}
 	.navbar-container {
-		@apply bg-white border-2 border-black  py-6 px-3  w-full flex flex-col items-start gap-y-2 transition ease-in-out duration-300;
+		@apply bg-white border-2 border-gray-900  py-6 px-3  w-full flex flex-col items-start gap-y-2 transition ease-in-out duration-300;
 	}
 	.logo {
 		@apply font-head text-xl;

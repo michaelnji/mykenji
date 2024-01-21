@@ -7,7 +7,7 @@
  import currentItem from "$lib/stores/toc-store";
 </script>
 
-<div class="p-6  bg-gray-100 border-opacity-30  w-full border-black max-h-[35rem] overflow-y-scroll rounded-2xl   dark:bg-base-300">
+<div class="p-6  bg-gray-100 border-opacity-30  w-full border-gray-900 max-h-[35rem] overflow-y-scroll rounded-2xl   dark:bg-base-300">
     <h3 class="mb-6 font-semibold text-2xl">On this page</h3>
     <ul class="flex flex-col  list-outside list-none gap-y-3">
        {#key $currentItem }

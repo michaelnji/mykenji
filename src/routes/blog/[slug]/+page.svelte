@@ -27,7 +27,7 @@
 
 	<section class="px-6 md:px-0 max-w-4xl mx-auto ">
 		<div class="w-full">
-			<img src={data.post.imageUrl} alt="" class="  border-2 border-black custom-img w-full rounded-xl" />
+			<img src={data.post.imageUrl} alt="" class="  border-2 border-gray-900 custom-img w-full rounded-xl" />
 
 			<h1 class="mt-6 text-5xl w-full md:text-7xl font-extrabold !font-head ">
 				{data.post.title}
@@ -64,7 +64,7 @@
 		<div class="hidden xl:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold prose-pre:!rounded-3xl  prose-pre:!p-0  prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-black  prose-pre:!bg-inherit prose-indigo  border-b-2 dark:bolder-gray-700 pb-10 "
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-2xl  dark:prose-invert prose-headings:font-sans prose-headings:font-semibold prose-pre:!rounded-3xl  prose-pre:!p-0  prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-gray-900  prose-pre:!bg-inherit prose-indigo  border-b-2 dark:bolder-gray-700 pb-10 "
 		>
 			<PortableText
 				value={[...data.post.body]}
