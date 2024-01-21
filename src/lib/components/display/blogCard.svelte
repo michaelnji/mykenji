@@ -18,7 +18,7 @@
 		>
 			{getReadableDate(published)}
 		</div>
-		<h1 class="text-2xl lg:text-3xl  capitalize font-medium font-head leading-tight">
+		<h1 class="text-2xl xl:text-3xl  capitalize font-medium font-head leading-tight">
             {title}
 		</h1>
         <div class="flex flex-wrap gap-2">

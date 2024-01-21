@@ -2,7 +2,7 @@
 	import BlogCard from "./../display/blogCard.svelte";
     export let posts: any[]   
 </script>
-<section class='py-12 lg:py-24 w-full'>
+<section class='py-12 xl:py-24 w-full'>
 
 	<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-bold font-head text-center">Article Garden🌿</h1>
 

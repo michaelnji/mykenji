@@ -5,9 +5,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Alegreya', 'sans-serif'],
-				head: ['Alegreya', 'sans-serif'],
-				"head-home": ['Work Sans', 'sans-serif'],
+				sans: ['Work Sans', 'sans-serif'],
+				head: ['Work Sans', 'sans-serif'],
+				"head-home": ['Zen Dots', 'sans-serif'],
 				mono: ['Fira Mono']
 			},
 			colors: {
