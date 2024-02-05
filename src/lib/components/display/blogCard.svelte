@@ -18,22 +18,21 @@
 		>
 			{getReadableDate(published)}
 		</div>
-		<h1 class="text-2xl xl:text-3xl  capitalize font-medium font-head leading-tight">
+		<h1 class="text-2xl  mb-4 xl:text-3xl  capitalize font-medium font-head-home ">
             {title}
 		</h1>
         <div class="flex flex-wrap gap-2">
             {#each tags as tag}
                 <a href={`/blog/tags/${tag.title}`}>
                     <span
-                        class="px-3 py-1   font-bold bg-indigo-100 dark:bg-opacity-10 dark:text-indigo-300 rounded-lg text-primary text-sm font-mono transition duration-1000"
+                        class="px-3 py-1   font-bold bg-indigo-50 dark:bg-opacity-10 dark:text-indigo-300 rounded-lg text-primary text-base font-mono transition duration-1000"
                     >
-                        <span class=" opacity-0 font-light group-hover:opacity-80 transition-opacity duration-700">#</span
-                        >{tag.title}
+                        {tag.title}
                     </span>
                 </a>
             {/each}
         </div>
-		<p class="text-xl opacity-75 font-medium line-clamp-2">
+		<p class="text-xl opacity-75  line-clamp-2">
 			{excerpt}
 		</p>
 		<div>

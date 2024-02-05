@@ -1,101 +1,114 @@
 export const skills = [
 	{
 		name: 'svelte',
-		color: '#ff922b',
+		text: '#ff922b',
 		proeficiency: 'advanced',
-		link: ''
+		link: '',
+		color: '#ffe8cc' 
+		
 	},
 	{
 		name: 'supabase',
 		proeficiency: 'intermediate',
-		color: '#51cf66',
-		link: ''
+		text: '#51cf66',
+		link: '',
+		color: '#b2f2bb' 
 	},
 	{
 		name: 'javascript',
 		proeficiency: 'advanced',
-		color: '#fcc419',
-		link: ''
+		text: '#fcc419',
+		link: '',
+		color: '#fff3bf' 
 	},
 	{
 		name: 'tailwindcss',
 		proeficiency: 'advanced',
-		color: '#20c997',
-		link: ''
+		text: '#20c997',
+		link: '',
+		color: '#96f2d7' 
 	},
 	{
 		name: 'python',
 		proeficiency: 'beginner',
-		color: '#3498db',
-		link: ''
+		text: '#3498db',
+		link: '',
+		color: '#a5d8ff' 
 	},
 	{
 		name: 'scss',
 		proeficiency: 'intermediate',
 		icon: 'sass',
-		color: '#cd6799',
-		link: ''
+		text: '#cd6799',
+		link: '',
+		color: '#fcc2d7' 
 	},
 	{
 		name: 'nodejs',
 		proeficiency: 'intermediate',
 		icon: 'nodedotjs',
-		color: '#37b24d',
-		link: ''
+		text: '#37b24d',
+		link: '',
+		color: '#b2f2bb' 
 	},
 	{
 		name: 'gulp',
 		proeficiency: 'intermediate',
 		icon: 'gulp',
-		color: '#ff6b6b',
-		link: ''
+		text: '#ff6b6b',
+		link: '', 
+		color: '#ffc9c9'  
 	},
 
 	{
 		name: 'github',
 		proeficiency: 'intermediate',
-		color: '#333',
-		link: ''
+		text: '#fff',
+		link: '',
+		color: '#fff'
 	},
 	{
 		name: 'typescript',
-		color: '#007acc',
-		link: ''
+		text: '#007acc',
+		link: '',
+		color: '#a5d8ff'
 	},
 	{
 		name: 'go',
-		color: '#3498db',
-		link: ''
+		text: '#3498db',
+		link: '',
+		color: '#a5d8ff' 
 	},
 	{
 		name: 'Nuxt',
 		icon: 'nuxtdotjs',
-		color: '#41b883',
-		link: ''
+		text: '#41b883',
+		link: '',
+		color: '#b2f2bb' 
 	}
 ];
 export const skillsToLearn = [
 		{
 			name:'go',
-			color:'#3498db',
+			text:'#3498db',
 			link:''
 		},
 		{
 			name:'Nuxt',
 			icon:'nuxtdotjs',
-			color:'#41b883',
+			text:'#41b883',
 			link:''
 		},
 		
 		{
 			name:'mongodb',
-			color:'#47a248',
+			text:'#47a248',
 			link:''
 		},
 		{
 			name:'Linux OS',
 			icon:'linux',
-			color:'#f0db4f',
+			text:'#f0db4f',
 			link:''
 		},
 	]

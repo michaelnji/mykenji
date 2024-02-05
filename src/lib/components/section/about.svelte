@@ -6,21 +6,21 @@
 	import { Icon } from 'svelte-simples';
 
 	let element: any;
-	let skill:any;
+	let skillEl:any;
 	function animateEntry() {
 		const items = document.querySelectorAll('.about-items');
 		anime({
 			targets: items,
 			translateY: 0,
 			opacity: 1,
-			duration: 600,
-			delay: anime.stagger(300, { start: 800, easing: 'linear' })
+			duration: 1200,
+			delay: anime.stagger(300, { start: 600, easing: 'linear' })
 		});
 		anime({
 			targets: '.about-img',
 			opacity: 1,
 			duration: 2000,
-			delay: 1100
+			delay: 800
 		});
 	}
 	onMount(() => {
@@ -37,14 +37,14 @@
 			}}
 		>
 			<div
-				bind:this={element}
+				
 				class=" flex flex-wrap md:flex-nowrap gap-4 lg:gap-12 mx-auto w-full items-center justify-center md:items-start"
 			>
 				<div
 					class="bg-green-100 rounded-xl mt-12 relative p-6 border-2 md:border-4 border-gray-900 max-w-2xl w-full about-items opacity-0"
 					style="transform: translateY(50px);"
 				>
-					<div class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-green-100 -top-8">
+					<div bind:this={element}  class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-green-100 -top-8">
 						<h2 class="font-head-home text-xl md:text-2xl xl:text-3xl">Hello There!</h2>
 					</div>
 					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
@@ -71,53 +71,50 @@
 
 		<!-- skills -->
 		<IntersectionObserver
-			element={skill}
+			element={skillEl}
 			on:intersect={() => {
 				anime({
 			targets: '.skills .skill',
 			scale: 1,
-			duration: 600,
-			delay: anime.stagger(150, { start: 1000, easing: 'cubicBezier(.3, .4, .5, .3)' })
+			duration: 800,
+			delay: anime.stagger(150, {start:800,  easing: 'cubicBezier(.3, .4, .5, .3)' })
 		});
-				anime({
-			targets: '.skill-head',
-			opacity:1,
-			translateY: 0,
-			delay: 700
-		});
+				
 			}}
 		>
-		<div bind:this={skill}
-			class="w-full  flex flex-col-reverse mt-12 md:mt-32 rounded-xl  items-center justify-center"
+		<div 
+			class="w-full  flex flex-col-reverse mt-32 rounded-xl  items-center justify-center"
 		>
 			
 		
-			<div class=" skills  border-gray-900 grid md:grid-cols-3 xl:grid-cols-5 grid-cols-2 bg-white 0 rounded-xl   gap-6 p-6">
+			<div bind:this={skillEl}  class=" skills  border-gray-900 grid md:grid-cols-3 xl:grid-cols-6 !mt-12 grid-cols-2   rounded-3xl   gap-3 bg-gray-900 p-3 md:p-6 xl:p-12">
 				{#each skills as skill}
-					<div
+					<div 
 						class={` p-3 flex items-center flex-col gap-3   skill rounded-xl`}
-						style={`color: ${skill.color} !important; transform: scale(0)`}
+						style={`color: #fff !important; transform: scale(0)`}
 					>
 						<Icon
 							name={skill.icon ? skill.icon : skill.name}
-							color={skill.color}
-							height="50"
-							width="50"
+							color={`${skill.text}`}
+							height="40"
+							width="40"
 							class='hidden md:block'
 						/>
 						<Icon
 							name={skill.icon ? skill.icon : skill.name}
-							color={skill.color}
+							color={`${skill.text}`}
 							height="30"
 							width="30"
 							class='block md:hidden'
 						/>
-						<p class="text-base md:text-2xl font-medium capitalize">{skill.name}</p>
+						<p class="text-sm md:text-2xl font-medium capitalize px-3 py-1.5  !bg-opacity-10 bg-gray-100 rounded-lg"
+						
+						>{skill.name}</p>
 					</div>
 				{/each}
 			</div>
 			<div class="font-head-home text-3xl md:text-5xl  p-3 ">
-			<h2 class="skill-head" style="opacity:0; transform: translateY(20px)" >I Build Using These </h2>
+			<h2>I Build Using These </h2>
 		</div>
 		</div>
 		</IntersectionObserver>
