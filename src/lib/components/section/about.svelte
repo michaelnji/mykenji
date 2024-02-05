@@ -28,7 +28,7 @@
 	});
 </script>
 
-<div class="!mb-24 !px-6 w-screen flex items-start justify-center" id="about">
+<div class=" !px-6 w-screen flex items-start justify-center" id="about">
 	<div class="w-full">
 		<IntersectionObserver
 			{element}
@@ -47,7 +47,7 @@
 					<div bind:this={element}  class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-green-100 -top-8">
 						<h2 class="font-head-home text-xl md:text-2xl xl:text-3xl">Hello There!</h2>
 					</div>
-					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
+					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl opacity-80">
 						I'm Michael, a self taught frontend web developer based in Cameroon with a knack for
 						creating stuff with web technologies. I'm also into backend web development & a bit of
 						graphic designing
@@ -60,7 +60,7 @@
 					<div class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-blue-100 -top-8">
 						<h2 class="font-head-home text-xl lgmd:text-2xl xl:text-3xl">I love the web</h2>
 					</div>
-					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl font-medium opacity-80">
+					<p class="text-xl lg:text-2xl pt-4 md:pt-8 max-w-3xl  opacity-80">
 						I discovered web development in 2020 and I've been learning and working hard to build
 						awesome web projects. I've fallen in love with frontend web development and look to get
 						better at it everyday.
@@ -83,11 +83,11 @@
 			}}
 		>
 		<div 
-			class="w-full  flex flex-col-reverse mt-32 rounded-xl  items-center justify-center"
+			class="w-full  flex flex-col-reverse mt-12 md:mt-32 rounded-xl  items-center justify-center"
 		>
 			
 		
-			<div bind:this={skillEl}  class=" skills  border-gray-900 grid md:grid-cols-3 xl:grid-cols-6 !mt-12 grid-cols-2   rounded-3xl   gap-3 bg-gray-900 p-3 md:p-6 xl:p-12">
+			<div bind:this={skillEl}  class=" skills  border-gray-900 grid md:grid-cols-3 xl:grid-cols-6 !mt-12 grid-cols-2   rounded-3xl   gap-3 w-full md:max-w-max bg-gray-900 p-3 md:p-6 xl:p-12">
 				{#each skills as skill}
 					<div 
 						class={` p-3 flex items-center flex-col gap-3   skill rounded-xl`}

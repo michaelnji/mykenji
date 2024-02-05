@@ -42,11 +42,13 @@
 	import { inject } from '@vercel/analytics';
 	inject();
 	injectSpeedInsights();
+	let ready = false
 	onMount(() => {
+		ready = true
 		$theme = getOrSetItem('theme', 'light');
 	});
 </script>
-
+{#if ready }
 <div class={`${$theme}`}>
 {#if $navigationIsDelayed}
 	<div class="w-screen h-screen dark:bg-gray-950 overflow-hidden grid place-items-center">
@@ -67,3 +69,10 @@
 		</div>
 		{/if}
 	</div>
+	{:else}
+	<div class="w-screen h-screen dark:bg-gray-950 overflow-hidden grid place-items-center">
+		<Loader />
+	</div>
+{/if}
+
+
