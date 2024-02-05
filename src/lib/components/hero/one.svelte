@@ -29,11 +29,11 @@ let elements = document.querySelectorAll('.icon-one-a-sm');
 			targets: elements,
 			opacity: {
 				value: 1,
-				delay: anime.stagger(100, {start:1700})
+				delay: anime.stagger(100, {start:1000})
 			},
 			translateY: {
 				value: '0px',
-				delay: anime.stagger(50, {start:1700})
+				delay: anime.stagger(50, {start:1000})
 			},
 			
 			
