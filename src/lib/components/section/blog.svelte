@@ -6,7 +6,7 @@
 
 	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-medium font-head-home text-center">Article Garden🌿</h1>
 
-<div class="prose-base mt-10 p-6 flex flex-wrap justify-center items-center gap-8  w-full">
+<div class="prose-base mt-10 p-3 md:p-6 flex flex-wrap justify-center items-center gap-8  w-full">
    {#each posts as post,i }
    {#if i <=3 }
      <BlogCard title={post.title} tags={post.tags} slug={post.slug.current} published={post.publishedAt} excerpt={post.excerpt}/>
