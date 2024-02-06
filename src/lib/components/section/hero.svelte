@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div
-		class=" w-full xl:hidden !min-h-[100vh] md:items-center md:justify-center z-auto "
+		class=" w-full xl:hidden mb-10 md:items-center md:justify-center z-auto "
 	>
 		<div class="xl:absolute one z-50 transition duration-300 w-full">
 			<One />

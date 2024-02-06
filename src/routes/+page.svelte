@@ -14,10 +14,10 @@
 
 	<Hero />
 
-	<div class=" !mb-36">
+	<div class=" !mb-24 ">
 		<About />
 	</div>
-<div class="!mb-24 !mt-36">
+<div class="!my-24">
 	{#if data?.posts }
 		<Blog posts={data.posts} />
 	{/if}

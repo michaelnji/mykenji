@@ -4,6 +4,7 @@
 	import { IconMini } from 'svelte-heros-v2';
 	import { Icon } from 'svelte-simples';
 	import HeroImg from './../display/heroImg.svelte';
+	const colors = ['pink','indigo','purple','red','blue','green','orange','yellow']
 onMount(()=>{
 	anime({
   targets: '.heading-one',
@@ -42,7 +43,7 @@ let elements = document.querySelectorAll('.icon-one-a-sm');
 })
 </script>
 
-<div class="flex flex-col md:gap-y-6 max-w-[84rem]  md:h-max xl:!rounded-3xl xl:border-4 mx-auto border-gray-900 border-t-8 md:border-t-4 border-b-4 bg-yellow-100 md:p-12  px-6 py-12">
+<div class={"flex flex-col md:gap-y-6 max-w-[84rem]  md:h-max xl:!rounded-3xl xl:border-4 mx-auto border-gray-900 border-t-8 md:border-t-4 border-b-4 bg-purple-100 md:p-12  px-6 py-12"}>
 		<div class=' md:inline-flex '><HeroImg /></div>
 		<h1
 			class="text-5xl md:text-7xl heading-one text-left xl:text-9xl font-head-home opacity-0 !text-gray-900 font-extrabold !leading-[3.5rem] md:!leading-[4.3rem] xl:!leading-[7rem]"
