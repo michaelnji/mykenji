@@ -28,7 +28,7 @@
 	});
 </script>
 
-<div class=" px-3 md:px-6 w-screen flex items-start justify-center" id="about">
+<div class="  w-screen flex items-start justify-center" id="about">
 	<div class="w-full">
 		<IntersectionObserver
 			{element}
@@ -38,7 +38,7 @@
 		>
 			<div
 				
-				class=" flex flex-wrap md:flex-nowrap gap-4 xl:gap-12 mx-auto w-full items-center justify-center md:items-start"
+				class=" flex px-3 md:px-6 flex-wrap md:flex-nowrap gap-4 xl:gap-12 mx-auto w-full items-center justify-center md:items-start mb-[16rem]"
 			>
 				<div
 					class="bg-green-100 rounded-xl mt-12 relative p-6 border-2 md:border-4 border-gray-900 max-w-2xl w-full about-items opacity-0"
@@ -83,12 +83,16 @@
 			}}
 		>
 		<div 
-			class="w-full  flex flex-col-reverse mt-12 md:mt-32 rounded-xl  items-center justify-center"
+			class="w-screen px-3 md:px-6 bg-pattern h-48  flex flex-col-reverse   items-center justify-center md:relative md:rotate-12 md:transform"
 		>
 			
 		
-			<div bind:this={skillEl}  class=" skills flex flex-wrap justify-center  border-gray-900 -6 !mt-12    rounded-3xl   gap-3 w-full xl:max-w-6xl bg-gray-950 p-3 md:p-6 xl:p-12">
-				{#each skills as skill}
+		<div bind:this={skillEl}  class=" md:absolute skills border-4  border-gray-600 md:-rotate-12  rounded-3xl w-full mx-auto   gap-3 md:!max-w-[90%] xl:!max-w-6xl bg-gray-950 p-3 md:p-6 xl:p-12">
+				<div class="font-head-home text-center text-3xl md:text-5xl xl:text-8xl  p-3 text-gray-50">
+			<h2>I Build Using💻 </h2>
+		</div>
+				<div class="mt-4 xl:mt-8 flex flex-wrap justify-center">
+					{#each skills as skill}
 					<div 
 						class={` p-3 flex items-center flex-col gap-3   skill rounded-xl`}
 						style={`color: #fff !important; transform: scale(0)`}
@@ -112,34 +116,13 @@
 						>{skill.name}</p>
 					</div>
 				{/each}
+				</div>
 			</div>
-			<div class="font-head-home text-center text-3xl md:text-5xl  p-3 ">
-			<h2>I Build Using🔨 </h2>
-		</div>
+			
 		</div>
 		</IntersectionObserver>
 	</div>
 
-	<!-- <div class="w-[33rem] sticky  top-[49rem] rotate-90">
-		
-			<h2
-				class="font-bold font-head-home text-6xl opacity-25 transition-opacity duration-500 w-full"
-				
-			>
-				About & Skills
-			</h2>
-			
-		
-	</div> -->
+	
 </div>
 
-<style>
-	.card-wrapper {
-		box-shadow: 4px 4px black;
-	}
-	.card-wrapper:hover {
-		box-shadow: -4px -4px black;
-		
-	}
-
-</style>
