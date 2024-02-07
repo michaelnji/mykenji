@@ -6,52 +6,49 @@
 	export let slug: string;
 	export let published: Date;
 	export let excerpt: string;
+	export let image:string
 </script>
 
-<div
-	class=" w-full rounded-3xl max-w-2xl  border-2 border-gray-900  group card-wrapper duration-500 ease-out dark:bg-gray-900"
->
-	
-	<div class="p-6">
-		<div
-			class=" max-w-max  font-medium opacity-70 text-lg"
-		>
-			{getReadableDate(published)}
-		</div>
-		<h1 class="text-2xl  mb-4 xl:text-3xl  capitalize font-medium font-head-home ">
-            {title}
-		</h1>
-        <div class="flex flex-wrap gap-2">
-            {#each tags as tag}
-                <a href={`/blog/tags/${tag.title}`}>
-                    <span
-                        class="px-3 py-1   font-bold bg-indigo-50 dark:bg-opacity-10 dark:text-indigo-300 rounded-lg text-primary text-base font-mono transition duration-1000"
-                    >
-                        {tag.title}
-                    </span>
-                </a>
-            {/each}
-        </div>
-		<p class="text-xl opacity-75  line-clamp-2">
-			{excerpt}
-		</p>
-		<div>
-			<a
-				href={`/blog/${slug}`}
-				class="font-semibold transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"
-				>Read more 
-			</a>
-		</div>
-		
-	</div>
-</div>
+<div class=" group w-full max-w-lg !rounded-2xl">
+				<div class="  bg-white dark:bg-gray-950 dark:border-gray-800  shadow-xl border-2 pt-6 !rounded-2xl">
+					<div class="w-full flex-col !justify-between gap-12 items-start">
+						
+							<div class="px-6"><img
+								src={image}
+								alt=""
+								class=" rounded-2xl group-hover:scale-105 transition  w-full object-cover max-w-xl m-0"
+							/></div>
+						
+						<div class="flex flex-wrap mt-6 gap-3 justify-start items-start px-6">
+							{#each tags as tag }
+								<span
+								class="  px-3 py-1 font-bold text-gray-700 rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-200 font-mono transition text-xs md:text-base"
+							>
+								{tag.title}
+							</span>
+							{/each}
+							
+						</div>
+					</div>
+					<div class="mt-4">
+						<h1 class="px-6 text-2xl md:text-3xl capitalize text-gray-950 dark:text-gray-100 font-head-home m-0">
+							{title}
+						</h1>
+						
+						<div class="mt-2 mb-4">
+							<p class="px-6 text-gray-800 dark:text-gray-100 md:text-lg  opacity-80 font-mono line-clamp-3 prose">
+							{excerpt}
+						</p>
+						<div class="w-full h-0.5 bg-gray-600 bg-opacity-10 md:my-6 my-3"></div>
+						<div class="mt-4 flex gap-3 justify-between items-center px-6 md:pb-3">
+								<a
+									href={`/blog/${slug}`}
+									class="btn font-medium !bg-opacity-10 btn-primary dark:!text-indigo-100 !text-primary !text-xs md:!text-base">read more</a
+								>
+								<span class=" md:text-lg opacity-75">{getReadableDate(published)}</span>
+							</div>	
+						</div>
 
-<style>
-	.card-wrapper{
-		box-shadow: 4px 4px black;
-		
-	}
-	.card-wrapper:hover{
-		box-shadow: -4px -4px black;
-	}
-</style>
+					</div>
+				</div>
+			</div>

@@ -56,6 +56,9 @@ dependencies:
   date-fns:
     specifier: ^2.30.0
     version: 2.30.0
+  emoxy:
+    specifier: ^1.0.4
+    version: 1.0.4
   mathjs:
     specifier: ^12.2.0
     version: 12.2.0
@@ -1197,6 +1200,10 @@ packages:
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
     dev: true
+
+  /emoxy@1.0.4:
+    resolution: {integrity: sha512-mAD/qoIzXYIm+w9Q1Oe4aOvbwR5d9K8Kq2cj5sroHswu42Nxysc6NypzEHzQOKm6Hyh+WX1SVaOu9Gdt+xvx/A==}
+    dev: false
 
   /es6-promise@3.3.1:
     resolution: {integrity: sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==}

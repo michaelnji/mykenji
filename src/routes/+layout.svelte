@@ -51,12 +51,12 @@
 {#if ready }
 <div class={`${$theme}`}>
 {#if $navigationIsDelayed}
-	<div class="w-screen h-screen dark:bg-gray-950 overflow-hidden grid place-items-center">
+	<div class="w-screen h-screen dark:bg-gray-900 overflow-hidden grid place-items-center">
 		<Loader />
 	</div>
 {:else}
 		<div
-			class="dark:!bg-base-400 dark:!text-gray-50 bg-white text-base-400 transition-colors duration-300 overflow-x-clip"
+			class="dark:!bg-gray-900 dark:!text-gray-50 bg-white text-base-400 transition-colors duration-300 overflow-x-clip"
 		>
 			<header>
 				<Navbar />
