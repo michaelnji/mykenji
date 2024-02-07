@@ -28,13 +28,13 @@ export const skills = [
 		link: '',
 		color: '#96f2d7' 
 	},
-	{
-		name: 'python',
-		proeficiency: 'beginner',
-		text: '#3498db',
-		link: '',
-		color: '#a5d8ff' 
-	},
+	// {
+	// 	name: 'python',
+	// 	proeficiency: 'beginner',
+	// 	text: '#3498db',
+	// 	link: '',
+	// 	color: '#a5d8ff' 
+	// },
 	{
 		name: 'scss',
 		proeficiency: 'intermediate',
@@ -73,19 +73,20 @@ export const skills = [
 		link: '',
 		color: '#a5d8ff'
 	},
-	{
-		name: 'go',
-		text: '#3498db',
-		link: '',
-		color: '#a5d8ff' 
-	},
-	{
-		name: 'Nuxt',
-		icon: 'nuxtdotjs',
-		text: '#41b883',
-		link: '',
-		color: '#b2f2bb' 
-	}
+	// {
+	// 	name: 'golang',
+	// 	icon:'go',
+	// 	text: '#3498db',
+	// 	link: '',
+	// 	color: '#a5d8ff' 
+	// },
+	// {
+	// 	name: 'Nuxt',
+	// 	icon: 'nuxtdotjs',
+	// 	text: '#41b883',
+	// 	link: '',
+	// 	color: '#b2f2bb' 
+	// }
 ];
 export const skillsToLearn = [
 		{
