@@ -15,10 +15,10 @@
 			translateY: '0px',
       opacity: {
 		value: 1,
-		duration: 900
+		duration: 1200
 	  },
 			duration: 1900,
-			 delay: anime.stagger(250, {start:800,  easing: 'cubicBezier(.3, .4, .5, .3)' })
+			 delay: anime.stagger(250, {start:400,  easing: 'cubicBezier(.3, .4, .5, 1)' })
 		});
 				
 			}}
@@ -28,7 +28,7 @@
 		<h1 class="md:text-7xl w-full max-w-6xl mx-auto text-4xl font-bold font-head-home text-center">
 			Some of my work
 		</h1>
-		<p class="mt-6 max-w-3xl mx-auto text-center text-xl opacity-70">
+		<p class="mt-6 max-w-3xl mx-auto text-center text-xl md:text-2xl opacity-70">
 			I have been working hard lately to build some pretty awesome stuff out here:
 		</p>
 	</section>
@@ -66,10 +66,10 @@
 						</div>
 					</div>
 					<div class="mt-4">
-						<h1 class="!md:text-8xl text-6xl capitalize text-indigo-50 font-bold font-head-home">
+						<h1 class="!md:text-8xl text-5xl capitalize text-indigo-50 font-bold font-head-home">
 							BytePay
 						</h1>
-						<p class="mt-3 text-indigo-50 text-lg md:text-2xl opacity-90">
+						<p class="mt-3 text-indigo-50 text-xl md:text-2xl opacity-90">
 							A website to buy and create virtual credit cards.
 						</p>
 						<div class="mt-4 p-6 rounded-2xl bg-indigo-800 bg-opacity-50">
@@ -142,10 +142,10 @@
 						</div>
 					</div>
 					<div class="mt-4">
-						<h1 class="!md:text-8xl text-6xl capitalize text-green-50 font-bold font-head-home">
+						<h1 class="!md:text-8xl text-5xl capitalize text-green-50 font-bold font-head-home">
 							Wabuzz
 						</h1>
-						<p class="mt-3 text-green-50 text-lg md:text-2xl opacity-90">
+						<p class="mt-3 text-green-50 text-xl md:text-2xl opacity-90">
 							A website to grow Whatsapp contacts via automated contact gathering.
 						</p>
 						<div class="mt-4 p-6 rounded-2xl bg-green-800 bg-opacity-50">
@@ -222,10 +222,10 @@
 						</div>
 					</div>
 					<div class="mt-4">
-						<h1 class="!md:text-8xl text-6xl capitalize text-pink-950 font-bold font-head-home">
+						<h1 class="!md:text-8xl text-5xl capitalize text-pink-950 font-bold font-head-home">
 							Kawaiii
 						</h1>
-						<p class="mt-3 text-pink-950 text-lg md:text-2xl opacity-90">
+						<p class="mt-3 text-pink-950 text-xl md:text-2xl opacity-90">
 							A website to display female manga characters.
 						</p>
 						<div class="mt-4 p-6 rounded-2xl bg-pink-800 bg-opacity-50">

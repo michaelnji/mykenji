@@ -9,8 +9,8 @@
 	export let image:string
 </script>
 
-<div class=" group w-full max-w-lg !rounded-2xl">
-				<div class="  bg-white dark:bg-gray-950 dark:border-gray-800  shadow-xl border-2 pt-6 !rounded-2xl">
+<div class=" group w-full max-w-lg !rounded-2xl transition-shadow">
+				<div class="  bg-white  border-2 border-black card-wrapper dark:bg-gray-900  pt-6 !rounded-2xl">
 					<div class="w-full flex-col !justify-between gap-12 items-start">
 						
 							<div class="px-6"><img
@@ -31,12 +31,12 @@
 						</div>
 					</div>
 					<div class="mt-4">
-						<h1 class="px-6 text-2xl md:text-3xl capitalize text-gray-950 dark:text-gray-100 font-head-home m-0">
+						<h1 class="px-6 text-2xl md:text-3xl  text-gray-950 dark:text-gray-100 font-bold font-head-home m-0">
 							{title}
 						</h1>
 						
 						<div class="mt-2 mb-4">
-							<p class="px-6 text-gray-800 dark:text-gray-100 md:text-lg  opacity-80 font-mono line-clamp-3 prose">
+							<p class="px-6 text-gray-800 dark:text-gray-100 md:text-lg  opacity-80  line-clamp-2 prose">
 							{excerpt}
 						</p>
 						<div class="w-full h-0.5 bg-gray-600 bg-opacity-10 md:my-6 my-3"></div>
@@ -52,3 +52,14 @@
 					</div>
 				</div>
 			</div>
+
+
+<style>
+	.card-wrapper{
+		box-shadow: 2px 2px black;
+		
+	}
+	.card-wrapper:hover{
+		box-shadow: 5px 5px black;
+	}
+</style>

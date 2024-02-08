@@ -1,37 +1,28 @@
-<span class="loader"></span>
+<div class="w-full h-screen  fixed z-50 bg-gray-500 dark:!bg-gray-950 grid place-items-center overflow-hidden" style="z-index: 1000;">
+  <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl">
+    <div class="loader"></div>
+  </div>
+</div>
 
 <style>
-    .loader {
-          width: 48px;
-          height: 48px;
-          display: flex;
-          animation : rotate 2s linear infinite;
-        }
-        .loader:before,
-        .loader:after {
-          content:"";
-          flex:1;
-         @apply bg-secondary;
-          animation: mvx 0.5s infinite linear alternate;
-        }
-        .loader:before {
-          @apply bg-primary;
-          animation-name:mvrx;
-        }
+   /* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c:no-repeat linear-gradient(#5c7cfa 0 0);
+  background: 
+    var(--c) 0    0,
+    var(--c) 0    100%, 
+    var(--c) 50%  50%,   
+    var(--c) 100% 0, 
+    var(--c) 100% 100%;
+  animation: l13 1s infinite alternate;
+}
 
-        @keyframes rotate {
-          100% {transform: rotate(360deg)}
-        }
-        @keyframes mvx {
-          0% , 40% {transform: translateX(0px)}
-          20% , 60% {transform: translateX(8px)}
-          100% {transform: translateX(15px)}
-        }
-        @keyframes mvrx {
-          0% , 40% {transform: translateX(0px)}
-          20% , 60% {transform: translateX(-8px)}
-          100% {transform: translateX(-15px)}
-        }
-
+@keyframes l13 {
+ 0%,10%   {background-size:20% 100%}
+ 50%      {background-size:20%  20%}
+ 90%,100% {background-size:100% 20%}
+}
     
 </style>

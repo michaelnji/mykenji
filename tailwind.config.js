@@ -5,9 +5,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Work Sans', 'sans-serif'],
+				sans: ['Source Serif Pro', 'sans-serif'],
 				head: ['Work Sans', 'sans-serif'],
-				"head-home": ['Righteous', 'sans-serif'],
+				'head-home': ['Gloock', 'sans-serif'],
 				mono: ['Fira Mono']
 			},
 			colors: {

@@ -3,11 +3,11 @@
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import BlogCard from "./../display/blogCard.svelte";
     export let posts: any[]   
-    export let el:HTMLElement
+     let el:HTMLElement
 </script>
 <section class='py-12 xl:py-24 w-full'>
 
-	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-medium font-head-home text-center">Article Garden🌿</h1>
+	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-bold font-head-home text-center">I write articles too</h1>
 <IntersectionObserver
 			element={el}
 			on:intersect={() => {
@@ -16,7 +16,7 @@
 			translateY: '0px',
       opacity: 1,
 			duration: 1500,
-			delay: 800
+			delay: 400
 		});
 				
 			}}
@@ -25,7 +25,7 @@
 style="opacity: 0; transform:translateY(100px)"
 >
    {#each posts as post,i }
-   {#if i <=3 }
+   {#if i <=6 }
      <BlogCard title={post.title} tags={post.tags} slug={post.slug.current} published={post.publishedAt} excerpt={post.excerpt} image={post.imageUrl}/>
    {/if}
    {/each}

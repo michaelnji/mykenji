@@ -4,9 +4,14 @@
 
 :root {
 	--secondary: #4c6ef5; 
-	--primary: transparent;
+	--primary: #ffffff;
+	
 }
-.dark *{
+html {
+  scroll-behavior: smooth;
+}
+
+ .dark {
 --primary: #495057
 }
 /* Firefox */
@@ -31,7 +36,7 @@
 	border: 3px solid var(--primary);
 }
 .btn {
-	@apply flex items-center gap-x-2 p-3 transition duration-300 rounded-xl text-base uppercase bg-base-200  text-gray-50;
+	@apply flex items-center gap-x-2 p-3 transition duration-300 rounded-xl text-base font-bold capitalize bg-base-200  text-gray-50 font-mono;
 }
 .btn:hover {
 	@apply bg-base-300;

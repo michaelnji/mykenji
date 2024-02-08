@@ -8,7 +8,7 @@
       <IconMini name='star-solid' width='24' height='24' />
 
    </div>
-    <div class=" text-xl !font-normal pt-10 p-3">
+    <div class=" text-lg tracking-tight leading-normal  !font-normal pt-10 p-3 font-mono">
       <slot/>
    </div>
   
