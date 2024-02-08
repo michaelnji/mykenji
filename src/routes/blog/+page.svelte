@@ -20,8 +20,8 @@
 
 </script>
 
-<section class="pb-12 md:min-h-screen">
-	<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center">
+<section class="py-12 md:min-h-screen">
+	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-bold font-head-home text-center">
 		Article Garden🌿
 	</h1>
 	{#key activeTag}
@@ -38,7 +38,7 @@
 			</button>
 			{#each data.tags as tag}
 				<button
-					class="px-3 rounded-xl py-1  font-bold hover:bg-primary hover:text-indigo-50 text-primary bg-indigo-100 dark:bg-opacity-10 dark:text-indigo-300 text-sm md:text-base font-mono transition duration-150 uppercase"
+					class="px-3 rounded-xl py-1  font-bold hover:bg-primary hover:text-indigo-50 text-primary bg-primary bg-opacity-10 dark:text-indigo-300 text-sm md:text-base font-mono transition duration-150 uppercase"
 					class:!bg-primary={activeTag === tag.title}
 					class:!text-white={activeTag === tag.title}
 					on:click={() => {
@@ -52,7 +52,7 @@
 
 		{#if activeTag === 'all'}
 			<div
-				class="prose-base mt-6 p-6 flex flex-wrap justify-center items-center gap-6 w-full"
+				class="prose-base mt-6 p-6 flex flex-wrap justify-center items-start gap-6 w-full"
 				
 			>
 				{#each data.posts as post}
@@ -63,13 +63,14 @@
 						slug={post.slug.current}
 						published={post.publishedAt}
 						excerpt={post.excerpt}
+						image={post.imageUrl}
 					/>
 					</div>
 				{/each}
 			</div>
 		{:else}
 		<div
-				class="prose-base mt-6 p-6 flex flex-wrap justify-center items-center gap-6 w-full"
+				class="prose-base mt-6 p-6 flex flex-wrap justify-center items-start gap-6 w-full"
 				
 			>
 				{#each data.posts as post}
@@ -81,6 +82,7 @@
 							slug={post.slug.current}
 							published={post.publishedAt}
 							excerpt={post.excerpt}
+							image={post.imageUrl}
 						/>
 						</div>
 					{/if}
@@ -91,3 +93,4 @@
 </section>
 
 <div><Footer /></div>
+

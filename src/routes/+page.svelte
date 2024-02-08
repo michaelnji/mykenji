@@ -17,12 +17,12 @@
 	<div class=" ">
 		<About />
 	</div>
-<div class="!mt-[18rem] mb-24">
+<div class=" mt-24 mb-12 ">
 	{#if data?.posts }
 		<Blog posts={data.posts} />
 	{/if}
 </div>
-<div class="my-24">
+<div class="mb-24">
 	<Projects />
 </div>
 <div class="my-24">

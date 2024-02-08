@@ -6,7 +6,10 @@
 	import Highlight, { HighlightAuto, HighlightSvelte, LineNumbers } from 'svelte-highlight';
 	import css from 'svelte-highlight/languages/css';
 	import { copyToClipboard } from '$lib/utils/index';
-	export let portableText;
+	/**
+	 * @type {any}
+	 */
+	 export let portableText;
 	$: ({ value } = portableText);
 	$: ({ language, code } = value);
 	let copySuccess = false;
@@ -23,7 +26,7 @@
 	}
 </script>
 
-<div class="card-wrapper rounded-3xl transition duration-300 ease-in-out !font-mono relative">
+<div class="card-wrapper rounded-3xl transition duration-300 ease-in-out !font-mono  relative">
 	{#if language == 'css'}
 		<Highlight language={css} {code} />
 	{:else if language == 'jsx'}

@@ -11,6 +11,12 @@ dependencies:
   '@fontsource/epilogue':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/gloock':
+    specifier: ^5.0.18
+    version: 5.0.18
+  '@fontsource/inknut-antiqua':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@fontsource/inter':
     specifier: ^5.0.16
     version: 5.0.16
@@ -20,6 +26,9 @@ dependencies:
   '@fontsource/lora':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/mulish':
+    specifier: ^5.0.16
+    version: 5.0.16
   '@fontsource/quattrocento':
     specifier: ^5.0.18
     version: 5.0.18
@@ -29,9 +38,15 @@ dependencies:
   '@fontsource/source-serif-pro':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/space-mono':
+    specifier: ^5.0.18
+    version: 5.0.18
   '@fontsource/work-sans':
     specifier: ^5.0.16
     version: 5.0.16
+  '@fontsource/yeseva-one':
+    specifier: ^5.0.18
+    version: 5.0.18
   '@fontsource/zen-dots':
     specifier: ^5.0.18
     version: 5.0.18
@@ -434,6 +449,14 @@ packages:
     resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
     dev: true
 
+  /@fontsource/gloock@5.0.18:
+    resolution: {integrity: sha512-dMZwcde8mblvtMSqVKXDizLtI8p3ePBB3XDjSvC1OfbsY/9uxt2HV3uWZWmtUGQJHD2WOFBqrDv/od7/zgyB6Q==}
+    dev: false
+
+  /@fontsource/inknut-antiqua@5.0.8:
+    resolution: {integrity: sha512-Hf+wQ0gh5Myn3Rj3h9FC7YjrnBr3uctG/3b+FMX44Tv9r49AWRX7kYGztwZo0eqmZL64FIQsrGDBXX5HlPsJzA==}
+    dev: false
+
   /@fontsource/inter@5.0.16:
     resolution: {integrity: sha512-qF0aH5UiZvCmneX5orJbVRoc2VTyLTV3X/7laMp03Qt28L+B9tFlZODOGUL64wDWc69YVdi1LeJB0cIgd51lvw==}
     dev: false
@@ -444,6 +467,10 @@ packages:
 
   /@fontsource/lora@5.0.8:
     resolution: {integrity: sha512-lJBsGmaOCr5INZwxz29TVTrIuZPTYcd3lkwnpoTclb86KsYpyU7chDVUQvf3CW/+hdX3fi1z7GvUz/kJIDyiZA==}
+    dev: false
+
+  /@fontsource/mulish@5.0.16:
+    resolution: {integrity: sha512-NM1LDZRDBWzK+9iVzgINGHVkGrSHVCJsGAK8PKrnyQ+rt99vYPGz7JOtBkEQZQbP6+Zn0uV+ie3SdETNzBAJtA==}
     dev: false
 
   /@fontsource/quattrocento@5.0.18:
@@ -458,8 +485,16 @@ packages:
     resolution: {integrity: sha512-bb8bza+aBp6Wpz1LOXaQ9YSwMc/wNpk3hniENCPoBMMwsn9LQaJU0kKnJSSIi+ld1t7aH4jbh+mHQHN1zLfZ3A==}
     dev: false
 
+  /@fontsource/space-mono@5.0.18:
+    resolution: {integrity: sha512-2GKT0pokkncXbYF675JcxexjTwVGD2jX+a9rof9wgI+IuyMk0CNsZFBNuSDDsJoTfZpJjA2GCVaEr7f/bgp35A==}
+    dev: false
+
   /@fontsource/work-sans@5.0.16:
     resolution: {integrity: sha512-NSWgUQC7MIV4ujGTZ5qxHwEZ5ttOVtY3OhVa3ESj+rB+BiN5XVxEwkUEoJ4mnWTYB3ibwn45S/V7TgjDuG21kg==}
+    dev: false
+
+  /@fontsource/yeseva-one@5.0.18:
+    resolution: {integrity: sha512-bpz1IAx0cLdkO0Sy2pKCZ48bPYDzkqry44uwk+7IJbm9P/mhcWU2tjNao8ZX4VIk2v0NtLLeQS2ZbJoNtf7gIA==}
     dev: false
 
   /@fontsource/zen-dots@5.0.18:

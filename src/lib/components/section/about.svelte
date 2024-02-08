@@ -35,14 +35,14 @@
 		>
 			<div
 				
-				class=" flex px-3 md:px-6 flex-wrap md:flex-nowrap gap-4 xl:gap-12 mx-auto w-full items-center justify-center md:items-start mb-[19rem]"
+				class=" flex px-3 md:px-6 flex-wrap md:flex-nowrap gap-4 xl:gap-12 mx-auto w-full items-center justify-center md:items-start mb-[9rem]"
 			>
 				<div
 					class="bg-green-100 rounded-xl mt-12 relative p-6 border-2 md:border-4 border-gray-900 max-w-2xl w-full about-items opacity-0"
 					style="transform: translateY(50px);"
 				>
 					<div bind:this={element}  class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-green-100 -top-8">
-						<h2 class="font-head-home text-xl md:text-2xl xl:text-3xl text-gray-950">Hello There!</h2>
+						<h2 class="font-head-home font-bold text-xl md:text-2xl xl:text-3xl text-gray-950">Hello There!</h2>
 					</div>
 					<p class="text-xl xl:text-2xl pt-4 md:pt-8 max-w-3xl opacity-80 text-gray-900">
 						I'm Michael, a self taught frontend web developer based in Cameroon with a knack for
@@ -55,7 +55,7 @@
 					style="transform: translateY(50px);"
 				>
 					<div class="absolute rounded-lg border-2 md:border-4 border-gray-900 p-3 bg-orange-100 -top-8">
-						<h2 class="font-head-home text-xl lgmd:text-2xl xl:text-3xl text-gray-950">I love the web</h2>
+						<h2 class="font-head-home text-xl md:text-2xl xl:text-3xl text-gray-950 font-bold">I love the web</h2>
 					</div>
 					<p class="text-xl xl:text-2xl pt-4 md:pt-8 max-w-3xl  opacity-80 text-gray-900">
 						I discovered web development in 2020 and I've been learning and working hard to build
@@ -79,45 +79,41 @@
 				
 			}}
 		>
-		<div 
-			class="w-screen px-3 md:px-6 bg-pattern h-48  flex flex-col-reverse   items-center justify-center md:relative md:rotate-12 md:transform"
-		>
+		
 			
 		
-		<div class=" md:absolute skills border-4  border-gray-600 md:-rotate-12  rounded-3xl w-full mx-auto   gap-3 md:!max-w-[90%] xl:!max-w-6xl bg-gray-950 p-3 md:p-6 xl:p-12 my-[5rem]">
-				<div class="font-head-home text-center text-3xl md:text-5xl xl:text-7xl  p-3 text-gray-50">
+		<div class="  skills   w-full mx-auto   md:!max-w-[90%] xl:!max-w-6xl">
+				<div class="font-head-home font-bold text-center text-2xl md:text-3xl xl:text-4xl ">
 			<h2>I build using </h2>
 		</div>
 		<div bind:this={skillEl}></div>
 				<div class="mt-8 xl:mt-8 flex flex-wrap justify-center">
 					{#each skills as skill}
 					<div 
-						class={` p-3 flex items-center flex-col gap-3   skill rounded-xl`}
-						style={`color: #fff !important; transform: scale(0)`}
+						class={` p-3 m-3 flex items-center flex-col gap-3   skill rounded-xl !bg-opacity-10`}
+						style={`color: #fff !important; background-color:${skill.color}; transform: scale(0)`}
 					>
 						<Icon
 							name={skill.icon ? skill.icon : skill.name}
 							color={`${skill.text}`}
-							height="40"
-							width="40"
+							height="60"
+							width="60"
 							class='hidden md:block'
 						/>
 						<Icon
 							name={skill.icon ? skill.icon : skill.name}
 							color={`${skill.text}`}
-							height="30"
-							width="30"
+							height="40"
+							width="40"
 							class='block md:hidden'
 						/>
-						<p class="text-sm md:text-2xl font-medium capitalize px-3 py-1.5 font-mono  !bg-opacity-5 bg-gray-50 rounded-lg"
 						
-						>{skill.name}</p>
 					</div>
 				{/each}
 				</div>
 			</div>
 			
-		</div>
+		
 		</IntersectionObserver>
 	</div>
 
