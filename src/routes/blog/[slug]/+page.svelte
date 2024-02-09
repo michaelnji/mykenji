@@ -1,7 +1,7 @@
 <script lang="ts">
 	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
 	import BlogImg from '$lib/components/misc/blogImg.svelte';
-	import CodeBloack from '$lib/components/misc/codeBloack.svelte';
+	import CodeBlock from '$lib/components/misc/codeBlock.svelte';
 	import ColorBlock from '$lib/components/misc/colorBlock.svelte';
 	import CustomHeading from '$lib/components/misc/customHeading.svelte';
 	import Gotcha from '$lib/components/misc/gotcha.svelte';
@@ -29,10 +29,10 @@
 		<div class="w-full">
 			<img src={data.post.imageUrl} alt="" class="  border-2 border-gray-900 custom-img w-full max-w-2xl rounded-xl" />
 
-			<h1 class="mt-6 text-4xl w-full md:text-5xl font-bold !font-head-home ">
+			<h1 class="mt-6 m-0 text-4xl w-full md:text-5xl font-bold !font-head-home ">
 				{data.post.title}
 			</h1>
-			<p class="font-medium mt-6 font-sans opacity-80 flex gap-x-2 items-center">
+			<p class="font-medium my-6 font-sans opacity-80 flex gap-x-2 items-center">
 				<IconMini name="calendar-solid" />
 				<span class="text-gray-700 dark:text-gray-200 font-medium text-xl "
 					>{data.post._updatedAt
@@ -70,7 +70,7 @@
 				value={[...data.post.body]}
 				components={{
 					types: {
-						code: CodeBloack,
+						code: CodeBlock,
 						image: BlogImg,
 						img: BlogImg,
 						
