@@ -10,7 +10,7 @@
       <IconMini name='exclamation-triangle-solid' width='26' height='26' />
 
    </div>
-    <div class="  !font-normal text-lg font-mono tracking-tight leading-normal  pt-10 p-3">
+    <div class="  !font-normal text-xl   pt-10 p-3">
       <slot/>
    </div>
   

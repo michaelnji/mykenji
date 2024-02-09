@@ -43,7 +43,7 @@
 			<div class="mt-3 flex flex-wrap gap-3 items-center w-full  ">
 				{#each data.post.tags as tag}
 					<span
-						class="px-3 py-1 rounded-xl hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
+						class="px-3 py-1 rounded-xl hover:bg-opacity-100 hover:text-purple-50 dark:hover:text-primary dark:hover:bg-purple-200 font-bold bg-primary bg-opacity-10 text-primary dark:text-purple-200 text-sm md:text-base font-mono transition duration-150"
 					>
 						{tag.title}
 					</span>
@@ -64,7 +64,7 @@
 		<div class="hidden xl:block w-full "><Toc outline={data.toc} /></div>
 	</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-xl` md:prose-2xl  dark:prose-invert prose-headings:font-bold prose-pre:!rounded-2xl  prose-pre:!p-0  prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-gray-900  prose-pre:!bg-inherit prose-pre:!text-2xl prose-indigo  border-b-2 dark:bolder-gray-700 pb-10  "
+			class="!min-w-full prose-p:!min-w-full   mt-10 prose prose-xl md:prose-2xl  dark:prose-invert prose-headings:font-bold prose-pre:!rounded-2xl  prose-pre:!p-0  prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-gray-900  prose-pre:!bg-inherit prose-pre:!text-md prose-purple  border-b-2 dark:bolder-gray-700 pb-10  "
 		>
 			<PortableText
 				value={[...data.post.body]}

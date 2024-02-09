@@ -1,10 +1,10 @@
 <script lang="ts">
+	  import byte from '$lib/images/bytepay.png';
+	  import kawaiii from '$lib/images/kawaiii.png';
+	  import wabuzz from '$lib/images/wabuzz.png';
 	  import anime from 'animejs';
-	import IntersectionObserver from 'svelte-intersection-observer';
-	import kawaiii from '$lib/images/kawaiii.png';
-	import byte from '$lib/images/bytepay.png';
-	import wabuzz from '$lib/images/wabuzz.png';
-	import { Icon } from 'svelte-simples';
+	  import IntersectionObserver from 'svelte-intersection-observer';
+	  import { Icon } from 'svelte-simples';
 	let el:HTMLElement
 </script>
 <IntersectionObserver
@@ -35,12 +35,12 @@
 
 	<section class="pt-12 px-3 md:px-6">
 		<div
-			class="w-full md:max-w-8xl xl:max-w-[95%] mx-auto grid grid-cols-1 items-start xl:grid-cols-3 md:grid-cols-2 p gap-6" bind:this={el}
+			class="w-full md:max-w-8xl xl:max-w-[95%] mx-auto grid grid-cols-1 items-start xl:grid-cols-3 lg:grid-cols-2 p gap-6" bind:this={el}
 		>
 			<div class=" group project w-full !rounded-2xl" style="opacity: 0; transform:translateY(100px)">
-				<div class="  bg-indigo-500 border-4 border-gray-950 p-6 !rounded-2xl">
+				<div class="  bg-purple-500 border-4 border-gray-950 p-6 !rounded-2xl">
 					<div class="w-full flex-col !justify-between gap-12 items-start">
-						<div class=" w-full border-2 border-indigo-950 rounded-2xl">
+						<div class=" w-full border-2 border-purple-950 rounded-2xl">
 							<img
 								src={byte}
 								alt=""
@@ -49,55 +49,55 @@
 						</div>
 						<div class="flex flex-wrap mt-8 gap-3">
 							<p
-								class="px-3 py-1 font-bold bg-indigo-950 rounded-lg text-indigo-300 text-sm font-mono transition duration-1000"
+								class="px-3 py-1 font-bold bg-purple-950 rounded-lg text-purple-300 text-sm font-mono transition duration-1000"
 							>
 								#unfinished
 							</p>
 							<p
-								class="px-3 py-1 font-bold bg-indigo-950 rounded-lg text-indigo-300 text-sm font-mono transition duration-1000"
+								class="px-3 py-1 font-bold bg-purple-950 rounded-lg text-purple-300 text-sm font-mono transition duration-1000"
 							>
 								#SaaS
 							</p>
 							<p
-								class="px-3 py-1 font-bold bg-indigo-950 rounded-lg text-indigo-300 text-sm font-mono transition duration-1000"
+								class="px-3 py-1 font-bold bg-purple-950 rounded-lg text-purple-300 text-sm font-mono transition duration-1000"
 							>
 								#website
 							</p>
 						</div>
 					</div>
 					<div class="mt-4">
-						<h1 class="!md:text-8xl text-5xl capitalize text-indigo-50 font-bold font-head-home">
+						<h1 class="!md:text-8xl text-5xl capitalize text-purple-50 font-bold font-head-home">
 							BytePay
 						</h1>
-						<p class="mt-3 text-indigo-50 text-xl md:text-2xl opacity-90">
+						<p class="mt-3 text-purple-50 text-xl md:text-2xl opacity-90">
 							A website to buy and create virtual credit cards.
 						</p>
-						<div class="mt-4 p-6 rounded-2xl bg-indigo-800 bg-opacity-50">
-							<p class="font-medium text-indigo-50 text-2xl opacity-90">Built using</p>
+						<div class="mt-4 p-6 rounded-2xl bg-purple-800 bg-opacity-50">
+							<p class="font-medium text-purple-50 text-2xl opacity-90">Built using</p>
 							<div class="flex flex-wrap gap-3 mt-3">
 								<p
-									class="p-2 font-bold text-indigo-50 rounded-lg bg-indigo-950 text-xs font-mono transition duration-1000"
+									class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 								>
 									<Icon name="javascript" width={'30'} height="30" />
 								</p>
 								<p
-									class="p-2 font-bold text-indigo-50 rounded-lg bg-indigo-950 text-xs font-mono transition duration-1000"
+									class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 								>
 									<Icon name="tailwindcss" width={'30'} height="30" />
 								</p>
 								<p
-									class="p-2 font-bold text-indigo-50 rounded-lg bg-indigo-950 text-xs font-mono transition duration-1000"
+									class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 								>
 									<Icon name="supabase" width={'30'} height="30" />
 								</p>
 								<p
-									class="p-2 font-bold text-indigo-50 rounded-lg bg-indigo-950 text-xs font-mono transition duration-1000"
+									class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 								>
 									<Icon name="nodedotjs" width={'30'} height="30" />
 								</p>
 
 								<p
-									class="p-2 font-bold text-indigo-50 rounded-lg bg-indigo-950 text-xs font-mono transition duration-1000"
+									class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 								>
 									<Icon name="svelte" width={'30'} height="30" />
 								</p>
@@ -106,7 +106,7 @@
 								<a
 									href="https://bytepay.vercel.app"
 									target="_blank"
-									class="btn font-bold !bg-indigo-300 !text-indigo-600">Preview</a
+									class="btn font-bold !bg-purple-300 !text-purple-600">Preview</a
 								>
 							</div>
 						</div>

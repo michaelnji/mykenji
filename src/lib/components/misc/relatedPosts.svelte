@@ -30,7 +30,7 @@
 				<div class="mt-2">
 					<a
 						href={`/blog/${post.slug.current}`}
-						class="font-semibold text-lg transition dark:text-indigo-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-indigo-200"
+						class="font-semibold text-lg transition dark:text-purple-200 text-primary border-b-2 border-transparent hover:border-primary dark:hover:border-purple-200"
 						>Read more
 					</a>
 				</div>

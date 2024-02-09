@@ -14,7 +14,7 @@
 
 	<Hero />
 
-	<div class=" ">
+	<div>
 		<About />
 	</div>
 <div class=" mt-24 mb-12 ">
@@ -24,9 +24,6 @@
 </div>
 <div class="mb-24">
 	<Projects />
-</div>
-<div class="my-24">
-	<Contact />
 </div>
 <Footer />
 

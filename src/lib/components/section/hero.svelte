@@ -13,7 +13,7 @@
 </script>
 
 <section class=" w-screen  relative xl:grid md:place-items-center">
-	<div class=" h-[7rem] md:h-[10rem] absolute !scale-100 w-full hero-bg my-auto block" />
+	<div class="h-[7.5rem] md:h-[11.9rem] absolute !scale-100 w-full hero-bg my-auto block" />
 	<div
 		class=" hidden  xl:h-screen xl:px-14 w-full xl:flex md:items-center md:justify-center z-auto hero"
 		style="transform: scale(0)"

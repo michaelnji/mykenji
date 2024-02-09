@@ -35,15 +35,15 @@
 							{title}
 						</h1>
 						
-						<div class="mt-2 mb-4">
-							<p class="px-6 text-gray-800 dark:text-gray-100 md:text-lg  opacity-80  line-clamp-2 prose">
+						<div class=" mb-4">
+							<p class="px-6 text-gray-800 dark:text-gray-100 text-xl  opacity-80  line-clamp-2 prose">
 							{excerpt}
 						</p>
 						<div class="w-full h-0.5 bg-gray-600 bg-opacity-10 md:my-6 my-3"></div>
 						<div class="mt-4 flex gap-3 justify-between items-center px-6 md:pb-3">
 								<a
 									href={`/blog/${slug}`}
-									class="btn font-medium !bg-opacity-10 btn-primary dark:!text-indigo-100 !text-primary !text-xs md:!text-base">read more</a
+									class="btn font-medium !bg-opacity-10 btn-primary dark:!text-purple-100 !text-primary !text-sm md:!text-base">read more</a
 								>
 								<span class=" md:text-lg opacity-75">{getReadableDate(published)}</span>
 							</div>	

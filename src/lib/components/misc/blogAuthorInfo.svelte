@@ -4,7 +4,7 @@
 </script>
 
  
-    <div class=" max-w-2xl border-2 border-gray-900   w-full p-6 bg-primary rounded-3xl text-indigo-100">
+    <div class=" max-w-2xl border-2 border-gray-900   w-full p-6 bg-primary rounded-3xl text-purple-100">
     <div class=" flex flex-col gap-3 ">
 			<div class="flex flex-row gap-3 items-center">
                 	<img
@@ -21,7 +21,7 @@
                     <a href={author.twitter} target="_blank"><p class="font-medium text-md flex gap-2 opacity-70 group"> <Icon name='twitter' width='20' height='20' class='group-hover:text-gray-900 transition-colors'/>@CodeD3vil</p></a>
                 </div>
             </div>
-                <p class="mt-2 prose   text-indigo-50 text-lg opacity-90">
+                <p class="mt-2 prose   text-purple-50 text-lg opacity-90">
                     {author.bio[0].children[0].text}
                 </p>
 			</div>
