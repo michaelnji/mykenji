@@ -22,22 +22,22 @@
 	</h3>
 	<div class="mt-6 flex flex-wrap gap-3 max-w-4xl mx-auto justify-center items-center">
 		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
+			class="px-3 py-1 hover:bg-opacity-100 hover:text-purple-50 dark:hover:text-primary dark:hover:bg-purple-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-purple-200 text-sm md:text-base font-mono transition duration-150"
 		>
 			ALL
 		</span>
 		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
+			class="px-3 py-1 hover:bg-opacity-100 hover:text-purple-50 dark:hover:text-primary dark:hover:bg-purple-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-purple-200 text-sm md:text-base font-mono transition duration-150"
 		>
 			SVELTEKIT
 		</span>
 		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
+			class="px-3 py-1 hover:bg-opacity-100 hover:text-purple-50 dark:hover:text-primary dark:hover:bg-purple-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-purple-200 text-sm md:text-base font-mono transition duration-150"
 		>
 			GOLANG
 		</span>
 		<span
-			class="px-3 py-1 hover:bg-opacity-100 hover:text-indigo-50 dark:hover:text-primary dark:hover:bg-indigo-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-indigo-200 text-sm md:text-base font-mono transition duration-150"
+			class="px-3 py-1 hover:bg-opacity-100 hover:text-purple-50 dark:hover:text-primary dark:hover:bg-purple-200 rounded-2xl font-bold bg-primary bg-opacity-10 text-primary dark:text-purple-200 text-sm md:text-base font-mono transition duration-150"
 		>
 			LIFESTYLE
 		</span>

@@ -32,7 +32,7 @@
 
 <div class="flex w-full gap-x-12 items-center justify-between">
 	<div class=" bg-primary overflow-hidden border-4 border-gray-900 hero-img mb-6 rounded-3xl w-[7rem] md:w-[12rem]" style="opacity:0; transform:translateY(20px);">
-		<img src={i} alt="" class="" loading="lazy" />
+		<img src={i} alt="" class="w-[7rem] md:w-[12rem]" loading="lazy" />
 	</div>
 	<div class="md:flex gap-x-3 icon-a hidden  transform !scale-75 xl:!scale-100">
 		<div class="flex flex-col  justify-between gap-3 -rotate-12 mb-3 container-a">

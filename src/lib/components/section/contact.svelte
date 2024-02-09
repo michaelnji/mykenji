@@ -1,54 +1,54 @@
 <script>
 	import { Icon } from 'svelte-simples';
+	let socials = [
+		{
+			name: 'discord',
+			link: 'https://discordapp.com/users/1086901938127388702',
+			text: '#748ffc',
+			color: '#bac8ff'
+		},
+		{
+			name: 'twitter',
+			link: 'https://twitter.com/CodeD3vil',
+			text: '#339af0',
+			color: '#a5d8ff'
+		},
+		{
+			name: 'gmail',
+			link: 'mailto:michaelnji34@gmail.com',
+			text: '#ff6b6b',
+			color: '#ffc9c9'
+		},
+		{
+			name: 'github',
+			link: 'https://github.com/michaelnji',
+			text: 'white',
+			color: 'black'
+		}
+	];
 </script>
 
-<h1 class="text-3xl w-full max-w-6xl mx-auto md:text-4xl font-extrabold font-head text-center">
-	Contact Me
-</h1>
+<div class="p-6 md:p-12 rounded-2xl transform rotate-6 bg-purple-50 shadow-2xl max-w-lg mx-auto w-full">
+	<h1 class="text-2xl mx-auto md:text-4xl font-extrabold font-head-home text-center">Catch me at</h1>
 
-<div class="flex w-full justify-center gap-3 mt-6">
-	<a
-		href="https://discordapp.com/users/1086901938127388702"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="hover:opacity-75 transition-opacity duration-200"
-	>
-		<div
-			class="py-2 px-4 flex gap-x-2 font-head bg-[#748ffc] bg-opacity-10 text-[#748ffc] border-2 border-[#748ffc] hover:rotate-3 hover:scale-x-90 transition-transform duration-500"
-		>
-			<Icon name="discord" color="#748ffc" />
-		</div>
-	</a>
-	<a
-		href="https://twitter.com/CodeD3vil"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="hover:opacity-75 transition-opacity duration-200"
-	>
-		<div
-			class="py-2 px-4 flex gap-x-2 font-head bg-[#339af0] bg-opacity-10 text-[#339af0] border-2 border-[#339af0] hover:rotate-3 hover:scale-x-90 transition-transform duration-500"
-		>
-			<Icon name="twitter" color="#339af0" />
-		</div>
-	</a>
-	<a href="mailto:michaelnji34@gmail.com" class="hover:opacity-75 transition-opacity duration-200">
-		<div
-			class="py-2 px-4 flex gap-x-2 font-head bg-[#ff6b6b] bg-opacity-10 text-[#ff6b6b] border-2 border-[#ff6b6b] hover:rotate-3 hover:scale-x-90 transition-transform duration-500"
-		>
-			<Icon name="gmail" color="#ff6b6b" />
-		</div>
-	</a>
-	
-	<a
-		href="https://github.com/michaelnji"
-		target="_blank"
-		rel="noopener noreferrer"
-		class=" hover:opacity-75 transition-opacity duration-200"
-	>
-		<div
-			class="py-2 px-4 flex gap-x-2 font-head bg-[black] dark:bg-gray-100 text-gray-900 bg-opacity-10 border-2 border-[black] hover:rotate-3 hover:scale-x-90 transition-transform duration-500"
-		>
-			<Icon name="github" color="black" /> 
-		</div>
-	</a>
+	<div class="flex justify-center flex-wrap w-full gap-3 mt-8">
+		{#each socials as social}
+			<a href={social.link}>
+				<div
+					class={` p-3 flex items-center flex-col gap-3 m   skill rounded-xl !bg-opacity-10`}
+					style={`color: #fff !important; border:2px solid ${social.text}; background-color:${social.color}; `}
+				>
+					<Icon
+						name={social.name}
+						color={`${social.text}`}
+						height="34"
+						width="34"
+						
+					/>
+					
+					
+				</div>
+			</a>
+		{/each}
+	</div>
 </div>

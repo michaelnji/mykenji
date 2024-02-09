@@ -9,7 +9,7 @@
 .loader {
   width: 45px;
   aspect-ratio: 1;
-  --c:no-repeat linear-gradient(#5c7cfa 0 0);
+  --c:no-repeat linear-gradient(#715DF2 0 0);
   background: 
     var(--c) 0    0,
     var(--c) 0    100%, 
