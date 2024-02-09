@@ -29,7 +29,7 @@
 </script>
 
 <div class="p-6 md:p-12 rounded-2xl transform rotate-6 bg-purple-50 shadow-2xl max-w-lg mx-auto w-full">
-	<h1 class="text-2xl mx-auto md:text-4xl font-extrabold font-head-home text-center">Catch me at</h1>
+	<h1 class="text-2xl mx-auto md:text-4xl font-extrabold font-head-home text-center">I'm active @</h1>
 
 	<div class="flex justify-center flex-wrap w-full gap-3 mt-8">
 		{#each socials as social}
@@ -41,8 +41,8 @@
 					<Icon
 						name={social.name}
 						color={`${social.text}`}
-						height="34"
-						width="34"
+						height="32"
+						width="32"
 						
 					/>
 					

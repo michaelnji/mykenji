@@ -2,8 +2,8 @@
 	export let posts: any;
 </script>
 
-<h1 class="mb-12 text-3xl text-center w-full md:text-4xl font-semibold">More Articles</h1>
-<div class="flex flex-wrap w-full gap-6 items-center justify-center">
+<h1 class="mb-12 text-3xl text-center w-full md:text-4xl font-semibold font-head-home">More Articles</h1>
+<div class="flex flex-wrap w-full gap-6 items-center justify-center mb-12">
 	{#each posts as post}
 		<div
 			class=" w-full max-w-2xl grid grid-cols-1 gap-y-3 md:gap-x-3 md:gap-y-0 border-2 border-gray-900 rounded-3xl dark:bg-gray-900 group card-wrapper duration-500 ease-out"

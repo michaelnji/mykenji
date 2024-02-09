@@ -22,7 +22,7 @@
 						<div class="flex flex-wrap mt-6 gap-3 justify-start items-start px-6">
 							{#each tags as tag }
 								<span
-								class="  px-3 py-1 font-bold text-gray-700 rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-200 font-mono transition text-xs md:text-base"
+								class="  px-3 py-1 font-bold text-gray-700 rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-200 font-mono transition text-base"
 							>
 								{tag.title}
 							</span>
