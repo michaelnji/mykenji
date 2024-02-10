@@ -31,7 +31,7 @@
 						</div>
 					</div>
 					<div class="mt-4">
-						<h1 class="px-6 text-2xl md:text-3xl  text-gray-950 dark:text-gray-100 font-bold font-head-home m-0">
+						<h1 class="px-6 text-2xl md:text-3xl  text-gray-950 dark:text-gray-100 font-bold font-head m-0">
 							{title}
 						</h1>
 						

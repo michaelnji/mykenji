@@ -1,13 +1,13 @@
 <script lang='ts'>
   import anime from 'animejs';
-	import IntersectionObserver from 'svelte-intersection-observer';
-	import BlogCard from "./../display/blogCard.svelte";
+  import IntersectionObserver from 'svelte-intersection-observer';
+  import BlogCard from "./../display/blogCard.svelte";
     export let posts: any[]   
      let el:HTMLElement
 </script>
 <section class='py-12 xl:py-24 w-full'>
 
-	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-bold font-head-home text-center">I write articles too</h1>
+	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-bold font-head text-center">I write articles too</h1>
 <IntersectionObserver
 			element={el}
 			on:intersect={() => {

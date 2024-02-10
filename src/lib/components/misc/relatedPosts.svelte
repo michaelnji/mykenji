@@ -2,7 +2,7 @@
 	export let posts: any;
 </script>
 
-<h1 class="mb-12 text-3xl text-center w-full md:text-4xl font-semibold font-head-home">More Articles</h1>
+<h1 class="mb-12 text-3xl text-center w-full md:text-4xl font-semibold font-head">More Articles</h1>
 <div class="flex flex-wrap w-full gap-6 items-center justify-center mb-12">
 	{#each posts as post}
 		<div
@@ -10,7 +10,7 @@
 		>
 			<div class=" overflow-hidden" />
 			<div class="p-6">
-				<h1 class="text-2xl capitalize font-bold font-head-home">
+				<h1 class="text-2xl capitalize font-bold font-head">
 					{post.title}
 				</h1>
 				<div class="mt-3 flex flex-wrap gap-2">

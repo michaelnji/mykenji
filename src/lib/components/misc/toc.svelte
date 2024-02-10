@@ -5,10 +5,11 @@
 	 */
  export let outline
  import currentItem from "$lib/stores/toc-store";
+ import { fly } from "svelte/transition";
 </script>
 
-<div class="p-6  bg-gray-100 border-opacity-30  w-full border-gray-900 max-h-[35rem] overflow-y-auto rounded-2xl   dark:bg-gray-900">
-    <h3 class="mb-6 font-bold font-head-home text-2xl">On this page</h3>
+<div class="p-6  bg-gray-100 border-opacity-30  w-full border-gray-900 max-h-[35rem] overflow-y-auto rounded-2xl   dark:bg-gray-900" in:fly={{y:100, duration:400, delay:1600}}>
+    <h3 class="mb-6 font-bold font-head text-2xl">On this page</h3>
     <ul class="flex flex-col  list-outside list-none gap-y-3">
        {#key $currentItem }
          {#each outline as heading }

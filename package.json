@@ -69,6 +69,7 @@
 		"date-fns": "^2.30.0",
 		"emoxy": "^1.0.4",
 		"mathjs": "^12.2.0",
+		"popmotion": "^11.0.5",
 		"speakingurl": "^14.0.1"
 	}
 }
