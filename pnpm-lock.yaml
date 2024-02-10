@@ -5,34 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource/alegreya':
-    specifier: ^5.0.8
-    version: 5.0.8
-  '@fontsource/epilogue':
-    specifier: ^5.0.8
-    version: 5.0.8
   '@fontsource/gloock':
-    specifier: ^5.0.18
-    version: 5.0.18
-  '@fontsource/inknut-antiqua':
-    specifier: ^5.0.8
-    version: 5.0.8
-  '@fontsource/inter':
-    specifier: ^5.0.16
-    version: 5.0.16
-  '@fontsource/krona-one':
-    specifier: ^5.0.8
-    version: 5.0.8
-  '@fontsource/lora':
-    specifier: ^5.0.8
-    version: 5.0.8
-  '@fontsource/mulish':
-    specifier: ^5.0.16
-    version: 5.0.16
-  '@fontsource/quattrocento':
-    specifier: ^5.0.18
-    version: 5.0.18
-  '@fontsource/righteous':
     specifier: ^5.0.18
     version: 5.0.18
   '@fontsource/source-serif-pro':
@@ -41,18 +14,9 @@ dependencies:
   '@fontsource/space-mono':
     specifier: ^5.0.18
     version: 5.0.18
-  '@fontsource/work-sans':
-    specifier: ^5.0.16
-    version: 5.0.16
   '@fontsource/yeseva-one':
     specifier: ^5.0.18
     version: 5.0.18
-  '@fontsource/zen-dots':
-    specifier: ^5.0.18
-    version: 5.0.18
-  '@formkit/auto-animate':
-    specifier: ^0.8.1
-    version: 0.8.1
   '@mojs/core':
     specifier: ^1.7.1
     version: 1.7.1
@@ -74,9 +38,6 @@ dependencies:
   date-fns:
     specifier: ^2.30.0
     version: 2.30.0
-  emoxy:
-    specifier: ^1.0.4
-    version: 1.0.4
   mathjs:
     specifier: ^12.2.0
     version: 12.2.0
@@ -443,48 +404,12 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /@fontsource/alegreya@5.0.8:
-    resolution: {integrity: sha512-f9B9ni40u2KKs6xmMWrcB3uDhQvoxkUl7DCRoYMPwhaVtBbmAt8dOIJ8+ETUtCRcAbDp4VGVJ7yNK+ubGItfuw==}
-    dev: false
-
-  /@fontsource/epilogue@5.0.8:
-    resolution: {integrity: sha512-zlDC3f+LO21v0bMWok9nFRHuJfVCAA+uY3poYk8AkMExwrNyZ3zJ2ITPUdAI84R6p4Z0jj0fRs2w0avMPOrOUw==}
-    dev: false
-
   /@fontsource/fira-mono@4.5.10:
     resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
     dev: true
 
   /@fontsource/gloock@5.0.18:
     resolution: {integrity: sha512-dMZwcde8mblvtMSqVKXDizLtI8p3ePBB3XDjSvC1OfbsY/9uxt2HV3uWZWmtUGQJHD2WOFBqrDv/od7/zgyB6Q==}
-    dev: false
-
-  /@fontsource/inknut-antiqua@5.0.8:
-    resolution: {integrity: sha512-Hf+wQ0gh5Myn3Rj3h9FC7YjrnBr3uctG/3b+FMX44Tv9r49AWRX7kYGztwZo0eqmZL64FIQsrGDBXX5HlPsJzA==}
-    dev: false
-
-  /@fontsource/inter@5.0.16:
-    resolution: {integrity: sha512-qF0aH5UiZvCmneX5orJbVRoc2VTyLTV3X/7laMp03Qt28L+B9tFlZODOGUL64wDWc69YVdi1LeJB0cIgd51lvw==}
-    dev: false
-
-  /@fontsource/krona-one@5.0.8:
-    resolution: {integrity: sha512-2QRdHlTrOKJn53EdmFFt1To+JiYKWRGRVcrWPirXHyr4YSOpHJQKjK7RshYLq+TObdI5bwUuq8u+sDCdcG28rw==}
-    dev: false
-
-  /@fontsource/lora@5.0.8:
-    resolution: {integrity: sha512-lJBsGmaOCr5INZwxz29TVTrIuZPTYcd3lkwnpoTclb86KsYpyU7chDVUQvf3CW/+hdX3fi1z7GvUz/kJIDyiZA==}
-    dev: false
-
-  /@fontsource/mulish@5.0.16:
-    resolution: {integrity: sha512-NM1LDZRDBWzK+9iVzgINGHVkGrSHVCJsGAK8PKrnyQ+rt99vYPGz7JOtBkEQZQbP6+Zn0uV+ie3SdETNzBAJtA==}
-    dev: false
-
-  /@fontsource/quattrocento@5.0.18:
-    resolution: {integrity: sha512-3D2IZU9he/X9B09wmBt47GZApza2CKoxsEDsFB+QtyLtjeoG9QqGhPaNjqJ+zHe2mNoB+88xWdlLz+XAU/1BZg==}
-    dev: false
-
-  /@fontsource/righteous@5.0.18:
-    resolution: {integrity: sha512-aBbSA87KGUdStVqTM/C1J0cChEQuQjMpsmZJb/50NTVVPPAUJfrAcIHVBQTPiHTTNp+Nfow4BmH18QuYnMDw6A==}
     dev: false
 
   /@fontsource/source-serif-pro@5.0.8:
@@ -495,20 +420,8 @@ packages:
     resolution: {integrity: sha512-2GKT0pokkncXbYF675JcxexjTwVGD2jX+a9rof9wgI+IuyMk0CNsZFBNuSDDsJoTfZpJjA2GCVaEr7f/bgp35A==}
     dev: false
 
-  /@fontsource/work-sans@5.0.16:
-    resolution: {integrity: sha512-NSWgUQC7MIV4ujGTZ5qxHwEZ5ttOVtY3OhVa3ESj+rB+BiN5XVxEwkUEoJ4mnWTYB3ibwn45S/V7TgjDuG21kg==}
-    dev: false
-
   /@fontsource/yeseva-one@5.0.18:
     resolution: {integrity: sha512-bpz1IAx0cLdkO0Sy2pKCZ48bPYDzkqry44uwk+7IJbm9P/mhcWU2tjNao8ZX4VIk2v0NtLLeQS2ZbJoNtf7gIA==}
-    dev: false
-
-  /@fontsource/zen-dots@5.0.18:
-    resolution: {integrity: sha512-LdlWbvl8qKzuOWdnu3ptsTE3Hw2+36NACBSofR6st43j5K3UTYdVgw4AbhMyTUz85kTMJ8OOjjN4IIdDm2WLQg==}
-    dev: false
-
-  /@formkit/auto-animate@0.8.1:
-    resolution: {integrity: sha512-0/Z2cuNXWVVIG/l0SpcHAWFhGdvLJ8DRvEfRWvmojtmRWfEy+LWNwgDazbZqY0qQYtkHcoEK3jBLkhiZaB/4Ig==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
@@ -1248,10 +1161,6 @@ packages:
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
     dev: true
-
-  /emoxy@1.0.4:
-    resolution: {integrity: sha512-mAD/qoIzXYIm+w9Q1Oe4aOvbwR5d9K8Kq2cj5sroHswu42Nxysc6NypzEHzQOKm6Hyh+WX1SVaOu9Gdt+xvx/A==}
-    dev: false
 
   /es6-promise@3.3.1:
     resolution: {integrity: sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==}
