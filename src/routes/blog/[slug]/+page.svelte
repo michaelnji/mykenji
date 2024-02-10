@@ -13,11 +13,15 @@
 	import Footer from '$lib/components/section/footer.svelte';
 	import { getReadableDate } from '$lib/utils/timeFunctions.js';
 	import { PortableText } from '@portabletext/svelte';
+	import { onMount } from 'svelte';
 	import { IconMini } from "svelte-heros-v2";
 	import dracula from 'svelte-highlight/styles/material-palenight.css';
-
+	import { fly } from 'svelte/transition';
+let ready = false
 	export let data;
-	// <!-- console.log(data.post.toc) -->
+	onMount(()=>{
+		ready = true
+	})
 </script>
 
 <svelte:head>
@@ -25,11 +29,12 @@
 </svelte:head>
 
 
-	<section class="px-6 md:px-0 max-w-4xl mx-auto pt-12">
+	{#if ready }
+		<section class="px-6 md:px-0 max-w-4xl mx-auto pt-12" in:fly={{y:100, duration:700, delay:800}}>
 		<div class="w-full">
 			<img src={data.post.imageUrl} alt="" class="  border-2 border-gray-900 custom-img w-full max-w-2xl rounded-xl" />
 
-			<h1 class="mt-6 m-0 text-4xl w-full md:text-5xl font-bold !font-head-home ">
+			<h1 class="mt-6 m-0 text-4xl w-full md:text-5xl font-bold !font-head ">
 				{data.post.title}
 			</h1>
 			<p class="font-medium my-6 font-sans opacity-80 flex gap-x-2 items-center">
@@ -103,6 +108,7 @@
 		<RelatedPosts posts={data.relatedPosts}/>
 	</div>
 	<Footer/>
+	{/if}
 
 <style>
 	.custom-img {

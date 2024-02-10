@@ -21,7 +21,7 @@
 </script>
 
 <section class="py-12 md:min-h-screen">
-	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-bold font-head-home text-center">
+	<h1 class="text-4xl w-full max-w-6xl mx-auto md:text-5xl font-bold font-head text-center">
 		Article Garden🌿
 	</h1>
 	{#key activeTag}

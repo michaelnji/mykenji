@@ -6,9 +6,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Source Serif Pro', 'sans-serif'],
-				head: ['Work Sans', 'sans-serif'],
-				'head-home': ['Gloock', 'sans-serif'],
-				mono: ['Fira Mono']
+				head: ['Gloock', 'sans-serif'],
+				mono: ['Space Mono']
 			},
 			colors: {
 				'base-100': '#1f2937',

@@ -7,7 +7,7 @@
 		anime({
 			targets: '.hero',
 			scale: 1,
-			duration: 1500
+			duration: 1000
 		});
 	});
 </script>

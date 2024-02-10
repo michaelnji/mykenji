@@ -43,7 +43,7 @@
 >
 	<div class=" md:inline-flex"><HeroImg /></div>
 	<h1
-		class="text-5xl md:text-7xl heading-one text-left xl:text-9xl font-head-home opacity-0 md:!text-gray-900 font-extrabold !leading-[3.5rem] md:!leading-[4.3rem] xl:!leading-[7rem]"
+		class="text-5xl md:text-7xl heading-one text-left xl:text-9xl font-head opacity-0 md:!text-gray-900 font-extrabold !leading-[3.5rem] md:!leading-[4.3rem] xl:!leading-[7rem]"
 		style=" transform:translateY(100px);"
 	>
 		I am Michael Nji, a <span class="text">Web</span> Developer

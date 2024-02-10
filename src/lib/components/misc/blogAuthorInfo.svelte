@@ -13,7 +13,7 @@
 					class="w-14 h-14 rounded-full border-2 border-gray-700"
 				/>
 				<div>
-                    <p class="font-bold font-head-home flex gap-x-2 text-xl"> {author.name} </p>
+                    <p class="font-bold font-head flex gap-x-2 text-xl"> {author.name} </p>
                     <a href={author.twitter} target="_blank"><p class="font-medium text-md flex gap-2 opacity-70 group"> <Icon name='twitter' width='20' height='20' class='group-hover:text-gray-900 transition-colors'/>@CodeD3vil</p></a>
                 </div>
             </div>
