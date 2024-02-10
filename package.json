@@ -61,7 +61,6 @@
 		"@fontsource/yeseva-one": "^5.0.18",
 		"@fontsource/zen-dots": "^5.0.18",
 		"@formkit/auto-animate": "^0.8.1",
-		"@mojs/core": "^1.7.1",
 		"@sanity/client": "^6.9.3",
 		"@vercel/analytics": "^1.1.1",
 		"@vercel/speed-insights": "^1.0.1",
