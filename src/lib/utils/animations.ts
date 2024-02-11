@@ -1,7 +1,6 @@
 // @ts-nocheck
-export const animateCSS = (element: string, animation: string, prefix = 'animate__') =>
-	// We create a Promise and return it
-	new Promise((resolve, reject) => {
+export function animateCSS(element: string, animation: string, prefix = 'animate__') {
+	return new Promise((resolve, reject) => {
 		const animationName = `${prefix}${animation}`;
 		const node: HTMLElement | null = document.querySelector(element);
 
@@ -16,6 +15,7 @@ export const animateCSS = (element: string, animation: string, prefix = 'animate
 
 		node.addEventListener('animationend', handleAnimationEnd, { once: true });
 	});
+}
 
 export async function exitElement(el: string,el2:string,el3:string, outro: string, intro:string) {
 	let element = document.querySelector(el);

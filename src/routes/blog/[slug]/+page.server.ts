@@ -4,15 +4,15 @@ import type { Load } from '@sveltejs/kit';
 /** @type {import('@sveltejs/kit').Load} */
 export const load: Load = async ({ url, params, fetch }) => {
 	const res = await getPost(params.slug);
-	const relatedPosts: any = await getRelatedPosts(params.slug)
-	console.log(relatedPosts) 
-	if (res?.post) {
+	const relatedPostsRes = await getRelatedPosts(params.slug);
+
+	if (res.status === 200 && relatedPostsRes.status === 200) {
+		let post = res.post;
 		return {
-			post: res.post[0],
+			post,
 			toc: res.toc,
-			relatedPosts: relatedPosts.posts
-		}
-		
+			relatedPosts: relatedPostsRes.posts
+		};
 	}
 
 	return {
