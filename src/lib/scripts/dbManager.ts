@@ -47,6 +47,5 @@ export function setItemValue(key: any, value: string = ''): any | null {
  */
 export function clearDB(): null {
 	localStorage.clear();
-	return null
+	return null;
 }
-

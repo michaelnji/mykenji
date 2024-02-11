@@ -1,4 +1,4 @@
-import { addDays, format, formatDistanceToNow, parseISO } from "date-fns";
+import { addDays, format, formatDistanceToNow, parseISO } from 'date-fns';
 import { isString } from 'mathjs';
 
 export function getReadableDate(date: Date | number): string {

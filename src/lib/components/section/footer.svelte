@@ -3,7 +3,7 @@
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import Layered from './../display/layered.svelte';
 	import Contact from './contact.svelte';
-	let el:HTMLElement;
+	let el: HTMLElement;
 </script>
 
 <Layered />
@@ -18,7 +18,12 @@
 				<div class="loader w-[20px] md:w-[45px]" />
 			</div>
 			<div>
-				<h2 class="font-head font-bold overflow-hidden text-purple-50 text-xl name-text md:text-3xl" style=" transform:translateY(40px); opacity:0; ">Michael Nji</h2>
+				<h2
+					class="font-head font-bold overflow-hidden text-purple-50 text-xl name-text md:text-3xl"
+					style=" transform:translateY(40px); opacity:0; "
+				>
+					Michael Nji
+				</h2>
 				<IntersectionObserver
 					element={el}
 					on:intersect={() => {
@@ -30,24 +35,28 @@
 						anime({
 							targets: `.name-text`,
 							opacity: {
-								delay:200,
-								value:1
+								delay: 200,
+								value: 1
 							},
-							translateY:0,
+							translateY: 0,
 							duration: 1600
 						});
 						anime({
 							targets: `.name-desc`,
 							opacity: {
-								delay:400,
-								value:1
+								delay: 400,
+								value: 1
 							},
-							translateY:0,
+							translateY: 0,
 							duration: 1600
 						});
 					}}
 				>
-					<p bind:this={el} class="text-lg name-desc md:text-xl opacity-70 font-semibold text-purple-100" style=" transform:translateY(-40px); opacity:0; ">
+					<p
+						bind:this={el}
+						class="text-lg name-desc md:text-xl opacity-70 font-semibold text-purple-100"
+						style=" transform:translateY(-40px); opacity:0; "
+					>
 						Web Developer
 					</p>
 				</IntersectionObserver>

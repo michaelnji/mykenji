@@ -4,36 +4,35 @@ export const skills = [
 		text: '#ff922b',
 		proeficiency: 'advanced',
 		link: '',
-		color: '#ffe8cc' 
-		
+		color: '#ffe8cc'
 	},
 	{
 		name: 'supabase',
 		proeficiency: 'intermediate',
 		text: '#51cf66',
 		link: '',
-		color: '#b2f2bb' 
+		color: '#b2f2bb'
 	},
 	{
 		name: 'javascript',
 		proeficiency: 'advanced',
 		text: '#fcc419',
 		link: '',
-		color: '#fff3bf' 
+		color: '#fff3bf'
 	},
 	{
 		name: 'tailwindcss',
 		proeficiency: 'advanced',
 		text: '#20c997',
 		link: '',
-		color: '#96f2d7' 
+		color: '#96f2d7'
 	},
 	{
 		name: 'python',
 		proeficiency: 'beginner',
 		text: '#3498db',
 		link: '',
-		color: '#a5d8ff' 
+		color: '#a5d8ff'
 	},
 	{
 		name: 'scss',
@@ -41,7 +40,7 @@ export const skills = [
 		icon: 'sass',
 		text: '#cd6799',
 		link: '',
-		color: '#fcc2d7' 
+		color: '#fcc2d7'
 	},
 	{
 		name: 'nodejs',
@@ -49,15 +48,15 @@ export const skills = [
 		icon: 'nodedotjs',
 		text: '#37b24d',
 		link: '',
-		color: '#b2f2bb' 
+		color: '#b2f2bb'
 	},
 	{
 		name: 'gulp',
 		proeficiency: 'intermediate',
 		icon: 'gulp',
 		text: '#ff6b6b',
-		link: '', 
-		color: '#ffc9c9'  
+		link: '',
+		color: '#ffc9c9'
 	},
 
 	{
@@ -75,43 +74,41 @@ export const skills = [
 	},
 	{
 		name: 'golang',
-		icon:'go',
+		icon: 'go',
 		text: '#3498db',
 		link: '',
-		color: '#a5d8ff' 
+		color: '#a5d8ff'
 	},
 	{
 		name: 'Nuxt',
 		icon: 'nuxtdotjs',
 		text: '#41b883',
 		link: '',
-		color: '#b2f2bb' 
+		color: '#b2f2bb'
 	}
 ];
 export const skillsToLearn = [
-		{
-			name:'go',
-			text:'#3498db',
-			link:''
-		},
-		{
-			name:'Nuxt',
-			icon:'nuxtdotjs',
-			text:'#41b883',
-			link:''
-		},
-		
-		{
-			name:'mongodb',
-			text:'#47a248',
-			link:''
-		},
-		{
-			name:'Linux OS',
-			icon:'linux',
-			text:'#f0db4f',
-			link:''
-		},
-	]
+	{
+		name: 'go',
+		text: '#3498db',
+		link: ''
+	},
+	{
+		name: 'Nuxt',
+		icon: 'nuxtdotjs',
+		text: '#41b883',
+		link: ''
+	},
 
-	
+	{
+		name: 'mongodb',
+		text: '#47a248',
+		link: ''
+	},
+	{
+		name: 'Linux OS',
+		icon: 'linux',
+		text: '#f0db4f',
+		link: ''
+	}
+];

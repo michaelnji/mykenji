@@ -35,11 +35,10 @@
 </script>
 
 {#if ready}
-
-<div class={`${$theme} overflow-x-hidden`}>
-	{#if isLoading}
-		<div out:fade={{ duration: 150 }}><Loader /></div>
-	{/if}
+	<div class={`${$theme} overflow-x-hidden`}>
+		{#if isLoading}
+			<div out:fade={{ duration: 150 }}><Loader /></div>
+		{/if}
 		<div
 			class="dark:!bg-gray-950 dark:!text-gray-50 bg-white text-base-400 transition-colors duration-300 !overflow-hidden"
 		>
@@ -54,7 +53,10 @@
 		</div>
 	</div>
 {:else}
-	<div class="w-screen h-screen dark:bg-gray-950 overflow-hidden grid place-items-center" out:fade={{ duration: 150 }}>
+	<div
+		class="w-screen h-screen dark:bg-gray-950 overflow-hidden grid place-items-center"
+		out:fade={{ duration: 150 }}
+	>
 		<Loader />
 	</div>
 {/if}

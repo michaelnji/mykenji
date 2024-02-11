@@ -46,7 +46,6 @@ export const parseOutline = (ast: any[]) => {
 const getChildrenText = (props: { children: any[] }) =>
 	props.children.map((node) => (typeof node === 'string' ? node : node.text || '')).join('');
 
-
 export function copyToClipboard(text: string): Promise<ClipboardCopyResult> {
 	return new Promise((resolve) => {
 		if (!navigator.clipboard) {

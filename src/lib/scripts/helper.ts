@@ -1,7 +1,6 @@
-
 import toast from 'svelte-french-toast';
 
-function addToast(message:string, type:string, duration:number = 4500) {
+function addToast(message: string, type: string, duration: number = 4500) {
 	const config = {
 		duration,
 
