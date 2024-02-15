@@ -27,7 +27,7 @@
 				value: '0.7',
 				duration: 500
 			},
-			duration: 1000,
+			duration: 1000, 
 			delay: 1000
 		});
 		let elements = document.querySelectorAll('.icon-one-a-sm');
