@@ -5,7 +5,7 @@
 	
 	import HeroImg from './../display/heroImg.svelte';
 	import { fly, scale } from "svelte/transition";
-	import { easeOutElastic } from '$lib/utils/animations';
+	import { easeOutElastic, easeInOutBack } from '$lib/utils/animations';
 	import Github  from 'svelte-simples/Github.svelte';
 	// const colors = ['pink', 'purple', 'purple', 'red', 'blue', 'green', 'orange', 'yellow'];
 	onMount(() => {
@@ -28,28 +28,28 @@
 				duration: 500
 			},
 			duration: 1000, 
-			delay: 1000
+			delay: 500
 		});
 		let elements = document.querySelectorAll('.icon-one-a-sm');
 		anime({
 			targets: elements,
 			opacity: {
 				value: 1,
-				delay: 1900
+				delay: 1000
 			},
 			translateY: '0px',
-			delay: 1900
+			delay: 1000
 		});
 	});
 </script>
 
-<div in:scale={{easing: easeOutElastic, duration:2100}}
+<div in:scale={{easing: easeOutElastic, duration:1500}}
 	class={'hidden xl:flex flex-col justify-center md:gap-y-6 max-w-[84rem]  md:h-max xl:!rounded-3xl xl:border-4 mx-auto border-gray-900  md:border-t-4 md:border-b-4 md:bg-purple-100 md:p-12  px-6 py-12 '}
 >
 	<div class=" md:inline-flex"><HeroImg /></div>
 	<h1
 		class="text-5xl md:text-7xl  text-left xl:text-9xl font-head  md:!text-gray-900 font-extrabold !leading-[3.5rem] md:!leading-[4.3rem] xl:!leading-[7rem]"
-		 in:fly={{ y: 100, delay: 1300, duration:1500 , easing: easeOutElastic  }}
+		 in:fly={{ y: 100, delay: 1700, duration:700 , easing: easeInOutBack  }}
 	>
 		I am Michael Nji, a <span class="text">Web</span> Developer
 	</h1>

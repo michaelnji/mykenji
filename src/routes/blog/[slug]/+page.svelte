@@ -16,19 +16,16 @@
 	import { PortableText } from '@portabletext/svelte';
 	import { onMount } from 'svelte';
 	import Calendar from 'svelte-heros-v2/CalendarDays.svelte';
-	import dracula from 'svelte-highlight/styles/material-palenight.css';
+	import 'svelte-highlight/styles/material-palenight.css';
 	import { fly } from 'svelte/transition';
 	let ready = false;
 	export let data;
 	onMount(() => {
-		console.log(data)
 		ready = true;
 	});
 </script>
 
-<svelte:head>
-	{@html dracula}
-</svelte:head>
+
 
 {#if ready && data.post}
 	<section
