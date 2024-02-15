@@ -1,12 +1,12 @@
 <!-- CustomHeading (blockStyle) -->
 <script lang="ts">
 	import currentItem from '$lib/stores/toc-store';
-	import type { BlockComponentProps } from '@portabletext/svelte';
+	// @ts-ignore
 	import speakingurl from 'speakingurl';
 	import IntersectionObserver from 'svelte-intersection-observer';
-	export let portableText:any
-	$: ({ indexInParent, global, value } = portableText);
-	$: ({ ptBlocks } = global);
+	export let portableText: any;
+	$: ({   value } = portableText);
+	// $: ({ ptBlocks } = global);
 	$: ({ style } = value);
 	$: anchorId = `${speakingurl(value.children[0].text, '-')}`;
 	let element: HTMLDivElement;
@@ -21,7 +21,7 @@
 		$currentItem = anchorId;
 	}}
 >
-	<div bind:this={element} id={anchorId} class="group relative ">
+	<div bind:this={element} id={anchorId} class="group relative">
 		<!-- <div class="h-1 w-28 bg-gray-900 dark:bg-gray-100"></div> -->
 		{#if style === 'h1'}
 			<h1 class=" flex w-full items-center gap-x-3 !font-head">

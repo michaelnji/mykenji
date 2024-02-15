@@ -1,8 +1,8 @@
 <script>
 	// @ts-nocheck
-	export let src='';
-	export let alt='';
-	export let classes='';
+	export let src = '';
+	export let alt = '';
+	export let classes = '';
 
 	import IntersectionObserver from './intersectionObserver.svelte';
 	import Image from './Image.svelte';

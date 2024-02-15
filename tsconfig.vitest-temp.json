@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "$lib": [
+        "./src/lib"
+      ],
+      "$lib/*": [
+        "./src/lib/*"
+      ]
+    },
+    "rootDirs": [
+      "..",
+      "./types"
+    ],
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "preserveValueImports": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "noEmit": true,
+    "target": "ES2020",
+    "ignoreDeprecations": "5.0",
+    "baseUrl": "./",
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "types": [
+      "vitest/importMeta"
+    ],
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDeclarationOnly": false,
+    "incremental": true,
+    "tsBuildInfoFile": "/home/michael/projects/mykenji/node_modules/.pnpm/vitest@1.2.2_@vitest+ui@1.2.2/node_modules/vitest/dist/vendor/tsconfig.tmp.tsbuildinfo"
+  },
+  "include": [
+    "src",
+    "tests"
+  ],
+  "exclude": [
+    "node_modules/**",
+    ".svelte-kit/[!ambient.d.ts]**",
+    "src/service-worker.js",
+    "src/service-worker.ts",
+    "src/service-worker.d.ts"
+  ]
+}

@@ -1,11 +1,14 @@
 <script>
-	import { animate } from "popmotion";
-	import { Icon } from 'svelte-simples';
+	import { animate } from 'popmotion';
+	import  Discord  from 'svelte-simples/Discord.svelte';
+	import  Twitter  from 'svelte-simples/Twitter.svelte';
+	import  Gmail  from 'svelte-simples/Gmail.svelte';
+	import  Github  from 'svelte-simples/Github.svelte';
 
-animate({
-  from: 0,
-  to: 100
-})
+	animate({
+		from: 0,
+		to: 100
+	});
 	let socials = [
 		{
 			name: 'discord',
@@ -34,7 +37,9 @@ animate({
 	];
 </script>
 
-<div class="p-6 md:p-12 rounded-2xl transform rotate-6 bg-purple-50 dark:bg-gray-900 shadow-2xl max-w-lg mx-auto w-full">
+<div
+	class="p-6 md:p-12 rounded-2xl transform rotate-6 bg-purple-50 dark:bg-gray-900 shadow-2xl max-w-lg mx-auto w-full"
+>
 	<h1 class="text-2xl mx-auto md:text-4xl font-extrabold font-head text-center">I'm active @</h1>
 
 	<div class="flex justify-center flex-wrap w-full gap-3 mt-8">
@@ -44,15 +49,18 @@ animate({
 					class={` p-3 flex items-center flex-col gap-3 m   skill rounded-xl !bg-opacity-10`}
 					style={`color: #fff !important; border:2px solid ${social.text}; background-color:${social.color}; `}
 				>
-					<Icon
-						name={social.name}
-						color={`${social.text}`}
-						height="32"
-						width="32"
+					{#if social.name === 'github' }
+					<Github color={`${social.text}`} height="32" width="32" />
+					{:else if social.name === 'discord' }
+					<Discord color={`${social.text}`} height="32" width="32" />
 						
-					/>
-					
-					
+					{:else if social.name === 'gmail' }
+					<Gmail color={`${social.text}`} height="32" width="32" />
+						
+					{:else if social.name === 'twitter' }
+					<Twitter color={`${social.text}`} height="32" width="32" />
+						
+					{/if}
 				</div>
 			</a>
 		{/each}

@@ -2,7 +2,12 @@
 	import { page } from '$app/stores';
 	import { setItemValue } from '$lib/scripts/dbManager';
 	import theme from '$lib/stores/theme';
-	import { IconSolid } from 'svelte-heros-v2';
+	import anime from 'animejs';
+	import { onMount } from 'svelte';
+	import Sun from 'svelte-heros-v2/Sun.svelte';
+	import Moon from 'svelte-heros-v2/Moon.svelte';
+	import XMark from 'svelte-heros-v2/XMark.svelte';
+	import Bars3Solid from 'svelte-heros-v2/Bars3.svelte';
 	import { fade, fly, scale } from 'svelte/transition';
 	let closeModal: boolean = false;
 	function toggleTheme(): void {
@@ -15,9 +20,15 @@
 		closeModal = !closeModal;
 	}
 	$: currentSection = $page.url.pathname;
+	onMount(()=>{
+		anime({
+			targets:'.navbar-wrapper',
+			scale:1
+		})
+	})
 </script>
 
-<div class="navbar-wrapper !z-10">
+<div class="navbar-wrapper !z-50" style="transform: scale(0);">
 	{#if closeModal}
 		<div
 			class="navbar-container rounded-3xl card-wrapper dark:!bg-base-200 dark:!text-gray-50"
@@ -44,8 +55,7 @@
 					{#key $theme}
 						{#if $theme == 'light'}
 							<div in:scale={{ duration: 400 }}>
-								<IconSolid
-									name="moon-solid"
+								<Moon
 									class="focus:!outline-none"
 									width="24"
 									height="24"
@@ -54,8 +64,7 @@
 							</div>
 						{:else}
 							<div in:scale={{ duration: 400 }}>
-								<IconSolid
-									name="sun-solid"
+								<Sun
 									class="focus:!outline-none"
 									width="24"
 									height="24"
@@ -86,7 +95,7 @@
 					</li>
 					<li>
 						<a
-						class:dark:text-purple-50={currentSection === '/#projects'}
+							class:dark:text-purple-50={currentSection === '/#projects'}
 							class:bg-primary={currentSection === '/#projects'}
 							class:bg-opacity-30={currentSection === '/#projects'}
 							class:text-primary={currentSection === '/#projects'}
@@ -105,7 +114,6 @@
 							class:bg-opacity-30={currentSection === '/blog'}
 							class:text-primary={currentSection === '/blog'}
 							class:dark:text-purple-50={currentSection === '/blog'}
-
 							class:rounded-2xl={currentSection === '/blog'}
 							href="/blog"
 							class="nav-item"
@@ -119,7 +127,6 @@
 					<li>
 						<a href="https://github.com/michaelnji" class="nav-item"> GITHUB </a>
 					</li>
-					
 				</ul>
 			</nav>
 			<div class="divider dark:!border-gray-700" />
@@ -137,15 +144,13 @@
 		{#key closeModal}
 			{#if !closeModal}
 				<div in:scale={{ duration: 400 }}>
-					<IconSolid
-						name="bars-3-solid"
+					<Bars3Solid
 						class="focus:!outline-none hidden md:block"
 						width="48"
 						height="48"
 						tabindex="-1"
 					/>
-					<IconSolid
-						name="bars-3-solid"
+					<Bars3Solid
 						class="focus:!outline-none md:hidden"
 						width="36"
 						height="36"
@@ -154,15 +159,13 @@
 				</div>
 			{:else}
 				<div in:scale={{ duration: 400 }}>
-					<IconSolid
-						name="x-mark-solid"
+					<XMark
 						class="focus:!outline-none hidden md:block"
 						width="48"
 						height="48"
 						tabindex="-1"
 					/>
-					<IconSolid
-						name="x-mark-solid"
+					<XMark
 						class="focus:!outline-none md:hidden"
 						width="36"
 						height="36"

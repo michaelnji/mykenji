@@ -29,7 +29,7 @@
 			</span>
 		</div>
 	{/if}
-	<img loading="lazy" {src} {alt} class={classes } class:loaded bind:this={thisImage} />
+	<img loading="lazy" {src} {alt} class={classes} class:loaded bind:this={thisImage} />
 </figure>
 
 <style>

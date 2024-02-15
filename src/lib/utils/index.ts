@@ -1,19 +1,22 @@
-import type { ClipboardCopyResult } from '$lib/types';
+import type { ClipboardCopyResult } from '../types';
+// @ts-ignore
 import speakingurl from 'speakingurl';
-const filter = (ast: any[], match: { (node: any): boolean; (arg0: any): any }) =>
-	ast.reduce((acc, node) => {
+function filter(ast: any[], match: { (node: any): boolean; (arg0: any): any }): any {
+	return ast.reduce((acc, node) => {
 		if (match(node)) acc.push(node);
 		if (node.children) acc.push(...filter(node.children, match));
 		return acc;
 	}, []);
+}
 
-export const findHeadings = (ast: any[]) =>
-	filter(ast, (node) => /h\d/.test(node.style)).map((node: { children: any[] }) => {
+export function findHeadings(ast: any[]): any {
+	return filter(ast, (node) => /h\d/.test(node.style)).map((node: { children: any[] }) => {
 		const text = getChildrenText(node);
-		const slug = speakingurl(text,'-');
-		
+		const slug = speakingurl(text, '-');
+
 		return { ...node, text, slug };
 	});
+}
 
 const get = (object: { subheadings: never[] }, path: any[]) =>
 	path.reduce((prev, curr) => prev[curr], object);
@@ -43,7 +46,6 @@ export const parseOutline = (ast: any[]) => {
 
 const getChildrenText = (props: { children: any[] }) =>
 	props.children.map((node) => (typeof node === 'string' ? node : node.text || '')).join('');
-
 
 export function copyToClipboard(text: string): Promise<ClipboardCopyResult> {
 	return new Promise((resolve) => {

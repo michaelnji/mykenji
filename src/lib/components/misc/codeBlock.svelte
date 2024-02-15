@@ -1,15 +1,14 @@
 <script>
-	import { fade } from "svelte/transition";
-	// @ts-nocheck
-
-	import { IconMini, IconSolid } from 'svelte-heros-v2';
+	import { fade } from 'svelte/transition';
+	import Check from 'svelte-heros-v2/Check.svelte';
+	import Square2Stack from 'svelte-heros-v2/Square2Stack.svelte';
 	import Highlight, { HighlightAuto, HighlightSvelte, LineNumbers } from 'svelte-highlight';
 	import css from 'svelte-highlight/languages/css';
 	import { copyToClipboard } from '$lib/utils/index';
 	/**
 	 * @type {any}
 	 */
-	 export let portableText;
+	export let portableText;
 	$: ({ value } = portableText);
 	$: ({ language, code } = value);
 	let copySuccess = false;
@@ -26,7 +25,7 @@
 	}
 </script>
 
-<div class="card-wrapper rounded-3xl transition duration-300 ease-in-out !font-mono  relative">
+<div class="card-wrapper rounded-3xl transition duration-300 ease-in-out !font-mono relative">
 	{#if language == 'css'}
 		<Highlight language={css} {code} />
 	{:else if language == 'jsx'}
@@ -36,16 +35,18 @@
 	{/if}
 	<button
 		on:click={copyCode}
-		class="py-1 px-2 absolute top-3 right-3 text-xs text-gray-200  rounded active:scale-95 transition-transform duration-200"
+		class="py-1 px-2 absolute top-3 right-3 text-xs text-gray-200 rounded active:scale-95 transition-transform duration-200"
 	>
 		{#key copySuccess}
 			{#if copySuccess}
 				<div class="flex items-center gap-x-2 font-bold" in:fade>
-					<b class="hidden md:inline">copied</b> <IconMini name="check-mini" class="focus:!outline-none text-green-500" />
+					<b class="hidden md:inline">copied</b>
+					<Check class="focus:!outline-none text-green-500" />
 				</div>
 			{:else}
 				<div class="flex items-center gap-x-2 font-bold" in:fade>
-				<b class="hidden md:inline">copy</b>	<IconMini name="square-2-stack-mini" class="focus:!outline-none" />
+					<b class="hidden md:inline">copy</b>
+					<Square2Stack class="focus:!outline-none" />
 				</div>
 			{/if}
 		{/key}
