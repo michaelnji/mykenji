@@ -1,6 +1,5 @@
 <script lang="ts">
 	import anime from 'animejs';
-	import { number } from 'mathjs';
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import { Icon } from 'svelte-simples';
 	export let name: string;

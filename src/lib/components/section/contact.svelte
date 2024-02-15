@@ -1,6 +1,9 @@
 <script>
 	import { animate } from 'popmotion';
-	import { Icon } from 'svelte-simples';
+	import  Discord  from 'svelte-simples/Discord.svelte';
+	import  Twitter  from 'svelte-simples/Twitter.svelte';
+	import  Gmail  from 'svelte-simples/Gmail.svelte';
+	import  Github  from 'svelte-simples/Github.svelte';
 
 	animate({
 		from: 0,
@@ -46,7 +49,18 @@
 					class={` p-3 flex items-center flex-col gap-3 m   skill rounded-xl !bg-opacity-10`}
 					style={`color: #fff !important; border:2px solid ${social.text}; background-color:${social.color}; `}
 				>
-					<Icon name={social.name} color={`${social.text}`} height="32" width="32" />
+					{#if social.name === 'github' }
+					<Github color={`${social.text}`} height="32" width="32" />
+					{:else if social.name === 'discord' }
+					<Discord color={`${social.text}`} height="32" width="32" />
+						
+					{:else if social.name === 'gmail' }
+					<Gmail color={`${social.text}`} height="32" width="32" />
+						
+					{:else if social.name === 'twitter' }
+					<Twitter color={`${social.text}`} height="32" width="32" />
+						
+					{/if}
 				</div>
 			</a>
 		{/each}

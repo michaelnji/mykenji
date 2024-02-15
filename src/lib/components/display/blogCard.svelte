@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { urlFor } from '$lib/backend/sanity';
 	import { getReadableDate } from '$lib/utils/timeFunctions';
 
 	export let title: string;
@@ -9,14 +10,16 @@
 	export let image: string;
 </script>
 
-<div class=" group w-full max-w-lg !rounded-2xl transition-shadow">
+<div class=" group w-full lg:max-w-lg max-w-xl !rounded-2xl transition-shadow">
 	<div class="  bg-white border-2 border-black card-wrapper dark:bg-gray-900 pt-6 !rounded-2xl">
 		<div class="w-full flex-col !justify-between gap-12 items-start">
 			<div class="px-6">
 				<img
-					src={image}
-					alt=""
-					class=" rounded-2xl group-hover:scale-105 transition w-full object-cover max-w-xl m-0"
+				alt=""
+				class=" rounded-2xl group-hover:scale-105 transition object-cover  m-0"
+				src={urlFor(image).format('webp').size(2000,1200).url()}
+				width="1900"
+					height="1000"
 				/>
 			</div>
 

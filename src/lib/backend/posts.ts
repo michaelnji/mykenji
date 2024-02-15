@@ -1,13 +1,12 @@
-import type { Heading, Post, PostResponse, PostsSummarizedResponse } from '$lib/types';
-import { findHeadings } from '$lib/utils';
-import { queries } from '$lib/utils/queryManager';
+import type { Heading, Post, PostResponse, PostsSummarizedResponse } from '../types';
+import { findHeadings } from '../utils';
+import { queries } from '../utils/queryManager';
 import { sanityClient } from './sanity';
 
 export async function getPostsSummarized(): Promise<PostsSummarizedResponse> {
 	const query = queries.postsSummary;
 	try {
 		const data: Post[] = await sanityClient.fetch(query);
-
 		if (data) {
 			return {
 				posts: data,

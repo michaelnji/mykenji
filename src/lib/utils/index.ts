@@ -1,4 +1,5 @@
-import type { ClipboardCopyResult } from '$lib/types';
+import type { ClipboardCopyResult } from '../types';
+// @ts-ignore
 import speakingurl from 'speakingurl';
 function filter(ast: any[], match: { (node: any): boolean; (arg0: any): any }): any {
 	return ast.reduce((acc, node) => {

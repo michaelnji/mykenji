@@ -1,7 +1,6 @@
 <script lang="ts">
 	import About from '$lib/components/section/about.svelte';
 	import Blog from '$lib/components/section/blog.svelte';
-	import Contact from '$lib/components/section/contact.svelte';
 	import Footer from '$lib/components/section/footer.svelte';
 	import Hero from '$lib/components/section/hero.svelte';
 	import Projects from '$lib/components/section/projects.svelte';

@@ -1,8 +1,7 @@
 <script>
 	import { fade } from 'svelte/transition';
-	// @ts-nocheck
-
-	import { IconMini, IconSolid } from 'svelte-heros-v2';
+	import Check from 'svelte-heros-v2/Check.svelte';
+	import Square2Stack from 'svelte-heros-v2/Square2Stack.svelte';
 	import Highlight, { HighlightAuto, HighlightSvelte, LineNumbers } from 'svelte-highlight';
 	import css from 'svelte-highlight/languages/css';
 	import { copyToClipboard } from '$lib/utils/index';
@@ -42,12 +41,12 @@
 			{#if copySuccess}
 				<div class="flex items-center gap-x-2 font-bold" in:fade>
 					<b class="hidden md:inline">copied</b>
-					<IconMini name="check-mini" class="focus:!outline-none text-green-500" />
+					<Check class="focus:!outline-none text-green-500" />
 				</div>
 			{:else}
 				<div class="flex items-center gap-x-2 font-bold" in:fade>
 					<b class="hidden md:inline">copy</b>
-					<IconMini name="square-2-stack-mini" class="focus:!outline-none" />
+					<Square2Stack class="focus:!outline-none" />
 				</div>
 			{/if}
 		{/key}

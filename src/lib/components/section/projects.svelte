@@ -1,10 +1,15 @@
 <script lang="ts">
-	import byte from '$lib/images/bytepay.png';
-	import kawaiii from '$lib/images/kawaiii.png';
-	import wabuzz from '$lib/images/wabuzz.png';
+	import  Typescript  from "svelte-simples/Typescript.svelte";
+	import  Svelte  from "svelte-simples/Svelte.svelte";
+	import  Supabase  from "svelte-simples/Supabase.svelte";
+	import  Tailwindcss  from "svelte-simples/Tailwindcss.svelte";
+	import byte from '$lib/images/bytepay.webp';
+	import kawaiii from '$lib/images/kawaiii.webp';
+	import wabuzz from '$lib/images/wabuzz.webp';
 	import anime from 'animejs';
 	import IntersectionObserver from 'svelte-intersection-observer';
-	import { Icon } from 'svelte-simples';
+	import Javascript  from 'svelte-simples/Javascript.svelte';
+	import { Nodedotjs } from "svelte-simples";
 	let el: HTMLElement;
 </script>
 
@@ -50,6 +55,7 @@
 									src={byte}
 									alt=""
 									class="rounded-2xl group-hover:scale-105 transition duration-300"
+									loading="lazy"
 								/>
 							</div>
 							<div class="flex flex-wrap mt-8 gap-3">
@@ -83,28 +89,28 @@
 									<p
 										class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="javascript" width={'30'} height="30" />
+										<Javascript width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="tailwindcss" width={'30'} height="30" />
+										<Tailwindcss width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="supabase" width={'30'} height="30" />
+										<Supabase width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="nodedotjs" width={'30'} height="30" />
+										<Nodedotjs width={'30'} height="30" />
 									</p>
 
 									<p
 										class="p-2 font-bold text-purple-50 rounded-lg bg-purple-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="svelte" width={'30'} height="30" />
+										<Svelte width={'30'} height="30" />
 									</p>
 								</div>
 								<div class="mt-8 flex gap-3">
@@ -129,6 +135,7 @@
 									src={wabuzz}
 									alt=""
 									class="rounded-2xl group-hover:scale-105 transition duration-300"
+									loading="lazy"
 								/>
 							</div>
 							<div class="flex flex-wrap mt-8 gap-3">
@@ -162,27 +169,27 @@
 									<p
 										class="p-2 font-bold text-green-50 rounded-lg bg-green-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="typescript" width={'30'} height="30" />
+										<Typescript width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-green-50 rounded-lg bg-green-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="tailwindcss" width={'30'} height="30" />
+										<Tailwindcss width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-green-50 rounded-lg bg-green-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="supabase" width={'30'} height="30" />
+										<Supabase width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-green-50 rounded-lg bg-green-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="nodedotjs" width={'30'} height="30" />
+										<Nodedotjs width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-green-50 rounded-lg bg-green-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="svelte" width={'30'} height="30" />
+										<Svelte width={'30'} height="30" />
 									</p>
 								</div>
 								<div class="mt-8 flex gap-3">
@@ -212,6 +219,7 @@
 									src={kawaiii}
 									alt=""
 									class="rounded-2xl group-hover:scale-105 transition duration-300"
+									loading="lazy"
 								/>
 							</div>
 							<div class="flex flex-wrap mt-8 gap-3">
@@ -245,18 +253,18 @@
 									<p
 										class="p-2 font-bold text-pink-50 rounded-lg bg-pink-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="typescript" width={'30'} height="30" />
+										<Typescript width={'30'} height="30" />
 									</p>
 									<p
 										class="p-2 font-bold text-pink-50 rounded-lg bg-pink-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="tailwindcss" width={'30'} height="30" />
+										<Tailwindcss width={'30'} height="30" />
 									</p>
 
 									<p
 										class="p-2 font-bold text-pink-50 rounded-lg bg-pink-950 text-xs font-mono transition duration-1000"
 									>
-										<Icon name="svelte" width={'30'} height="30" />
+										<Svelte width={'30'} height="30" />
 									</p>
 								</div>
 								<div class="mt-8 flex gap-3">
@@ -282,11 +290,11 @@
 
 <style>
 	/* .kawaiii-bg:hover{
-		background: url('../../images/kawaiii.png') !important;
+		background: url('../../images/kawaiii.webp') !important;
 		background-repeat: repeat !important;
 }
 	.byte-bg:hover{
-		background: url('../../images/bytepay.png') !important;
+		background: url('../../images/bytepay.webp') !important;
 		background-repeat: repeat !important;
 } */
 </style>

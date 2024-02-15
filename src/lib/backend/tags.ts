@@ -1,5 +1,5 @@
-import type { TagResponse } from '$lib/types';
-import { queries } from '$lib/utils/queryManager';
+import type { TagResponse } from '../types';
+import { queries } from '../utils/queryManager';
 import { sanityClient } from './sanity';
 
 export async function getTags(): Promise<TagResponse> {

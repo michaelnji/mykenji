@@ -1,5 +1,3 @@
-import type { PortableText } from '@portabletext/svelte';
-
 export type ClipboardCopyResult = 'success' | 'error' | 'not-supported';
 
 export interface Post {
@@ -9,7 +7,7 @@ export interface Post {
 		slug: string;
 		name: string;
 		bio: string;
-		image: string;
+		imageUrl: string;
 		twitter: string;
 	};
 	tags: { title: string; description: string }[];
@@ -18,7 +16,7 @@ export interface Post {
 	title: string;
 	_updatedAt: Date | string;
 	imageUrl: string;
-	body: PortableText;
+	body: any;
 }
 export interface PostsSummarizedResponse {
 	posts: Post[];

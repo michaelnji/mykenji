@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { urlFor } from '$lib/backend/sanity.js';
 	import BlogAuthorInfo from '$lib/components/misc/blogAuthorInfo.svelte';
 	import BlogImg from '$lib/components/misc/blogImg.svelte';
 	import CodeBlock from '$lib/components/misc/codeBlock.svelte';
@@ -14,12 +15,13 @@
 	import { getReadableDate } from '$lib/utils/timeFunctions.js';
 	import { PortableText } from '@portabletext/svelte';
 	import { onMount } from 'svelte';
-	import { IconMini } from 'svelte-heros-v2';
+	import Calendar from 'svelte-heros-v2/CalendarDays.svelte';
 	import dracula from 'svelte-highlight/styles/material-palenight.css';
 	import { fly } from 'svelte/transition';
 	let ready = false;
 	export let data;
 	onMount(() => {
+		console.log(data)
 		ready = true;
 	});
 </script>
@@ -28,23 +30,26 @@
 	{@html dracula}
 </svelte:head>
 
-{#if ready}
+{#if ready && data.post}
 	<section
-		class="px-6 md:px-0 max-w-4xl mx-auto pt-12"
+		class="px-6  max-w-5xl mx-auto pt-12"
 		in:fly={{ y: 100, duration: 700, delay: 800 }}
 	>
 		<div class="w-full">
 			<img
-				src={data.post.imageUrl}
+			src={urlFor(data?.post.imageUrl).format('webp').size(2000,1200).url()}
+				width="2000"
+					height="1200"
+				
 				alt=""
-				class="  border-2 border-gray-900 custom-img w-full max-w-2xl rounded-xl"
+				class="  border-2 border-gray-900 custom-img w-full max-w-3xl rounded-xl"
 			/>
 
 			<h1 class="mt-6 m-0 text-4xl w-full md:text-5xl font-bold !font-head">
 				{data.post.title}
 			</h1>
 			<p class="font-medium my-6 font-sans opacity-80 flex gap-x-2 items-center">
-				<IconMini name="calendar-solid" />
+				<Calendar/>
 				<span class="text-gray-700 dark:text-gray-200 font-medium text-xl"
 					>{data.post._updatedAt
 						? `Last updated ${getReadableDate(data.post._updatedAt)}`
