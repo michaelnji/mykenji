@@ -1,12 +1,16 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import path from 'path';
-// import viteCompression from 'vite-plugin-compression';
+import webfontDownload from "vite-plugin-webfont-dl";
+
 import { defineConfig } from 'vitest/config';
 export default defineConfig({
 	alias: {
 		$lib: path.resolve(__dirname, './src/lib')
 	},
-	plugins: [sveltekit()],
+	plugins: [sveltekit(),webfontDownload([
+			"https://api.fontshare.com/v2/css?f[]=archivo@701,401,900,801,901,700,800,200,201,300,500,501,301,100,1,2,400,600,101,601&f[]=clash-display@200,400,700,500,600,1,300&display=swap",
+			"https://api.fontshare.com/v2/css?f[]=manrope@700,400,300,1,800,600,500,200&display=swap", "https://api.fontshare.com/v2/css?f[]=manrope@700,400,300,1,800,600,500,200&display=swap"
+		]),],
 	test: {
 		include: ['tests/**/*.{test,spec}.{js,ts}'],
 		reporters: ['html', 'default'],

@@ -33,14 +33,7 @@
 		in:fly={{ y: 100, duration: 700, delay: 800 }}
 	>
 		<div class="w-full">
-			<img
-			src={urlFor(data?.post.imageUrl).format('webp').size(2000,1200).url()}
-				width="2000"
-					height="1200"
-				
-				alt=""
-				class="  border-2 border-gray-900 custom-img w-full max-w-3xl rounded-xl"
-			/>
+			
 
 			<h1 class="mt-6 m-0 text-4xl w-full md:text-5xl font-bold !font-head">
 				{data.post.title}
@@ -76,11 +69,19 @@
 				</p>
 			</div>
 		</div>
+		<img
+			src={urlFor(data?.post.imageUrl).format('webp').size(2000,1200).url()}
+				width="2000"
+					height="1200"
+				
+				alt=""
+				class=" mt-3 border-2 border-gray-900 custom-img w-full max-w-3xl rounded-xl"
+			/>
 		<aside class=" w-full max-w-3xl my-12">
 			<div class="hidden xl:block w-full"><Toc outline={data.toc} /></div>
 		</aside>
 		<section
-			class="!min-w-full prose-p:!min-w-full mt-10 prose prose-xl md:prose-2xl dark:prose-invert prose-headings:font-bold prose-pre:!rounded-2xl prose-pre:!p-0 prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-gray-900 prose-pre:!bg-inherit prose-pre:!text-md prose-purple border-b-2 dark:bolder-gray-700 pb-10"
+			class="!min-w-full prose-p:!min-w-full mt-10 prose prose-xl md:prose-2xl dark:prose-invert prose-headings:font-medium prose-pre:!rounded-2xl prose-pre:!p-0 prose-pre:whitespace-pre-wrap prose-pre:border-2 prose-pre:border-gray-900 prose-pre:!bg-inherit prose-pre:!text-md prose-purple border-b-2 dark:bolder-gray-700 pb-10"
 		>
 			<PortableText
 				value={[...data.post.body]}

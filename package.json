@@ -46,6 +46,7 @@
 		"typescript": "^5.3.3",
 		"vite": "^4.5.1",
 		"vite-plugin-compression": "^0.5.1",
+		"vite-plugin-webfont-dl": "^3.9.1",
 		"vitest": "^1.2.2",
 		"web-vitals": "^3.5.0"
 	},

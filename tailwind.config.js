@@ -5,8 +5,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Source Serif Pro', 'sans-serif'],
-				head: ['Gloock', 'sans-serif'],
+				sans: ['Manrope', 'sans-serif'],
+				head: ['Clash Display', 'sans-serif'],
 				mono: ['Space Mono']
 			},
 			colors: {
