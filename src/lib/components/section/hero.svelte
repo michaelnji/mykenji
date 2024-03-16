@@ -54,7 +54,7 @@
 	});
 </script>
 
-<section class=" w-screen py-28">
+<section class=" w-screen pt-28 pb-24">
 	<!-- <div class="h-[7.5rem] md:h-[11.9rem]  opacity-50 w-full hero-bg block" /> -->
 	<div
 		class="hero h-full flex flex-col-reverse xl:flex-row md:items-center !justify-center gap-8 md:gap-12 lg:gap-24 px-6 md:px-12"

@@ -1,7 +1,7 @@
 export const skills = [
 	{
 		name: 'svelte',
-		text: '#ff922b',
+		text: '#ff922b', 
 		proeficiency: 'advanced',
 		link: '',
 		color: '#ffe8cc'

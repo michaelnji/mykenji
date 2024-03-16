@@ -8,7 +8,6 @@
 </script>
 
 <Hero />
-
 <div>
 	<About />
 </div>
